@@ -1,0 +1,56 @@
+{
+  "source": "assets\\processed\\reconstructed\\kuroki-source.blend",
+  "sourceSha256": "66a076cb77a81a0aa67f16de220d8d6816f81fa4237bd81b565f5e7adf94c5ea",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\kuroki.glb",
+  "runtimeSha256": "9d7c322805bba1bd4d351c0fb8012e35026996bb65d5ca808555defa247c4c43",
+  "bytes": 4088068,
+  "heightMeters": 1.78,
+  "trianglesInSource": 50334,
+  "trianglesBeforeExport": 50334,
+  "boneCount": 174,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": false,
+  "characterId": "kuroki",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "reconstruction": {
+    "approximation": true,
+    "base": "assets\\processed\\yui-player.blend",
+    "baseSha256": "0036f55abb5c284b68935441592b66f129066c8ef7379542d03935382bfcafcd",
+    "extraSource": "assets\\processed\\unity\\kuroki\\Assets\\YaokiSubWork\\Living Bodysuit Alpha\\Kuroki\\fbx\\TBS alpha for Kuroki.fbx",
+    "reference": "test-results/kuroki-official-reference.jpg",
+    "referenceUrl": "https://booth.pm/ja/items/8822547",
+    "note": "Bản dựng lại cho thử nghiệm, ghép và chỉnh hình học từ rig Yui do người dùng cung cấp; không phải model Airi/Annie/Kuroki gốc."
+  },
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

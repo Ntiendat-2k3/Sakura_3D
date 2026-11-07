@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Pop_dance",
+    "source": "Pop_dance.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 4.900000095367432,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 329677
+  },
+  {
+    "id": "Rosetta_dance",
+    "source": "Rosetta_dance.fbx",
+    "sourceRig": "UE-style humanoid with duplicate skin joints",
+    "duration": 9.566666603088379,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 671227
+  },
+  {
+    "id": "Rosetta_dance2",
+    "source": "Rosetta_dance2.fbx",
+    "sourceRig": "UE-style humanoid with duplicate skin joints",
+    "duration": 29.066667556762695,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 2024019
+  },
+  {
+    "id": "Wine_dance",
+    "source": "Wine_dance.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 21.96666717529297,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 1409308
+  },
+  {
+    "id": "Flair",
+    "source": "Flair.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 1,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 81663
+  }
+]

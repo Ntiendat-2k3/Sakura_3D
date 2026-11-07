@@ -1,0 +1,56 @@
+{
+  "source": "assets\\processed\\reconstructed\\annie-source.blend",
+  "sourceSha256": "76ae6c0ec1aae5d29b05cf9680eec5d7ecf1e777e1a519a5cf6c106d716609fb",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\annie.glb",
+  "runtimeSha256": "b19a5834880694845d1e5955f0d11e0bc67926317b0f8855898cbf18f0988d8c",
+  "bytes": 3404744,
+  "heightMeters": 1.78,
+  "trianglesInSource": 44952,
+  "trianglesBeforeExport": 44952,
+  "boneCount": 174,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": false,
+  "characterId": "annie",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "reconstruction": {
+    "approximation": true,
+    "base": "assets\\processed\\yui-player.blend",
+    "baseSha256": "0036f55abb5c284b68935441592b66f129066c8ef7379542d03935382bfcafcd",
+    "extraSource": null,
+    "reference": "test-results/annie-reference/image2.png",
+    "referenceUrl": null,
+    "note": "Bản dựng lại cho thử nghiệm, ghép và chỉnh hình học từ rig Yui do người dùng cung cấp; không phải model Airi/Annie/Kuroki gốc."
+  },
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

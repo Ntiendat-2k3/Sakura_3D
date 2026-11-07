@@ -1,0 +1,15 @@
+{
+  "highBloomFPS": 35.034166984633956,
+  "viewport": [1536, 776],
+  "canvasDpr": 1,
+  "musicProvided": false,
+  "silentTechnicalWav": {
+    "durationSeconds": 4,
+    "pausedBeforeConsent": true,
+    "playedAfterConsent": true,
+    "pauseWorked": true,
+    "removeWorked": true,
+    "fixtureDeletedAfterTest": true
+  },
+  "note": "Không phải nhạc; file WAV im lặng chỉ kiểm tra luồng xin phép phát. Không lưu vào thư mục nhạc game. MP3/OGG và khớp beat nhạc thật chưa được kiểm thử."
+}

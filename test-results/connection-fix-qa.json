@@ -1,0 +1,30 @@
+{
+  "pass": true,
+  "origins": [
+    {
+      "origin": "http://localhost:3000",
+      "online": true,
+      "guestStatus": 201
+    },
+    {
+      "origin": "http://127.0.0.1:3000",
+      "online": true,
+      "guestStatus": 201
+    }
+  ],
+  "cors": {
+    "http://localhost:3000": "http://localhost:3000",
+    "http://127.0.0.1:3000": "http://127.0.0.1:3000",
+    "untrustedOriginAllowed": false
+  },
+  "networkRecovery": {
+    "refusedRequests": 2,
+    "attempts": 4,
+    "recovered": true
+  },
+  "httpFailure": {
+    "status": 503,
+    "retried": false,
+    "requests": 3
+  }
+}

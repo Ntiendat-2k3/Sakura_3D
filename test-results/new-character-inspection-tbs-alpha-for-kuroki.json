@@ -1,0 +1,317 @@
+{
+  "source": "assets/processed/unity/kuroki/Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/fbx/TBS alpha for Kuroki.fbx",
+  "rigs": [
+    {
+      "name": "Armature",
+      "bones": [
+        "Hips",
+        "Spine",
+        "Chest",
+        "Neck",
+        "Head",
+        "EYE.L",
+        "EYE.R",
+        "Patch",
+        "Shoulder_R",
+        "Upper_arm_R",
+        "Lower_arm_R",
+        "Hand_R",
+        "Thumb Proximal_R",
+        "Thumb Intermediate_R",
+        "Thumb Distal_R",
+        "Little Proximal_R",
+        "Little Intermediate_R",
+        "Little Distal_R",
+        "Middle Proximal_R",
+        "Middle Intermediate_R",
+        "Middle Distal_R",
+        "Ring Proximal_R",
+        "Ring Intermediate_R",
+        "Ring Distal_R",
+        "Index Proximal_R",
+        "Index Intermediate_R",
+        "Index Distal_R",
+        "Lower_arm_Twist_R",
+        "Upper_arm_Twist_R",
+        "Shoulder_L",
+        "Upper_arm_L",
+        "Lower_arm_L",
+        "Hand_L",
+        "Little Proximal_L",
+        "Little Intermediate_L",
+        "Little Distal_L",
+        "Middle Proximal_L",
+        "Middle Intermediate_L",
+        "Middle Distal_L",
+        "Ring Proximal_L",
+        "Ring Intermediate_L",
+        "Ring Distal_L",
+        "Index Proximal_L",
+        "Index Intermediate_L",
+        "Index Distal_L",
+        "Thumb Proximal_L",
+        "Thumb Intermediate_L",
+        "Thumb Distal_L",
+        "Lower_arm_Twist_L",
+        "Upper_arm_Twist_L",
+        "Breast_L_Root",
+        "Breast_L",
+        "Breast_L.001",
+        "Breast_L.002",
+        "Breast_R_Root",
+        "Breast_R",
+        "Breast_R.001",
+        "Breast_R.002",
+        "Bundle gloves",
+        "Bundle gloves.hand",
+        "Upper_leg_L",
+        "lower_leg_L",
+        "Foot_L",
+        "Toe_L",
+        "Upper_leg_R",
+        "lower_leg_R",
+        "Foot_R",
+        "Toe_R",
+        "Butt_L_Root",
+        "Butt_L_PB",
+        "Butt_L",
+        "Butt_L.001",
+        "Butt_L.002",
+        "Butt_R_Root",
+        "Butt_R_PB",
+        "Butt_R",
+        "Butt_R.001",
+        "Butt_R.002"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Bikini",
+      "vertices": 1500,
+      "triangles": 2960,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": [
+        "Basis",
+        "————Breasts——————",
+        "Breasts_flat",
+        "BreastInner",
+        "Breasts_small",
+        "Breasts_big",
+        "Breasts_Lemon",
+        "Pregnant"
+      ]
+    },
+    {
+      "name": "Bundle Gloves",
+      "vertices": 2040,
+      "triangles": 4020,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "Clothing",
+      "vertices": 1555,
+      "triangles": 2666,
+      "materials": [
+        "Tentacle suit A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": [
+        "Basis",
+        "Nick_reduce",
+        "Nick_wide",
+        "Waist_reduce",
+        "Waist_wide",
+        "Hip_small",
+        "Hip_big",
+        "Up leg_big",
+        "————Breasts——————",
+        "Breasts_flat",
+        "BreastInner",
+        "Breasts_small",
+        "Breasts_big",
+        "Pregnant"
+      ]
+    },
+    {
+      "name": "Eye of the tentacle",
+      "vertices": 1703,
+      "triangles": 3174,
+      "materials": [
+        "Tentacle suit B"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "Eye of the tentacle Gloves",
+      "vertices": 5028,
+      "triangles": 9624,
+      "materials": [
+        "Tentacle suit A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "Gloves",
+      "vertices": 8776,
+      "triangles": 17514,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "Gloves Tentacle",
+      "vertices": 1488,
+      "triangles": 2880,
+      "materials": [
+        "Tentacle B"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "High heels",
+      "vertices": 4628,
+      "triangles": 8896,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A",
+        "Tentacle B"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "High heels Tentacles",
+      "vertices": 7338,
+      "triangles": 14460,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A",
+        "Tentacle B"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "Patch",
+      "vertices": 1838,
+      "triangles": 3656,
+      "materials": [
+        "Tentacle suit A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "Socks",
+      "vertices": 5704,
+      "triangles": 11350,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A"
+      ],
+      "rig": "Armature",
+      "shapeKeys": [
+        "Basis",
+        "Hip_big",
+        "Up leg_small",
+        "Up leg_big",
+        "Lower leg_small",
+        "Lower leg_big",
+        "Stocking_Up_L_extra",
+        "Stocking_Up_R_extra"
+      ]
+    },
+    {
+      "name": "Socks Tentacle",
+      "vertices": 2360,
+      "triangles": 4568,
+      "materials": [
+        "Tentacle B"
+      ],
+      "rig": "Armature",
+      "shapeKeys": [
+        "Basis",
+        "Hip_small",
+        "Hip_big",
+        "Up leg_small",
+        "Up leg_big",
+        "Stocking_Up_L_extra",
+        "Stocking_Up_R_extra"
+      ]
+    },
+    {
+      "name": "Tentacle ",
+      "vertices": 6179,
+      "triangles": 12342,
+      "materials": [
+        "Tentacle suit A",
+        "Tentacle A",
+        "Tentacle B"
+      ],
+      "rig": "Armature",
+      "shapeKeys": [
+        "Basis",
+        "Open",
+        "Pregnant",
+        "Nick_reduce",
+        "Nick_wide",
+        "Waist_reduce",
+        "Waist_wide",
+        "Hip_small",
+        "Hip_big",
+        "Up leg_big"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Shinano Tentacle _Tentacle A_基础色.png",
+      "path": "E:\\Booth原创商品\\LatexSistar\\Blender\\材质\\Shinano Tentacle _Tentacle A_基础色.png",
+      "size": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Shinano Tentacle _Tentacle B_基础色.png",
+      "path": "E:\\Booth原创商品\\LatexSistar\\Blender\\材质\\Shinano Tentacle _Tentacle B_基础色.png",
+      "size": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Shinano Tentacle _Tentacle suit A_基础色.png",
+      "path": "E:\\Booth原创商品\\LatexSistar\\Blender\\材质\\Shinano Tentacle _Tentacle suit A_基础色.png",
+      "size": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Shinano Tentacle _Tentacle suit B_基础色.png",
+      "path": "E:\\Booth原创商品\\LatexSistar\\Blender\\材质\\Shinano Tentacle _Tentacle suit B_基础色.png",
+      "size": [
+        0,
+        0
+      ]
+    }
+  ],
+  "actions": []
+}

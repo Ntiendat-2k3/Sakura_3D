@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.env.windows": {
+    "Path": "${workspaceFolder}\\scripts\\bin;${env:PATH}"
+  },
+  "git.openRepositoryInParentFolders": "never"
+}

@@ -1,0 +1,467 @@
+{
+  "validator": "2.0.0-dev.3.10",
+  "results": [
+    {
+      "file": "apps/web/public/assets/buildings/denmu-club.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 19,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_mesh_gpu_instancing'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/1/primitives/0/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/3/primitives/0/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/4/primitives/0/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/1"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/2"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/15"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/16"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/26"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/27"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/31"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/accessors/32"
+        },
+        {
+          "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+          "message": "Indices accessor contains 56 degenerate triangles (out of 3996).",
+          "severity": 2,
+          "pointer": "/meshes/0/primitives/0/indices"
+        },
+        {
+          "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+          "message": "Indices accessor contains 27 degenerate triangles (out of 540).",
+          "severity": 2,
+          "pointer": "/meshes/3/primitives/0/indices"
+        },
+        {
+          "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+          "message": "Indices accessor contains 18 degenerate triangles (out of 432).",
+          "severity": 2,
+          "pointer": "/meshes/4/primitives/0/indices"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/buildings/sakura-street.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 6,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/3/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/4/uri"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 2048x384.",
+          "severity": 2,
+          "pointer": "/images/3"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/dumpster.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/electricity-pole.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/electricity-wires.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/ground.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/lantern.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 4,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/light-curved.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/road-crossing.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/road-straight.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/tree_oak.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 3,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "file": "apps/web/public/assets/props/vending-machine.glb",
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 4,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/0/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/1/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/2/uri"
+        },
+        {
+          "code": "URI_GLB",
+          "message": "URI is used in GLB container.",
+          "severity": 2,
+          "pointer": "/images/3/uri"
+        }
+      ],
+      "truncated": false
+    }
+  ]
+}

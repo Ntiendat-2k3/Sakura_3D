@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "id": "wine",
+      "source": "Wine_dance.fbx",
+      "sourceRig": "Mixamo",
+      "sourceDuration": 21.96666717529297,
+      "loopDuration": 21.71666717529297,
+      "frames": 1364,
+      "maxJointChangeRadians": 0.5631931973450846,
+      "maxAnkleGroundErrorMeters": 1.6653345369377348e-16,
+      "maxHandTravelMeters": 0.880860805716979,
+      "returnToGreeting": "N/A"
+    },
+    {
+      "id": "pop",
+      "source": "Pop_dance.fbx",
+      "sourceRig": "Mixamo",
+      "sourceDuration": 4.900000095367432,
+      "loopDuration": 4.650000095367432,
+      "frames": 340,
+      "maxJointChangeRadians": 0.4012542960506763,
+      "maxAnkleGroundErrorMeters": 1.6653345369377348e-16,
+      "maxHandTravelMeters": 0.5754002082452971,
+      "returnToGreeting": "N/A"
+    },
+    {
+      "id": "rosetta",
+      "source": "Rosetta_dance2.fbx",
+      "sourceRig": "UE-style humanoid with duplicate skin joints",
+      "sourceDuration": 29.066667556762695,
+      "loopDuration": 28.816667556762695,
+      "frames": 1790,
+      "maxJointChangeRadians": 0.6847583984912243,
+      "maxAnkleGroundErrorMeters": 3.885780586188048e-16,
+      "maxHandTravelMeters": 1.08991803557663,
+      "returnToGreeting": "PASS"
+    }
+  ],
+  "browser": "SKIPPED theo yêu cầu người dùng"
+}

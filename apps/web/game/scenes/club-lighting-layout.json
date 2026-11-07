@@ -1,0 +1,17 @@
+[
+  {"id":"34104","role":"moving","position":[-4.2,0.77,-5.7],"rotation":[0,0,0]},
+  {"id":"34104","role":"moving","position":[4.2,0.77,-5.7],"rotation":[0,0,0]},
+  {"id":"34104","role":"moving","position":[-3.5,4.8,-2.7],"rotation":[0,3.14159265,3.14159265]},
+  {"id":"34104","role":"moving","position":[3.5,4.8,-2.7],"rotation":[0,3.14159265,3.14159265]},
+  {"id":"34104","role":"surround","position":[-7.35,4.8,-4],"rotation":[0,0,3.14159265]},
+  {"id":"34104","role":"surround","position":[-7.35,4.8,0],"rotation":[0,0,3.14159265]},
+  {"id":"34104","role":"surround","position":[-7.35,4.8,4],"rotation":[0,0,3.14159265]},
+  {"id":"34104","role":"surround","position":[7.35,4.8,-4],"rotation":[0,0,3.14159265]},
+  {"id":"34104","role":"surround","position":[7.35,4.8,0],"rotation":[0,0,3.14159265]},
+  {"id":"34104","role":"surround","position":[7.35,4.8,4],"rotation":[0,0,3.14159265]},
+  {"id":"34105","role":"bar","position":[-6.8,3.5,0],"rotation":[0,1.5707963,0]},
+  {"id":"34106","role":"bar","position":[-6.8,3.5,2],"rotation":[0,1.5707963,0]},
+  {"id":"34107","role":"laser","position":[-4.6,2.4,-6.6],"rotation":[0,0,0]},
+  {"id":"34107","role":"laser","position":[4.6,2.4,-6.6],"rotation":[0,0,0]},
+  {"id":"34108","role":"disco","position":[0,4.5,-0.3],"rotation":[0,0,0]}
+]

@@ -1,0 +1,13 @@
+{
+  "bocchi": { "name": "Bocchi", "url": "/assets/characters/player/bocchi.glb", "portrait": "/assets/characters/player/portraits/bocchi.png", "guitar": true },
+  "kita": { "name": "Kita", "url": "/assets/characters/player/kita.glb", "portrait": "/assets/characters/player/portraits/kita.png", "guitar": true },
+  "ryo": { "name": "Ryo", "url": "/assets/characters/player/ryo.glb", "portrait": "/assets/characters/player/portraits/ryo.png", "guitar": true },
+  "ubel": { "name": "Übel", "url": "/assets/characters/player/ubel.glb", "portrait": "/assets/characters/player/portraits/ubel.png", "guitar": false },
+  "miorine": { "name": "Miorine", "url": "/assets/characters/player/miorine.glb", "portrait": "/assets/characters/player/portraits/miorine.png", "guitar": false },
+  "nijika": { "name": "Nijika", "url": "/assets/characters/player/nijika.glb", "portrait": "/assets/characters/player/portraits/nijika.png", "guitar": false },
+  "serie": { "name": "Serie", "url": "/assets/characters/player/serie.glb", "portrait": "/assets/characters/player/portraits/serie.png", "guitar": false },
+  "yui": { "name": "Yui", "url": "/assets/characters/player/yui.glb", "portrait": "/assets/characters/player/portraits/yui.png", "guitar": false },
+  "airi": { "name": "Airi · bản dựng", "url": "/assets/characters/player/airi.glb", "portrait": "/assets/characters/player/portraits/airi.png", "guitar": false },
+  "annie": { "name": "Annie · bản dựng", "url": "/assets/characters/player/annie.glb", "portrait": "/assets/characters/player/portraits/annie.png", "guitar": false },
+  "kuroki": { "name": "Kuroki · bản dựng", "url": "/assets/characters/player/kuroki.glb", "portrait": "/assets/characters/player/portraits/kuroki.png", "guitar": false }
+}

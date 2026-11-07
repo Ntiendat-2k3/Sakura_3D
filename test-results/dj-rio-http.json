@@ -1,0 +1,24 @@
+[
+  {
+    "path": "/assets/props/club/dj-rio-console.glb",
+    "status": 200,
+    "bytes": 1578280,
+    "sha256": "9534aa877364efc795ee9ccbc82ade5c05861d5c1a09c98be6b8ae1aacac8d65"
+  },
+  {
+    "path": "/assets/props/lantern-garlands.glb",
+    "status": 200,
+    "bytes": 113612,
+    "sha256": "9363ca818c473bacba8fc9c6928e87e1231051b5190b8ebc7a9268173e20e55b"
+  },
+  {
+    "path": "/assets/animations/club/Rosetta_dance2.json",
+    "status": 200,
+    "bytes": 2024019,
+    "sha256": "73c9389bac0829ba32b11ecf6848b46d9b5de964cdeb26fc8b415cb722779d3f"
+  },
+  {
+    "path": "API /health",
+    "status": 200
+  }
+]

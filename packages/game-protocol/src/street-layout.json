@@ -1,0 +1,10 @@
+[
+  { "id": "vip", "x": -8.8, "z": -15, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "izakaya", "x": 8.8, "z": -15, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "hostess", "x": -8.8, "z": -7, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "oiran", "x": 8.8, "z": -7, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "cabaret", "x": -8.8, "z": 1, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "nightclub", "x": 8.8, "z": 1, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "atelier", "x": -8.8, "z": 9, "halfWidth": 3.5, "halfDepth": 3.5 },
+  { "id": "tea", "x": 8.8, "z": 9, "halfWidth": 3.5, "halfDepth": 3.5 }
+]

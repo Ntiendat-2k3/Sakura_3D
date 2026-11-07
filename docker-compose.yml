@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: sakura
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: neon_sakura
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sakura -d neon_sakura"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+  # Redis chỉ cần khi mở rộng Colyseus ra nhiều tiến trình.
+  redis:
+    image: redis:7-alpine
+    profiles: ["scale"]
+    ports:
+      - "127.0.0.1:6379:6379"
+volumes:
+  pgdata:

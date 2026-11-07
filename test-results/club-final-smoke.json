@@ -1,0 +1,24 @@
+{
+  "data": {
+    "engine": "three.js r173",
+    "playerPose": "{\"x\":3.135999917984009,\"z\":-2.8327999114990234,\"seatId\":\"\",\"camera\":[3.135999917984009,4.397739019545702,4.467195313188868],\"yaw\":0,\"pitch\":0.36,\"radius\":7.8}",
+    "assetSource": "denmu-club",
+    "buildings": "8",
+    "renderStats": "{\"calls\":258,\"triangles\":126776,\"textures\":86,\"geometries\":263}",
+    "npcWINE": "ready",
+    "npcPOP": "ready",
+    "clubFixtures": "gltf-cc0",
+    "assetStatus": "ready",
+    "movingHead0": "{\"pan\":0.42196982520774795,\"tilt\":0.779992437927592,\"intensity\":19.79469740570634,\"active\":true}",
+    "movingHead1": "{\"pan\":0.4265459724509692,\"tilt\":0.7214150996082026,\"intensity\":19.810256306333294,\"active\":true}",
+    "movingHead2": "{\"pan\":-0.4219698252077483,\"tilt\":-0.5971790480566374,\"intensity\":16.925302594293655,\"active\":true}",
+    "movingHead3": "{\"pan\":-0.4265459724509693,\"tilt\":-0.5215063361254996,\"intensity\":16.909743693666705,\"active\":true}",
+    "clubShow": "{\"bpm\":112,\"offset\":0,\"cue\":\"groove\",\"quality\":\"medium\",\"reducedFlashing\":true,\"beat\":35.97253333333333,\"epoch\":1793893947351,\"pulse\":0.9925726566476007}",
+    "dancePOP": "{\"seconds\":19.27,\"beat\":35.970666666666666,\"clip\":\"NPC_DancingParty\",\"previous\":\"DoTheRobot\",\"blend\":1,\"phrase\":1,\"rootY\":0.09038632920110504,\"hipsZ\":0.03598094493460768,\"armZ\":1.45352528839712}",
+    "danceWINE": "{\"seconds\":19.269,\"beat\":35.968799999999995,\"clip\":\"DancingMedium\",\"previous\":\"GentleSwayingDancing\",\"blend\":1,\"phrase\":1,\"rootY\":0.08085020668918054,\"hipsZ\":0.12796056145577095,\"armZ\":0.83603926931585}",
+    "motionPOP": "rokoko-fbx",
+    "motionWINE": "rokoko-fbx"
+  },
+  "online": "● ONLINE · 1 người",
+  "contextLost": false
+}

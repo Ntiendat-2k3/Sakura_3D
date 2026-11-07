@@ -1,0 +1,96 @@
+{
+  "blender": "5.2.3 LTS",
+  "units": "meters",
+  "upAxis": "Blender Z / runtime glTF Y",
+  "buildings": [
+    {
+      "venue": "vip",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": -11.800000190734863,
+        "xMax": -5.800000190734863,
+        "zMin": -18.0,
+        "zMax": -12.0
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "izakaya",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": 5.703413009643555,
+        "xMax": 11.896587371826172,
+        "zMin": -18.0,
+        "zMax": -11.869999885559082
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "hostess",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": -11.800000190734863,
+        "xMax": -5.800000190734863,
+        "zMin": -10.0,
+        "zMax": -4.0
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "oiran",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": 5.703413009643555,
+        "xMax": 11.896587371826172,
+        "zMin": -10.0,
+        "zMax": -3.869999885559082
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "cabaret",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": -11.800000190734863,
+        "xMax": -5.800000190734863,
+        "zMin": -2.0,
+        "zMax": 4.0
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "nightclub",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": 5.800000190734863,
+        "xMax": 11.800000190734863,
+        "zMin": -2.0,
+        "zMax": 4.0
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "atelier",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": -11.800000190734863,
+        "xMax": -5.800000190734863,
+        "zMin": 6.0,
+        "zMax": 12.0
+      },
+      "insideCollider": true
+    },
+    {
+      "venue": "tea",
+      "bodyHeight": 2.7,
+      "bounds": {
+        "xMin": 5.703413009643555,
+        "xMax": 11.896587371826172,
+        "zMin": 6.0,
+        "zMax": 12.130000114440918
+      },
+      "insideCollider": true
+    }
+  ],
+  "pass": true
+}

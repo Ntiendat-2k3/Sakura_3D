@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "rosetta": {
+    "restored": true,
+    "blinkVerified": true,
+    "clips": [
+      "Rosetta_Render_Idle"
+    ],
+    "duration": 8,
+    "handDisplacement": 0.0009106430809017538,
+    "sampledHeights": [
+      1.7000117294572936,
+      1.700057103328848,
+      1.7000571013630925,
+      1.7000117210843892
+    ],
+    "costumePresent": true,
+    "interactionDance": {
+      "clip": "GentleSwayingDancing",
+      "duration": 16,
+      "tracks": 21,
+      "sampledHeights": [
+        1.8105911244688162,
+        1.8052984493520665,
+        1.8099757979485656,
+        1.820290381986038,
+        1.789144447431144,
+        1.809750850186184
+      ],
+      "poseRestoredAfterRetarget": true
+    }
+  },
+  "galaxy": {
+    "metadataPreserved": true,
+    "license": {
+      "version": "1",
+      "author": "OneLazerBunny (Nanasita)",
+      "contactInformation": "https://www.instagram.com/onelazerbunny/",
+      "title": "Galaxy Summer",
+      "texture": 21,
+      "allowedUserName": "ExplicitlyLicensedPerson",
+      "violentUssageName": "Disallow",
+      "sexualUssageName": "Disallow",
+      "commercialUssageName": "Allow",
+      "licenseName": "Redistribution_Prohibited"
+    }
+  },
+  "http": [
+    {
+      "id": "rosetta",
+      "bytes": 8953288,
+      "sha256": "88dbbdefc1fc5ac170cd46423bab966d6c78b186c68ec53c274e74836d78666c",
+      "status": 200
+    },
+    {
+      "id": "galaxy",
+      "bytes": 8610220,
+      "sha256": "8d5c14f89a19b34b0b929cc6869e1a37455f7451d576465b6e609252b7c4a79e",
+      "status": 200
+    }
+  ],
+  "browserTest": "SKIPPED: user has not authorized opening a browser"
+}

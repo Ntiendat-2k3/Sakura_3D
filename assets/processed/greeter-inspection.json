@@ -1,0 +1,731 @@
+{
+  "meshes": [
+    {
+      "name": "Body",
+      "vertices": 3967,
+      "hidden": true,
+      "collections": [
+        "Mesh"
+      ],
+      "materials": [
+        "Face_transparent",
+        "Face"
+      ],
+      "armature": "Armature"
+    },
+    {
+      "name": "Body_Costumeoff",
+      "vertices": 7226,
+      "hidden": true,
+      "collections": [
+        "Mesh"
+      ],
+      "materials": [
+        "Skin",
+        "Tights"
+      ],
+      "armature": "Armature"
+    },
+    {
+      "name": "Body_main",
+      "vertices": 10880,
+      "hidden": true,
+      "collections": [
+        "Mesh"
+      ],
+      "materials": [
+        "Skin",
+        "Tights"
+      ],
+      "armature": "Armature"
+    },
+    {
+      "name": "Costume",
+      "vertices": 18017,
+      "hidden": true,
+      "collections": [
+        "Mesh"
+      ],
+      "materials": [
+        "Costume_Main",
+        "Costume_Sub",
+        "Costume_Metal",
+        "Costume_Jewel"
+      ],
+      "armature": "Armature"
+    },
+    {
+      "name": "Hair",
+      "vertices": 3954,
+      "hidden": true,
+      "collections": [
+        "Mesh"
+      ],
+      "materials": [
+        "Hair"
+      ],
+      "armature": "Armature"
+    },
+    {
+      "name": "Tail_Wing",
+      "vertices": 1343,
+      "hidden": true,
+      "collections": [
+        "Mesh"
+      ],
+      "materials": [
+        "Skin"
+      ],
+      "armature": "Armature"
+    }
+  ],
+  "rigs": [
+    {
+      "name": "Armature",
+      "bones": [
+        "Hips",
+        "Tail_Root",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Tail.008",
+        "Tail.009",
+        "Tail.010",
+        "Tail.011",
+        "Tail.012",
+        "Tail.End",
+        "Spine",
+        "Chest",
+        "Neck",
+        "Head",
+        "RightEye",
+        "LeftEye",
+        "Hair.F",
+        "Hair.F.001",
+        "Hair_end.F",
+        "Hair_side2.L",
+        "Hair_side2.L.001",
+        "Hair_side2.L.002",
+        "Hair_side_end2.L",
+        "Hair_side2.R",
+        "Hair_side2.R.001",
+        "Hair_side2.R.002",
+        "Hair_side_end2.R",
+        "Hair_side.R",
+        "Hair_side.R.001",
+        "Hair_side_end.R",
+        "Hair_side3.L",
+        "Hair_side3_end.L",
+        "Hair_Back3.L",
+        "Hair_Back3_end.L",
+        "Hair_Back2.L",
+        "Hair_Back2_end.L",
+        "Hair_Back.L",
+        "Hair_Back_end.L",
+        "Hair_side3.R",
+        "Hair_side3_end.R",
+        "Hair_Back3.R",
+        "Hair_Back3_end.R",
+        "Hair_Back2.R",
+        "Hair_Back2_end.R",
+        "Hair_Back.R",
+        "Hair_Back_end.R",
+        "Hair_side.L",
+        "Hair_side.L.001",
+        "Hair_side_end.L",
+        "Head.col",
+        "Ahoge",
+        "Ahoge.001",
+        "Ahoge.002",
+        "Ahoge.003",
+        "Ahoge.004",
+        "Ahoge.End",
+        "EarRing.L",
+        "EarRing.L.001",
+        "EarRing.R",
+        "EarRing.R.001",
+        "Shoulder.R",
+        "Upper Arm.R",
+        "Upper Arm_twist.R",
+        "Lower Arm.R",
+        "Lower Arm_twist.R",
+        "Hand.R",
+        "Thumb Proximal.R",
+        "Thumb Intermidiate.R",
+        "Thumb Distal.R",
+        "Index Proximal.R",
+        "Index Intermidiate.R",
+        "Index Distal.R",
+        "Middle Proximal.R",
+        "Middle Intermidiate.R",
+        "Middle Distal.R",
+        "Ring Proximal.R",
+        "Ring Intermidiate.R",
+        "Ring Distal.R",
+        "Little proximal.R",
+        "Little Intermidiate.R",
+        "Little Distal.R",
+        "Ribon.R",
+        "Ribon.R.001",
+        "Ribon_End.R",
+        "Oppai.R",
+        "Oppai_end.R",
+        "Oppai.L",
+        "Oppai_end.L",
+        "Shoulder.L",
+        "Upper Arm.L",
+        "Upper Arm_twist.L",
+        "Lower Arm.L",
+        "Lower Arm_twist.L",
+        "Hand.L",
+        "Thumb Proximal.L",
+        "Thumb Intermidiate.L",
+        "Thumb Distal.L",
+        "Index Proximal.L",
+        "Index Intermidiate.L",
+        "Index Distal.L",
+        "Middle Proximal.L",
+        "Middle Intermidiate.L",
+        "Middle Distal.L",
+        "Ring Proximal.L",
+        "Ring Intermidiate.L",
+        "Ring Distal.L",
+        "Little proximal.L",
+        "Little Intermidiate.L",
+        "Little Distal.L",
+        "Ribon.L",
+        "Ribon.L.001",
+        "Ribon_End.L",
+        "Pendant",
+        "Wing.L",
+        "Wing.L.001",
+        "Wing.L.002",
+        "Wing.R",
+        "Wing.R.001",
+        "Wing.R.002",
+        "Upper Leg.L",
+        "Lower Leg.L",
+        "Foot.L",
+        "Toe.L",
+        "Upper Leg.R",
+        "Lower Leg.R",
+        "Foot.R",
+        "Toe.R",
+        "Skirt.F",
+        "Skirt.F.001",
+        "Skirt_end.F",
+        "Skirt2.L",
+        "Skirt2.L.001",
+        "Skirt2_end.L",
+        "Skirt4.L",
+        "Skirt4.L.001",
+        "Skirt4_end.L",
+        "Skirt6.L",
+        "Skirt6.L.001",
+        "Skirt6_end.L",
+        "Skirt8.L",
+        "Skirt8.L.001",
+        "Skirt8_end.L",
+        "Skirt10.L",
+        "Skirt10.L.001",
+        "Skirt10_end.L",
+        "Skirt12.L",
+        "Skirt12.L.001",
+        "Skirt12_end.L",
+        "Skirt1.R",
+        "Skirt1.R.001",
+        "Skirt1_end.R",
+        "Skirt2.R",
+        "Skirt2.R.001",
+        "Skirt2_end.R",
+        "Skirt4.R",
+        "Skirt4.R.001",
+        "Skirt4_end.R",
+        "Skirt5.R",
+        "Skirt5.R.001",
+        "Skirt5_end.R",
+        "Skirt6.R",
+        "Skirt6.R.001",
+        "Skirt6_end.R",
+        "Skirt3.R",
+        "Skirt3.R.001",
+        "Skirt3_end.R",
+        "Skirt1.L",
+        "Skirt1.L.001",
+        "Skirt1_end.L",
+        "Skirt3.L",
+        "Skirt3.L.001",
+        "Skirt3_end.L",
+        "Skirt5.L",
+        "Skirt5.L.001",
+        "Skirt5_end.L",
+        "Skirt7.L",
+        "Skirt7.L.001",
+        "Skirt7_end.L",
+        "Skirt9.L",
+        "Skirt9.L.001",
+        "Skirt9_end.L",
+        "Skirt11.L",
+        "Skirt11.L.001",
+        "Skirt11_end.L",
+        "Skirt.B",
+        "Skirt.B.001",
+        "Skirt_end.B",
+        "Skirt8.R",
+        "Skirt8.R.001",
+        "Skirt8_end.R",
+        "Skirt10.R",
+        "Skirt10.R.001",
+        "Skirt10_end.R",
+        "Skirt12.R",
+        "Skirt12.R.001",
+        "Skirt12_end.R",
+        "Skirt7.R",
+        "Skirt7.R.001",
+        "Skirt7_end.R",
+        "Skirt9.R",
+        "Skirt9.R.001",
+        "Skirt9_end.R",
+        "Skirt11.R",
+        "Skirt11.R.001",
+        "Skirt11_end.R",
+        "Hips.col",
+        "Hips_yure.L",
+        "Hips_yure.R"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Body_main.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "//..\\PNG\\Body\\Body_main.png"
+    },
+    {
+      "name": "Costume_main.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "//..\\PNG\\Costume\\Costume_main.png"
+    },
+    {
+      "name": "Face_main.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "//..\\PNG\\Face\\Face_main.png"
+    },
+    {
+      "name": "Face_Trans.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "//..\\PNG\\Face_Trance\\Face_Trans.png"
+    },
+    {
+      "name": "Hair_main.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "//..\\PNG\\Hair\\Hair_main.png"
+    },
+    {
+      "name": "Matcap_jewel.png",
+      "size": [
+        1080,
+        1080
+      ],
+      "packed": true,
+      "filepath": "//..\\..\\Texture\\Matcap\\Matcap_jewel.png"
+    },
+    {
+      "name": "Matcap_metal.jpg",
+      "size": [
+        236,
+        236
+      ],
+      "packed": true,
+      "filepath": "//..\\..\\Texture\\Matcap\\Matcap_metal.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Costume_Jewel",
+      "nodes": [
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "GROUP",
+          "Group"
+        ],
+        [
+          "GROUP",
+          "Group.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    },
+    {
+      "name": "Costume_Main",
+      "nodes": [
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "EMISSION",
+          "Emission"
+        ]
+      ]
+    },
+    {
+      "name": "Costume_Metal",
+      "nodes": [
+        [
+          "GROUP",
+          "Group"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "GROUP",
+          "Group.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    },
+    {
+      "name": "Costume_Sub",
+      "nodes": [
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "EMISSION",
+          "Emission"
+        ]
+      ]
+    },
+    {
+      "name": "Face",
+      "nodes": [
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "NEW_GEOMETRY",
+          "Geometry"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    },
+    {
+      "name": "Face_transparent",
+      "nodes": [
+        [
+          "TEX_IMAGE",
+          "Node"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "GROUP",
+          "Group"
+        ],
+        [
+          "GROUP",
+          "Group.001"
+        ]
+      ]
+    },
+    {
+      "name": "Hair",
+      "nodes": [
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "NEW_GEOMETRY",
+          "Geometry"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF.001"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ]
+      ]
+    },
+    {
+      "name": "Skin",
+      "nodes": [
+        [
+          "NEW_GEOMETRY",
+          "Geometry"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF.001"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "TEX_IMAGE",
+          "Node"
+        ]
+      ]
+    },
+    {
+      "name": "Tights",
+      "nodes": [
+        [
+          "NEW_GEOMETRY",
+          "Geometry"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF.001"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "TEX_IMAGE",
+          "Node"
+        ]
+      ]
+    }
+  ],
+  "actions": [
+    "PoseLib"
+  ],
+  "armRest": [
+    {
+      "name": "Hips",
+      "head": [
+        8.121000064420514e-06,
+        0.9903745651245117,
+        -0.008783985860645771
+      ],
+      "tail": [
+        7.791878488205839e-06,
+        1.0436817407608032,
+        -0.008726099506020546
+      ]
+    },
+    {
+      "name": "Head",
+      "head": [
+        9.312808302297526e-10,
+        1.4248251914978027,
+        -0.03582031652331352
+      ],
+      "tail": [
+        9.34010424558096e-10,
+        1.6010993719100952,
+        -0.01945728063583374
+      ]
+    },
+    {
+      "name": "Upper Arm.R",
+      "head": [
+        -0.08270009607076645,
+        1.3311150074005127,
+        -0.05513359233736992
+      ],
+      "tail": [
+        -0.30755001306533813,
+        1.3280117511749268,
+        -0.05186783894896507
+      ]
+    },
+    {
+      "name": "Lower Arm.R",
+      "head": [
+        -0.3075949549674988,
+        1.3280340433120728,
+        -0.05185176432132721
+      ],
+      "tail": [
+        -0.4951905906200409,
+        1.3298965692520142,
+        -0.049592163413763046
+      ]
+    },
+    {
+      "name": "Hand.R",
+      "head": [
+        -0.4953596591949463,
+        1.3299208879470825,
+        -0.04958091676235199
+      ],
+      "tail": [
+        -0.5342993140220642,
+        1.3346892595291138,
+        -0.04723157361149788
+      ]
+    },
+    {
+      "name": "Upper Arm.L",
+      "head": [
+        0.08270009607076645,
+        1.3311150074005127,
+        -0.05513359233736992
+      ],
+      "tail": [
+        0.30755001306533813,
+        1.3280117511749268,
+        -0.05186783894896507
+      ]
+    },
+    {
+      "name": "Lower Arm.L",
+      "head": [
+        0.3075949549674988,
+        1.3280340433120728,
+        -0.05185176432132721
+      ],
+      "tail": [
+        0.4951905906200409,
+        1.3298965692520142,
+        -0.049592163413763046
+      ]
+    }
+  ],
+  "instances": []
+}

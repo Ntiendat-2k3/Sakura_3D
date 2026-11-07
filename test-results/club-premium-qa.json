@@ -1,0 +1,115 @@
+{
+  "pass": true,
+  "performance": {
+    "low": {
+      "fps": 59.665871121718375,
+      "p95": 17.19999999999709,
+      "render": {
+        "calls": 265,
+        "triangles": 128396,
+        "textures": 86,
+        "geometries": 259
+      },
+      "viewport": [
+        1536,
+        776
+      ],
+      "dpr": 1.25
+    },
+    "medium": {
+      "fps": 59.67282828629244,
+      "p95": 17.099999999998545,
+      "render": {
+        "calls": 269,
+        "triangles": 128460,
+        "textures": 86,
+        "geometries": 263
+      },
+      "viewport": [
+        1536,
+        776
+      ],
+      "dpr": 1.25
+    },
+    "high": {
+      "fps": 60.00754380550692,
+      "p95": 17.099999999998545,
+      "render": {
+        "calls": 269,
+        "triangles": 128460,
+        "textures": 86,
+        "geometries": 263
+      },
+      "viewport": [
+        1536,
+        776
+      ],
+      "dpr": 1.25
+    }
+  },
+  "wine": [
+    "GentleSwayingDancing",
+    "DancingMedium",
+    "DoTheTwist",
+    "NPC_DancingParty"
+  ],
+  "pop": [
+    "DoTheRobot",
+    "NPC_DancingParty",
+    "DancingMedium",
+    "DoTheTwist"
+  ],
+  "blended": true,
+  "minRootY": 0.006663859365402161,
+  "maxRootY": 0.09884897768116988,
+  "lightA": {
+    "pan": -0.5711775121243804,
+    "tilt": 0.5742087547321649,
+    "intensity": 23.178347941802972,
+    "active": true
+  },
+  "lightB": {
+    "pan": -0.45822691912644975,
+    "tilt": 0.5218148437792877,
+    "intensity": 23.72051078819304,
+    "active": true
+  },
+  "room": "wbNzNY232",
+  "sync": {
+    "a": {
+      "bpm": 180,
+      "offset": 0,
+      "cue": "peak",
+      "quality": "medium",
+      "reducedFlashing": true,
+      "beat": 103.60499999999999,
+      "epoch": 1793893141384,
+      "pulse": 0.10492249381213514
+    },
+    "b": {
+      "bpm": 180,
+      "offset": 0,
+      "cue": "peak",
+      "quality": "low",
+      "reducedFlashing": true,
+      "beat": 103.86300000000001,
+      "epoch": 1793893141384,
+      "pulse": 0.825916862650472
+    }
+  },
+  "chat": true,
+  "disconnect": true,
+  "noMusic": true,
+  "errors": [],
+  "failed": [],
+  "sockets": [
+    "ws://localhost:3000/_next/webpack-hmr",
+    "ws://localhost:2567/F_elM_WF-/kcW9o-1xG",
+    "ws://localhost:2567/F_elM_WF-/wBDwBokij",
+    "ws://localhost:2567/F_elM_WF-/wbNzNY232",
+    "ws://localhost:3000/_next/webpack-hmr",
+    "ws://localhost:2567/F_elM_WF-/FOQNTzLbi",
+    "ws://localhost:2567/F_elM_WF-/D8C96sbNZ",
+    "ws://localhost:2567/F_elM_WF-/wbNzNY232"
+  ]
+}

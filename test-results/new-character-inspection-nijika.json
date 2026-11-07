@@ -1,0 +1,163 @@
+{
+  "source": "assets/source/characters/figure/nijika/nijika.blend",
+  "rigs": [
+    {
+      "name": "Armature",
+      "bones": [
+        "Hips",
+        "Spine",
+        "Spine1",
+        "Spine2",
+        "Neck",
+        "Head",
+        "hair front",
+        "nijika tail",
+        "nijika tail.001",
+        "nijika tail.002",
+        "nijika tail.003",
+        "hair right",
+        "hair left",
+        "hair right.001",
+        "eye R",
+        "eye L",
+        "shoulder.L",
+        "arm.L",
+        "elbow.L",
+        "hand.L",
+        "thumb.L",
+        "thumb.L.001",
+        "thumb.L.002",
+        "index.L",
+        "index.L.001",
+        "index.L.002",
+        "middle.L",
+        "middle.L.001",
+        "middle.L.002",
+        "ring.L",
+        "ring.L.001",
+        "ring.L.002",
+        "pinky.L",
+        "pinky.L.001",
+        "pinky.L.002",
+        "shoulder.R",
+        "arm.R",
+        "elbow.R",
+        "hand.R",
+        "thumb.R",
+        "thumb.R.001",
+        "thumb.R.002",
+        "index.R",
+        "index.R.001",
+        "index.R.002",
+        "middle.R",
+        "middle.R.001",
+        "middle.R.002",
+        "ring.R",
+        "ring.R.001",
+        "ring.R.002",
+        "pinky.R",
+        "pinky.R.001",
+        "pinky.R.002",
+        "bow.R",
+        "bow.L",
+        "bow.R.001",
+        "bow.L.001",
+        "leg.L",
+        "knee.L",
+        "shoes.L",
+        "feet.L",
+        "leg.R",
+        "knee.R",
+        "shoes.R",
+        "feet.R",
+        "skirt"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "body",
+      "vertices": 4211,
+      "triangles": 6143,
+      "materials": [
+        "colors"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    },
+    {
+      "name": "drum stick.L",
+      "vertices": 42,
+      "triangles": 80,
+      "materials": [
+        "colors"
+      ],
+      "rig": null,
+      "shapeKeys": []
+    },
+    {
+      "name": "drum stick.R",
+      "vertices": 42,
+      "triangles": 80,
+      "materials": [
+        "colors"
+      ],
+      "rig": null,
+      "shapeKeys": []
+    },
+    {
+      "name": "face",
+      "vertices": 804,
+      "triangles": 1320,
+      "materials": [
+        "colors"
+      ],
+      "rig": "Armature",
+      "shapeKeys": [
+        "Basis",
+        "mouth unamused",
+        "jaw down",
+        "jaw open 2",
+        "jaw open 3",
+        "jaw open",
+        "jaw wide",
+        "jaw narrow",
+        "brows angry",
+        "brows sad",
+        "brows forward",
+        "dead eyes",
+        "eyes narrow",
+        "eyes short",
+        "unamused eyes",
+        "blink",
+        "blink.L",
+        "blink.R",
+        "blink 2",
+        "blink 2.L",
+        "blink 2.R"
+      ]
+    },
+    {
+      "name": "hair",
+      "vertices": 1581,
+      "triangles": 1828,
+      "materials": [
+        "colors",
+        "outline.001"
+      ],
+      "rig": "Armature",
+      "shapeKeys": []
+    }
+  ],
+  "images": [
+    {
+      "name": "nijika",
+      "path": "//..\\nijika.png",
+      "size": [
+        0,
+        0
+      ]
+    }
+  ],
+  "actions": []
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "file": "apps/web/public/assets/buildings/denmu-club.glb",
+    "bytes": 292816,
+    "triangles": 6200,
+    "meshes": 7,
+    "materials": 4,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "08240abe4848c26aa8873a680d8ba575b29e3e5c310a11dd8d5ca5bc89f6d4db"
+  },
+  {
+    "file": "apps/web/public/assets/buildings/sakura-street.glb",
+    "bytes": 548304,
+    "triangles": 19146,
+    "meshes": 11,
+    "materials": 3,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png",
+      "../textures/atlas-312bebec6c97.png",
+      "../textures/atlas-b6d6a7e0d5b6.png"
+    ],
+    "sha256": "53bfbbe81ead9a9295ac936069185badd0882c561bcaac6d86087772e23fd0e9"
+  },
+  {
+    "file": "apps/web/public/assets/props/dumpster.glb",
+    "bytes": 10276,
+    "triangles": 234,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "90041bf1d36c023dcc4713bd93b2f080ad1b9b07252f9cc2f3ca8ec5653a2d45"
+  },
+  {
+    "file": "apps/web/public/assets/props/electricity-pole.glb",
+    "bytes": 16668,
+    "triangles": 416,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "3eb5e37a365111b8d815bfff3dc8c0c441748259f51be0d6761f21cf4efe5953"
+  },
+  {
+    "file": "apps/web/public/assets/props/electricity-wires.glb",
+    "bytes": 4068,
+    "triangles": 72,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "171f1d99c160ccf56d4cd874d93be71ae0404fdc0577fd4c3f0d73ddfb44047d"
+  },
+  {
+    "file": "apps/web/public/assets/props/ground.glb",
+    "bytes": 2368,
+    "triangles": 12,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "fd1af491bf1a8cdd2510575fe6f8390e11aeb13c6972c2ad5a70318c9e75e926"
+  },
+  {
+    "file": "apps/web/public/assets/props/lantern-garlands.glb",
+    "bytes": 964872,
+    "triangles": 14256,
+    "meshes": 3,
+    "materials": 3,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "b237641bdbbc3b1b1040910ccadd9915949fe44edcb2a198e7e72d1edb89f47b"
+  },
+  {
+    "file": "apps/web/public/assets/props/lantern.glb",
+    "bytes": 44620,
+    "triangles": 932,
+    "meshes": 1,
+    "materials": 2,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "14ff50a9ef89dd7ddeb57da8dc77d5b0d217d30b69c0f26e35b7d7ee539fdf05"
+  },
+  {
+    "file": "apps/web/public/assets/props/light-curved.glb",
+    "bytes": 5332,
+    "triangles": 92,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "024cde6855cfe0d7a4311d6c755c81fb0f62319806b158228c0d95e75f148b50"
+  },
+  {
+    "file": "apps/web/public/assets/props/road-crossing.glb",
+    "bytes": 5280,
+    "triangles": 104,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "cf7c0dc3fa22e2c0e11d3f33a74f2dc4522492f24487ada27be8c2b50b825d54"
+  },
+  {
+    "file": "apps/web/public/assets/props/road-straight.glb",
+    "bytes": 3660,
+    "triangles": 44,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "310cc7ea1399ff4d3fbc61bfa2097a26a9873416a35b2d404a1e995320fde09d"
+  },
+  {
+    "file": "apps/web/public/assets/props/tree_oak.glb",
+    "bytes": 9556,
+    "triangles": 196,
+    "meshes": 1,
+    "materials": 1,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "d20b390c62927da49d3137242f86bee313388470256c0c227f28c49a2342ae6c"
+  },
+  {
+    "file": "apps/web/public/assets/props/vending-machine.glb",
+    "bytes": 12908,
+    "triangles": 218,
+    "meshes": 1,
+    "materials": 2,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png",
+      "../textures/atlas-4ec2cd813f95.png"
+    ],
+    "sha256": "7140ee7d65392f537c0474bb0b7f139ef213b222853901fb867a768f6f6183da"
+  }
+]

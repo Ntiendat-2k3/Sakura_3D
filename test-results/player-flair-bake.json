@@ -1,0 +1,90 @@
+[
+  {
+    "id": "kita",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50848,
+    "maxCorrection": 0.12824982424705203,
+    "runtimeSha256": "d2c6b0cb2dfe4ac2bfb79840d5711fc9d1f4bbfcbe101f1847d92fc7120ace3a"
+  },
+  {
+    "id": "ryo",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50648,
+    "maxCorrection": 0.11928894498785125,
+    "runtimeSha256": "f651d4d0e7cdd9d61d9348f31002c92445a256925e64d06becaec6f8fb1a2402"
+  },
+  {
+    "id": "ubel",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50444,
+    "maxCorrection": 0.13340869173076414,
+    "runtimeSha256": "c060abe0186ffd5592eb4a5cb73c82d5ca832b5e9d5f65ae186c636f71c743b0"
+  },
+  {
+    "id": "miorine",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50796,
+    "maxCorrection": 0.060703889390299935,
+    "runtimeSha256": "32a5cc14d46dddd70d53380c5d416bb009578820ae5f7307c545f4b31e905907"
+  },
+  {
+    "id": "nijika",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50652,
+    "maxCorrection": 0.21158191577259688,
+    "runtimeSha256": "2838f9f996979f11d14058a2894c5f8bae91f375bb2902711a2268f58cf3ff40"
+  },
+  {
+    "id": "serie",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50868,
+    "maxCorrection": 0.2671808903153256,
+    "runtimeSha256": "d260eec85e85276a359a202ad6bc79d9df91866ee420e0cc6ca8610151e754aa"
+  },
+  {
+    "id": "yui",
+    "duration": 0.92,
+    "tracks": 52,
+    "addedBytes": 49616,
+    "maxCorrection": 0.16281821941172311,
+    "runtimeSha256": "8c37139df9dbc027c7383862d683f9cdd9795fd9628dab2301023f84a9a615c5"
+  },
+  {
+    "id": "airi",
+    "duration": 0.92,
+    "tracks": 52,
+    "addedBytes": 49568,
+    "maxCorrection": 0.1674104312542306,
+    "runtimeSha256": "b27d4896aad16f7dd96199a96e92e8d9f4563dbac4ea6e1eebc4031d4aa6061e"
+  },
+  {
+    "id": "annie",
+    "duration": 0.92,
+    "tracks": 52,
+    "addedBytes": 49580,
+    "maxCorrection": 0.17454800492679667,
+    "runtimeSha256": "b19a5834880694845d1e5955f0d11e0bc67926317b0f8855898cbf18f0988d8c"
+  },
+  {
+    "id": "kuroki",
+    "duration": 0.92,
+    "tracks": 52,
+    "addedBytes": 49556,
+    "maxCorrection": 0.17454800492679667,
+    "runtimeSha256": "9d7c322805bba1bd4d351c0fb8012e35026996bb65d5ca808555defa247c4c43"
+  },
+  {
+    "id": "bocchi",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 50716,
+    "maxCorrection": 0.1255802007737327,
+    "runtimeSha256": "6703db4946c28ec0ef90a05364c6bb2444079c44932a219efa4b0767f37fd22b"
+  }
+]

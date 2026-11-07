@@ -1,0 +1,2336 @@
+{
+  "project": "Neon Sakura City / DENMU",
+  "generatedAt": "2026-11-06T10:21:57.802768+00:00",
+  "overallStatus": "PARTIAL",
+  "lighting": [
+    {
+      "status": "DONE",
+      "id": "34088",
+      "title": "Turntable Deck (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-turntable-deck-aa917183",
+      "download": "https://cdn.3dassets.dev/assets/34088/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 40736,
+        "triangles": 848,
+        "vertices": 1869,
+        "meshes": 6,
+        "materials": 5,
+        "textures": 0,
+        "animations": [
+          "spin"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.22499999403953552,
+            6.104231356643744e-06,
+            -0.18000960856185869
+          ],
+          "max": [
+            0.22499999403953552,
+            0.16400377691566542,
+            0.18000960856185869
+          ]
+        },
+        "sizeMeters": [
+          0.45,
+          0.164,
+          0.36
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34088.glb",
+        "bytes": 40736,
+        "sha256": "2436c3fe76148e7a018fa1c5689690f5df705ba7102b2f4fa5d4def72f2a2b3b"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34088.glb",
+        "bytes": 40736,
+        "sha256": "2436c3fe76148e7a018fa1c5689690f5df705ba7102b2f4fa5d4def72f2a2b3b"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34089",
+      "title": "DJ Booth Desk (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-dj-booth-desk-b052b722",
+      "download": "https://cdn.3dassets.dev/assets/34089/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 32688,
+        "triangles": 688,
+        "vertices": 1559,
+        "meshes": 4,
+        "materials": 4,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.9559999704360962,
+            -7.248145909594106e-05,
+            -0.3900372276872385
+          ],
+          "max": [
+            0.9559999704360962,
+            1.0030301930459304,
+            0.40403131212696153
+          ]
+        },
+        "sizeMeters": [
+          1.912,
+          1.003,
+          0.794
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34089.glb",
+        "bytes": 32688,
+        "sha256": "5917ab331b3eb45ba66f8c0698efb80e9793af57564173d32dc1f71fd6d4cdd0"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34089.glb",
+        "bytes": 32688,
+        "sha256": "5917ab331b3eb45ba66f8c0698efb80e9793af57564173d32dc1f71fd6d4cdd0"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34090",
+      "title": "DJ Mixer (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-dj-mixer-b2b93529",
+      "download": "https://cdn.3dassets.dev/assets/34090/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 57268,
+        "triangles": 1338,
+        "vertices": 2853,
+        "meshes": 6,
+        "materials": 6,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.1940000057220459,
+            6.6229775759450715e-06,
+            -0.24514522664829902
+          ],
+          "max": [
+            0.1940000057220459,
+            0.10180836917027168,
+            0.20999999344348907
+          ]
+        },
+        "sizeMeters": [
+          0.388,
+          0.102,
+          0.455
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34090.glb",
+        "bytes": 57268,
+        "sha256": "19c5170eb598246f132998715ca0b76d5b4823d83fdde75d57238a3566812c42"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34090.glb",
+        "bytes": 57268,
+        "sha256": "19c5170eb598246f132998715ca0b76d5b4823d83fdde75d57238a3566812c42"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34104",
+      "title": "Moving Head Light (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-moving-head-light-fd0c42b4",
+      "download": "https://cdn.3dassets.dev/assets/34104/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 35448,
+        "triangles": 724,
+        "vertices": 1571,
+        "meshes": 6,
+        "materials": 4,
+        "textures": 0,
+        "animations": [
+          "spin",
+          "tilt"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.23000000417232513,
+            6.866057372375417e-06,
+            -0.18000640326692335
+          ],
+          "max": [
+            0.23000000417232513,
+            0.7979999713897705,
+            0.22599850165248045
+          ]
+        },
+        "sizeMeters": [
+          0.46,
+          0.798,
+          0.406
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34104.glb",
+        "bytes": 35448,
+        "sha256": "02490bd028262126ec873f9c986fca04d9d8e649be790ff70d5743f1001534fd"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34104.glb",
+        "bytes": 35448,
+        "sha256": "02490bd028262126ec873f9c986fca04d9d8e649be790ff70d5743f1001534fd"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34105",
+      "title": "Strobe Bar (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-strobe-bar-9b670476",
+      "download": "https://cdn.3dassets.dev/assets/34105/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 30052,
+        "triangles": 656,
+        "vertices": 1459,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.550000011920929,
+            4.615583178074756e-06,
+            -0.07996460026219385
+          ],
+          "max": [
+            0.550000011920929,
+            0.25599539657616943,
+            0.10799679708082646
+          ]
+        },
+        "sizeMeters": [
+          1.1,
+          0.256,
+          0.188
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34105.glb",
+        "bytes": 30052,
+        "sha256": "b9f7f1ccb9326264eb8771ef6b11be5b9fb43f0dd3ae11023043c369c8526530"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34105.glb",
+        "bytes": 30052,
+        "sha256": "b9f7f1ccb9326264eb8771ef6b11be5b9fb43f0dd3ae11023043c369c8526530"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34106",
+      "title": "UV Blacklight Bar (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-uv-bar-9812d548",
+      "download": "https://cdn.3dassets.dev/assets/34106/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 25076,
+        "triangles": 552,
+        "vertices": 1187,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.550000011920929,
+            -1.750915090234506e-05,
+            -0.07996460026219385
+          ],
+          "max": [
+            0.550000011920929,
+            0.2560175213102499,
+            0.1319723922255533
+          ]
+        },
+        "sizeMeters": [
+          1.1,
+          0.256,
+          0.212
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34106.glb",
+        "bytes": 25076,
+        "sha256": "7f24be55dcf68f96f70b2a48baa78d48ef12d151c711583d2b32911bbb5ee32c"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34106.glb",
+        "bytes": 25076,
+        "sha256": "7f24be55dcf68f96f70b2a48baa78d48ef12d151c711583d2b32911bbb5ee32c"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34107",
+      "title": "Laser Effect Unit (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-laser-unit-c9ba16d0",
+      "download": "https://cdn.3dassets.dev/assets/34107/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 33788,
+        "triangles": 712,
+        "vertices": 1566,
+        "meshes": 5,
+        "materials": 5,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.19499999284744263,
+            2.207624971189981e-06,
+            -0.14999450824600655
+          ],
+          "max": [
+            0.19499999284744263,
+            0.3249990780021452,
+            0.16300237820584274
+          ]
+        },
+        "sizeMeters": [
+          0.39,
+          0.325,
+          0.313
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34107.glb",
+        "bytes": 33788,
+        "sha256": "66c03f22e97b261b5728eb91d7e4c12b0ee9be01ca0ee08d9c99f31c66f81b1c"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34107.glb",
+        "bytes": 33788,
+        "sha256": "66c03f22e97b261b5728eb91d7e4c12b0ee9be01ca0ee08d9c99f31c66f81b1c"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34108",
+      "title": "Disco Ball on a Motor (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-disco-ball-on-motor-055bf9ff",
+      "download": "https://cdn.3dassets.dev/assets/34108/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 52800,
+        "triangles": 1096,
+        "vertices": 2538,
+        "meshes": 6,
+        "materials": 5,
+        "textures": 0,
+        "animations": [
+          "spin"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.25999999046325684,
+            9.536743394988889e-09,
+            -0.25999999046325684
+          ],
+          "max": [
+            0.25999999046325684,
+            1.149999976158142,
+            0.25999999046325684
+          ]
+        },
+        "sizeMeters": [
+          0.52,
+          1.15,
+          0.52
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34108.glb",
+        "bytes": 52800,
+        "sha256": "7d1e353bde1764513fc3e83f728e044beaf0f6fd181395136f2b3894c7ff6dbd"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34108.glb",
+        "bytes": 52800,
+        "sha256": "7d1e353bde1764513fc3e83f728e044beaf0f6fd181395136f2b3894c7ff6dbd"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34111",
+      "title": "LED Dance Floor Tile (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-led-floor-tile-module-f241f0a9",
+      "download": "https://cdn.3dassets.dev/assets/34111/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 18768,
+        "triangles": 384,
+        "vertices": 857,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.5,
+            3.082302401850173e-05,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.08400088363606566,
+            0.5
+          ]
+        },
+        "sizeMeters": [
+          1,
+          0.084,
+          1
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34111.glb",
+        "bytes": 18768,
+        "sha256": "57c30f6f3a6e9b03a9a8b35c6b9a2c0735c5bc81ec88e68116fdc2e444924490"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34111.glb",
+        "bytes": 18768,
+        "sha256": "57c30f6f3a6e9b03a9a8b35c6b9a2c0735c5bc81ec88e68116fdc2e444924490"
+      }
+    },
+    {
+      "status": "DONE",
+      "id": "34112",
+      "title": "LED Dance Floor Tile, Cyan (Nightclub and DJ Booth)",
+      "source": "https://3dassets.dev/assets/nightclub-and-dj-booth-led-floor-tile-module-cyan-83ec37b2",
+      "download": "https://cdn.3dassets.dev/assets/34112/v1/model.glb",
+      "author": {
+        "username": "3dassets",
+        "name": "3D Assets",
+        "url": "https://3dassets.dev/u/3dassets"
+      },
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "aiGenerated": true,
+      "stats": {
+        "fileSize": 18804,
+        "triangles": 384,
+        "vertices": 857,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.5,
+            3.082302401850173e-05,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.08400088363606566,
+            0.5
+          ]
+        },
+        "sizeMeters": [
+          1,
+          0.084,
+          1
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "sourceFile": {
+        "path": "assets/source/club-lighting/34112.glb",
+        "bytes": 18804,
+        "sha256": "559a2a83d1e640fb889b0e109ac59f7223491f601d9db5314ca1e716c1718271"
+      },
+      "runtimeFile": {
+        "path": "apps/web/public/assets/props/club/34112.glb",
+        "bytes": 18804,
+        "sha256": "559a2a83d1e640fb889b0e109ac59f7223491f601d9db5314ca1e716c1718271"
+      }
+    }
+  ],
+  "animationSource": {
+    "status": "DONE",
+    "title": "Rokoko mocap: 6 free dance animations",
+    "source": "https://www.rokoko.com/resources/rokoko-mocap-6-free-dance-animations",
+    "author": "Sam Lazarus / Rokoko",
+    "license": "Rokoko free-resource permission for personal and commercial game projects; not CC0",
+    "licenseEvidence": "https://www.rokoko.com/resources/rokoko-mocap-6-free-dance-animations",
+    "officialFolder": "https://drive.google.com/drive/folders/1DIGkt7SsX99k6d_OSjBudjJOvW1PYqnd",
+    "sourceDirectory": "assets/source/animations/club/rokoko-six/Dancing",
+    "processing": "FBX -> 16-second excerpts, 30 Hz, body quaternion tracks, rounded numeric data. Rest world rotations retained for per-VRM retarget. Root X/Z locked; vertical hips clamped and feet grounded. Fingers retain model rest pose.",
+    "files": [
+      {
+        "id": "DancingMedium",
+        "duration": 16,
+        "originalDuration": 30.45833396911621,
+        "bones": 66,
+        "tracks": 24,
+        "bytes": 445159,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/rokoko-six/Dancing/DancingMedium_mixamo.fbx",
+          "bytes": 2600272,
+          "sha256": "180df05fb030cd90e3d9af0f571f2876618ee83d1a1ea3c171fc479d213c670c"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/DancingMedium.json",
+          "bytes": 445159,
+          "sha256": "9917e663869a2be3dcf05711716730ff76f6c1b5fca78c7cf2ef216762f6eeaf"
+        }
+      },
+      {
+        "id": "DoTheRobot",
+        "duration": 16,
+        "originalDuration": 35.25,
+        "bones": 66,
+        "tracks": 24,
+        "bytes": 443821,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/rokoko-six/Dancing/DoTheRobot_mixamo.fbx",
+          "bytes": 2907312,
+          "sha256": "7cab6498c4508ce3de2ad970e88b0117f8e32d4ca23363fc1068f6a0997ab143"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/DoTheRobot.json",
+          "bytes": 443821,
+          "sha256": "f57ae8ec19dc5a580111b6fcc5f491337ae6efc3d6a26488ef3860e863cdd2ac"
+        }
+      },
+      {
+        "id": "DoTheTwist",
+        "duration": 16,
+        "originalDuration": 26.08333396911621,
+        "bones": 66,
+        "tracks": 24,
+        "bytes": 443780,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/rokoko-six/Dancing/DoTheTwist_mixamo.fbx",
+          "bytes": 2320656,
+          "sha256": "555aef99bbdbd455dde25640f434f16781b07658fccbd78a49009db7326af9bc"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/DoTheTwist.json",
+          "bytes": 443780,
+          "sha256": "989b0cb4aa3724f502ffccdda31026deec87e347450da31e061e0427a8c3dffe"
+        }
+      },
+      {
+        "id": "GentleSwayingDancing",
+        "duration": 16,
+        "originalDuration": 52.375,
+        "bones": 66,
+        "tracks": 24,
+        "bytes": 444077,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/rokoko-six/Dancing/GentleSwayingDancing_mixamo.fbx",
+          "bytes": 3987088,
+          "sha256": "6ddae3874c96dccc0948dad166a9e2b9da90f42477e47d1700503d9c3436e734"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/GentleSwayingDancing.json",
+          "bytes": 444077,
+          "sha256": "c840f5e25c726f84e36d98189d64544b2f67fe99a0f4260d561cba0613207784"
+        }
+      },
+      {
+        "id": "NPC_DancingParty",
+        "duration": 16,
+        "originalDuration": 30.54166603088379,
+        "bones": 66,
+        "tracks": 24,
+        "bytes": 442890,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/rokoko-six/Dancing/NPC_DancingParty_mixamo.fbx",
+          "bytes": 2598592,
+          "sha256": "5ca636a1e5c837af63bb0670c0d0bf99ae691e808a24355108394b7da517e424"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/NPC_DancingParty.json",
+          "bytes": 442890,
+          "sha256": "ce666159f58e9413ff623997a5c10852084ea8bbd085609fedb085115b8c9df7"
+        }
+      }
+    ]
+  },
+  "userAnimations": {
+    "status": "PARTIAL",
+    "implementationStatus": "DONE",
+    "report": "docs/reports/DJ_RIO_LANTERN_UPGRADE_REPORT.md",
+    "selected": {
+      "WINE": [
+        "Wine_dance"
+      ],
+      "POP": [
+        "Pop_dance"
+      ],
+      "ROSETTA": [
+        "Rosetta_dance2"
+      ]
+    },
+    "files": [
+      {
+        "id": "Pop_dance",
+        "source": "Pop_dance.fbx",
+        "sourceRig": "Mixamo",
+        "duration": 4.900000095367432,
+        "bones": 52,
+        "tracks": 53,
+        "bytes": 329677,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/mixamo/Pop_dance.fbx",
+          "bytes": 2154336,
+          "sha256": "0c1d6b8b00cd6e83ae76b31928dfe5475b7e59de1b0e01331bffc4ed80be2109"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/Pop_dance.json",
+          "bytes": 329677,
+          "sha256": "eab7b514298cfaf21f6689e432438f60a6f16bf4193db6ceed5e5b39f605bbb2"
+        },
+        "provenance": "Người dùng cung cấp sau khi chọn/tải animation; WINE/POP có rig Mixamo, Rosetta có rig khác. Chưa có URL/tên gốc xác nhận riêng từng clip.",
+        "license": "Không tự gán CC0 hoặc giấy phép Mixamo cho file Rosetta; quyền model/clip gốc giữ nguyên, sử dụng thử local theo yêu cầu người dùng."
+      },
+      {
+        "id": "Rosetta_dance",
+        "source": "Rosetta_dance.fbx",
+        "sourceRig": "UE-style humanoid with duplicate skin joints",
+        "duration": 9.566666603088379,
+        "bones": 52,
+        "tracks": 53,
+        "bytes": 671227,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/mixamo/Rosetta_dance.fbx",
+          "bytes": 8454908,
+          "sha256": "c6372fce10f9cbc038a07ec50c140a2ca746a30229d8467edd59827e1ef9cf5f"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/Rosetta_dance.json",
+          "bytes": 671227,
+          "sha256": "5f76e0ce1a7efdc6f08e6c740a69d63c3e144ea1dc93c60872e6e041c019a0cb"
+        },
+        "provenance": "Người dùng cung cấp sau khi chọn/tải animation; WINE/POP có rig Mixamo, Rosetta có rig khác. Chưa có URL/tên gốc xác nhận riêng từng clip.",
+        "license": "Không tự gán CC0 hoặc giấy phép Mixamo cho file Rosetta; quyền model/clip gốc giữ nguyên, sử dụng thử local theo yêu cầu người dùng."
+      },
+      {
+        "id": "Rosetta_dance2",
+        "source": "Rosetta_dance2.fbx",
+        "sourceRig": "UE-style humanoid with duplicate skin joints",
+        "duration": 29.066667556762695,
+        "bones": 52,
+        "tracks": 53,
+        "bytes": 2024019,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/mixamo/Rosetta_dance2.fbx",
+          "bytes": 9865932,
+          "sha256": "1ad6357e302f682495b19e065040e13db17c4c3000c1e7b7bdc9e66a12f9ee7f"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/Rosetta_dance2.json",
+          "bytes": 2024019,
+          "sha256": "73c9389bac0829ba32b11ecf6848b46d9b5de964cdeb26fc8b415cb722779d3f"
+        },
+        "provenance": "Người dùng cung cấp sau khi chọn/tải animation; WINE/POP có rig Mixamo, Rosetta có rig khác. Chưa có URL/tên gốc xác nhận riêng từng clip.",
+        "license": "Không tự gán CC0 hoặc giấy phép Mixamo cho file Rosetta; quyền model/clip gốc giữ nguyên, sử dụng thử local theo yêu cầu người dùng."
+      },
+      {
+        "id": "Wine_dance",
+        "source": "Wine_dance.fbx",
+        "sourceRig": "Mixamo",
+        "duration": 21.96666717529297,
+        "bones": 52,
+        "tracks": 53,
+        "bytes": 1409308,
+        "status": "DONE",
+        "sourceFile": {
+          "path": "assets/source/animations/club/mixamo/Wine_dance.fbx",
+          "bytes": 3455696,
+          "sha256": "fd388011b1ba2088ac2c6a1e8a6ab81b335454310575c755d353946a869fab4a"
+        },
+        "runtimeFile": {
+          "path": "apps/web/public/assets/animations/club/Wine_dance.json",
+          "bytes": 1409308,
+          "sha256": "b062b6590dfcc527e995d564045d5b1414cacc7855313f0fa56242344c6001f8"
+        },
+        "provenance": "Người dùng cung cấp sau khi chọn/tải animation; WINE/POP có rig Mixamo, Rosetta có rig khác. Chưa có URL/tên gốc xác nhận riêng từng clip.",
+        "license": "Không tự gán CC0 hoặc giấy phép Mixamo cho file Rosetta; quyền model/clip gốc giữ nguyên, sử dụng thử local theo yêu cầu người dùng."
+      }
+    ],
+    "processing": "Đọc inverse bind từ skin, chuẩn hóa tên xương, bake 30 Hz toàn clip, bỏ mesh/texture; runtime retarget cả ngón tay. Chồng 0.25 giây đầu/cuối, giữ tốc độ gốc, khóa root X/Z và hiệu chỉnh độ cao chân. Chữa các đoạn xoắn >0.85 rad/frame bằng nội suy hai pose ổn định; FBX gốc giữ nguyên. Không cộng lớp lắc hông cũ.",
+    "browserStatus": "SKIPPED theo yêu cầu người dùng"
+  },
+  "djStage": {
+    "status": "PARTIAL",
+    "implementationStatus": "DONE",
+    "name": "DJ Rio",
+    "characterId": "galaxy",
+    "role": "dj",
+    "position": [
+      0,
+      0.77,
+      -7.35
+    ],
+    "layout": {
+      "booth": {
+        "id": "dj-rio-console",
+        "role": "booth",
+        "position": [
+          0,
+          0.77,
+          -6.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "leftHand": [
+        0.29,
+        1.84,
+        -7.08
+      ],
+      "rightHand": [
+        -0.12,
+        1.84,
+        -7.08
+      ],
+      "keyLight": {
+        "position": [
+          0,
+          4.5,
+          -4.8
+        ],
+        "target": [
+          0,
+          2.05,
+          -7.35
+        ],
+        "color": "#ffe1c2",
+        "intensity": 32
+      },
+      "rimLight": {
+        "position": [
+          1.5,
+          3.7,
+          -7.3
+        ],
+        "target": [
+          0,
+          2.0,
+          -7.35
+        ],
+        "color": "#ff79c9",
+        "intensity": 12
+      }
+    },
+    "motion": "Diễn hoạt thao tác DJ procedural IK; tay chạm controls, chân cố định, đầu/thân theo beat show. Không dùng clip nhảy cho DJ Rio.",
+    "console": {
+      "path": "apps/web/public/assets/props/club/dj-rio-console.glb",
+      "bytes": 1578280,
+      "sha256": "9534aa877364efc795ee9ccbc82ade5c05861d5c1a09c98be6b8ae1aacac8d65"
+    },
+    "blend": {
+      "path": "assets/processed/dj-rio-console.blend",
+      "bytes": 504728,
+      "sha256": "2d3c8cacf92dbe092a08377415e99b6b7bc69201d332120c26e1d40deab27908"
+    },
+    "sourceAssetIds": [
+      "34089",
+      "34088",
+      "34090"
+    ],
+    "license": "CC0 cho ba model gốc theo lighting[].license; phần bổ sung/texture kim loại/waveform do dự án tạo.",
+    "geometry": {
+      "drawPrimitives": 21,
+      "embeddedImages": 1,
+      "platterAnimations": 2
+    },
+    "lights": "Hai moving-head GLB và hai SpotLight riêng: key trắng ấm 32, rim hồng 12; sáng liên tục cả chế độ Low.",
+    "report": "docs/reports/DJ_RIO_LANTERN_UPGRADE_REPORT.md",
+    "evidence": [
+      "test-results/dj-rio-check.json",
+      "test-results/screenshots/dj-rio-30-offline.png",
+      "test-results/screenshots/dj-rio-150-offline.png"
+    ],
+    "browserStatus": "SKIPPED theo yêu cầu người dùng"
+  },
+  "sequences": {
+    "WINE": [
+      "Wine_dance"
+    ],
+    "POP": [
+      "Pop_dance"
+    ],
+    "ROSETTA": [
+      "Rosetta_dance2"
+    ],
+    "timing": "Clip người dùng chạy theo giây tại tốc độ gốc; vòng chồng 0.25 giây. WINE/POP dùng epoch chung, không time-stretch theo BPM.",
+    "style": "Giữ diễn xuất clip nguồn; các clip Rokoko trước đây vẫn nằm trên đĩa nhưng không còn là chuỗi mặc định."
+  },
+  "roomLighting": {
+    "layout": "apps/web/game/scenes/club-lighting-layout.json",
+    "surroundFixtures": 6,
+    "palette": [
+      "red",
+      "orange",
+      "yellow",
+      "green",
+      "cyan",
+      "blue",
+      "purple"
+    ],
+    "stageKeys": {
+      "count": 2,
+      "color": "#ffe8dd",
+      "intensity": 42,
+      "mode": "Steady warm-white light aimed at the dancers; no beat pulse"
+    },
+    "mode": "Dark audience area, bright stage, smooth spectrum sweeps around the room; dimmer LED floor; no hard strobe"
+  },
+  "otherRequestedSources": [
+    {
+      "source": "https://www.rokoko.com/resources/club-motion-asset-pack",
+      "status": "DONE",
+      "used": false,
+      "note": "Verified official club pack and public Drive folder. Six-dance pack supplies enough clips; no duplicate motion downloads."
+    },
+    {
+      "source": "https://www.rokoko.com/resources/rokoko-mocap-13-free-dance-animations",
+      "status": "BLOCKED",
+      "reason": "HTTP 404; used current official 6-animation page instead."
+    },
+    {
+      "source": "https://www.mixamo.com/",
+      "status": "DONE",
+      "used": true,
+      "note": "Người dùng tự tải và cung cấp Wine_dance.fbx/Pop_dance.fbx. Không đăng nhập tài khoản thay người dùng; Rosetta_dance.fbx dùng rig khác, nguồn cụ thể chưa xác nhận.",
+      "licenseEvidence": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html"
+    },
+    {
+      "source": "https://1designtool.com/3d/models/music-festival-lighting-rig",
+      "status": "DONE",
+      "used": false,
+      "licenseEvidence": "https://1designtool.com/3d/license",
+      "note": "Allows use inside games, restricts standalone redistribution. CC0 pack already provides required fixtures; no redundant rig imported."
+    }
+  ],
+  "characters": {
+    "status": "PARTIAL",
+    "names": [
+      "WINE",
+      "POP!",
+      "Rosetta",
+      "DJ Rio"
+    ],
+    "replaced": false,
+    "runtimeDefinitions": "apps/web/game/entities/club-npcs.json",
+    "vrmFiles": [
+      {
+        "name": "wine",
+        "source": "assets/source/characters/club-import/WINE/MODEL/WINE.vrm",
+        "runtime": "apps/web/public/assets/characters/club-local/wine.vrm",
+        "sourceSha256": "fc95b5a559b15c9a06e2ea7d9a997cc880622e46b39c10827007ed098354aea7",
+        "runtimeSha256": "6680597d139181a313487bbd1d61b40f8f7f57a4a77a3539f3851574a824b373",
+        "bytes": 8910036,
+        "metadata": {
+          "version": "",
+          "author": "BABYCORE / NANAMI",
+          "contactInformation": "https://twitter.com/bab1ecore",
+          "reference": "",
+          "title": "WINE",
+          "texture": 24,
+          "allowedUserName": "Everyone",
+          "violentUssageName": "Allow",
+          "sexualUssageName": "Allow",
+          "commercialUssageName": "Allow",
+          "otherPermissionUrl": "",
+          "licenseName": "Other",
+          "otherLicenseUrl": ""
+        },
+        "textures": [
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              256,
+              256
+            ],
+            "runtime": [
+              256,
+              256
+            ]
+          },
+          {
+            "original": [
+              512,
+              256
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          }
+        ],
+        "animationsInSource": 0,
+        "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+      },
+      {
+        "name": "pop",
+        "source": "assets/source/characters/club-import/POP!/MODEL/POP!.vrm",
+        "runtime": "apps/web/public/assets/characters/club-local/pop.vrm",
+        "sourceSha256": "b044fe88a3a69af085e225a80dfe2f43c190b8bf2a2a6724f0e93f07c69b9e54",
+        "runtimeSha256": "21560b7ab9464c6a7061849ea54dc960a54391dc1e8c592d3b9b7c880510f5e0",
+        "bytes": 7389400,
+        "metadata": {
+          "version": "",
+          "author": "nanami / babycore",
+          "contactInformation": "https://twitter.com/bab1ecore",
+          "reference": "",
+          "title": "POP",
+          "texture": 26,
+          "allowedUserName": "Everyone",
+          "violentUssageName": "Allow",
+          "sexualUssageName": "Allow",
+          "commercialUssageName": "Allow",
+          "otherPermissionUrl": "",
+          "licenseName": "Other",
+          "otherLicenseUrl": ""
+        },
+        "textures": [
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              256,
+              256
+            ],
+            "runtime": [
+              256,
+              256
+            ]
+          },
+          {
+            "original": [
+              512,
+              256
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          }
+        ],
+        "animationsInSource": 0,
+        "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+      },
+      {
+        "name": "galaxy",
+        "source": "assets/source/characters/club-import/club-e1/Galaxy Summer.vrm",
+        "runtime": "apps/web/public/assets/characters/club-local/galaxy.vrm",
+        "sourceSha256": "5c69543db3387e4db026a0920ebd56bac46038ddfc4ead3fa1b1ef8addb9dfd9",
+        "runtimeSha256": "8d5c14f89a19b34b0b929cc6869e1a37455f7451d576465b6e609252b7c4a79e",
+        "bytes": 8610220,
+        "metadata": {
+          "version": "1",
+          "author": "OneLazerBunny (Nanasita)",
+          "contactInformation": "https://www.instagram.com/onelazerbunny/",
+          "title": "Galaxy Summer",
+          "texture": 21,
+          "allowedUserName": "ExplicitlyLicensedPerson",
+          "violentUssageName": "Disallow",
+          "sexualUssageName": "Disallow",
+          "commercialUssageName": "Allow",
+          "licenseName": "Redistribution_Prohibited"
+        },
+        "textures": [
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              256,
+              256
+            ],
+            "runtime": [
+              256,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              512,
+              128
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              512,
+              128
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              512,
+              128
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              256,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              256,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              256,
+              512
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          }
+        ],
+        "animationsInSource": 0,
+        "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+      }
+    ],
+    "rosetta": {
+      "source": "assets\\source\\characters\\club-import\\Rosetta\\Render\\Render.blend",
+      "sourceSha256": "add0116b16d8b414eb95a1ea3f207f570813c8a7a6028d443fd74a2dbd3db4f7",
+      "candidate": "assets\\processed\\rosetta-restored.glb",
+      "bytes": 8953288,
+      "sha256": "88dbbdefc1fc5ac170cd46423bab966d6c78b186c68ec53c274e74836d78666c",
+      "meshes": [
+        "Body",
+        "Body_main",
+        "Costume",
+        "Eye_decal",
+        "Hair",
+        "mouth_decal",
+        "Wing&Tail"
+      ],
+      "expression": {
+        "Body": {
+          "ふ": 1.0,
+          "にやり": 0.7429999709129333
+        },
+        "Costume": {},
+        "Eye_decal": {
+          "Eye_down": 0.564084529876709,
+          "Eye_left": 0.25
+        }
+      },
+      "materials": [
+        {
+          "name": "Tail&Wing",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Face_transparent",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": true,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Nail",
+          "albedoSize": null,
+          "metallic": 0,
+          "roughness": 0.12727272510528564,
+          "alpha": false,
+          "sourceColorBaked": false
+        },
+        {
+          "name": "Costume_Sub",
+          "albedoSize": [
+            2048,
+            2048
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Eye_Right",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": true,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Hair",
+          "albedoSize": [
+            2048,
+            2048
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Tights",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0.3181818127632141,
+          "roughness": 0.3181818127632141,
+          "alpha": false,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Costume_Metal",
+          "albedoSize": null,
+          "metallic": 1,
+          "roughness": 0.2454545497894287,
+          "alpha": false,
+          "sourceColorBaked": false
+        },
+        {
+          "name": "Costume_Jewel",
+          "albedoSize": null,
+          "metallic": 1,
+          "roughness": 0.25,
+          "alpha": false,
+          "sourceColorBaked": false
+        },
+        {
+          "name": "Face",
+          "albedoSize": [
+            2048,
+            2048
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": true,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Skin",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Neck",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "Eye_Left",
+          "albedoSize": [
+            1024,
+            1024
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": true,
+          "sourceColorBaked": true
+        },
+        {
+          "name": "mouth",
+          "albedoSize": null,
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": false
+        },
+        {
+          "name": "Costume_Main",
+          "albedoSize": [
+            2048,
+            2048
+          ],
+          "metallic": 0,
+          "roughness": 0.5,
+          "alpha": false,
+          "sourceColorBaked": true
+        }
+      ],
+      "animation": "Rosetta_Render_Idle",
+      "durationSeconds": 8,
+      "outfit": "Fixed original black/red costume; castoff excluded",
+      "license": "User supplied, local testing only; redistribution not verified",
+      "materialPolicy": {
+        "Face_transparent": "MASK",
+        "Face": "MASK",
+        "Skin": "OPAQUE",
+        "Tights": "OPAQUE",
+        "Nail": "OPAQUE",
+        "Neck": "OPAQUE",
+        "Costume_Main": "OPAQUE",
+        "Costume_Sub": "OPAQUE",
+        "Costume_Metal": "OPAQUE",
+        "Costume_Jewel": "OPAQUE",
+        "Eye_Left": "MASK",
+        "Eye_Right": "MASK",
+        "Hair": "OPAQUE",
+        "mouth": "OPAQUE",
+        "Tail&Wing": "OPAQUE"
+      },
+      "runtimeSha256": "88dbbdefc1fc5ac170cd46423bab966d6c78b186c68ec53c274e74836d78666c",
+      "textureCompression": [
+        {
+          "image": "Rosetta_Skin_Albedo",
+          "before": 485418,
+          "after": 155051,
+          "meanAbsoluteErrorRGB": [
+            0.5489015579223633,
+            0.38304710388183594,
+            0.8886985778808594
+          ]
+        },
+        {
+          "image": "Rosetta_Tights_Albedo",
+          "before": 695101,
+          "after": 220215,
+          "meanAbsoluteErrorRGB": [
+            0.6458959579467773,
+            0.4337892532348633,
+            0.6843729019165039
+          ]
+        },
+        {
+          "image": "Rosetta_Neck_Albedo",
+          "before": 656852,
+          "after": 216123,
+          "meanAbsoluteErrorRGB": [
+            0.5347747802734375,
+            0.4461507797241211,
+            0.6377182006835938
+          ]
+        },
+        {
+          "image": "Rosetta_Costume_Main_Albedo",
+          "before": 919062,
+          "after": 214577,
+          "meanAbsoluteErrorRGB": [
+            0.3141622543334961,
+            0.46904468536376953,
+            0.5592925548553467
+          ]
+        },
+        {
+          "image": "Rosetta_Costume_Sub_Albedo",
+          "before": 1787555,
+          "after": 552194,
+          "meanAbsoluteErrorRGB": [
+            0.6524527072906494,
+            0.370025634765625,
+            0.7106499671936035
+          ]
+        },
+        {
+          "image": "Rosetta_Hair_Albedo",
+          "before": 1625069,
+          "after": 450474,
+          "meanAbsoluteErrorRGB": [
+            0.4987053871154785,
+            0.24340271949768066,
+            0.7740151882171631
+          ]
+        },
+        {
+          "image": "Rosetta_Tail&Wing_Albedo",
+          "before": 668956,
+          "after": 219723,
+          "meanAbsoluteErrorRGB": [
+            0.5900964736938477,
+            0.44449710845947266,
+            0.6735515594482422
+          ]
+        }
+      ],
+      "runtime": "apps/web/public/assets/characters/club-local/rosetta-restored.glb",
+      "triangles": 91908
+    },
+    "note": "Model người dùng cung cấp, chỉ dùng thử local. Rosetta giữ bản phục hồi từ Render.blend, vẫy tay xen pose gốc và dùng Rosetta_dance2 khi chọn Nhảy. DJ Rio đổi tên từ Galaxy Summer, thao tác bàn DJ trên sân khấu; giữ nguyên file VRM/metadata và điều kiện giấy phép, không đưa vào chuỗi nhảy."
+  },
+  "npcMotion": {
+    "status": "PARTIAL",
+    "report": "docs/reports/NPC_MOTION_REPORT.md",
+    "rosetta": {
+      "implementationStatus": "DONE",
+      "mode": "Vẫy tay xen dáng đã duyệt, chuyển mỗi khoảng 3 giây trong chu kỳ 6 giây; blend mượt và neo chân trụ IK. Không đổi model, trang phục hoặc vị trí.",
+      "source": {
+        "path": "assets/processed/rosetta-before-restore/rosetta.glb",
+        "bytes": 5219768,
+        "sha256": "30fa6935df574b00baa964deed829e623cd9f5ec43451da88ee897b6cb1461db"
+      },
+      "sourceClip": "Rosetta_Welcome_Wave",
+      "provenance": "Clip đã tạo trong dự án trước khi phục hồi, không phải animation từ ảnh render hoặc mocap tải mới. Quyền model gốc không thay đổi.",
+      "runtimeMotion": {
+        "path": "apps/web/public/assets/animations/club/Rosetta_Wave.json",
+        "bytes": 53340,
+        "sha256": "c46cdf00d68c8148cc4ee2903d0b72c5f548ed771aab3a065f07d9fa7de59e87"
+      },
+      "tracks": 51,
+      "durationSeconds": 4
+    },
+    "galaxy": {
+      "implementationStatus": "DONE",
+      "name": "DJ Rio",
+      "mode": "DJ Rio đứng tại bàn trên sân khấu, tay IK thao tác controls và đầu/thân theo beat; ngừng tuần tra sảnh.",
+      "source": "apps/web/game/systems/djPerformance.ts",
+      "externalAnimationDownloaded": false,
+      "position": [
+        0,
+        0.77,
+        -7.35
+      ]
+    },
+    "sync": "Hai client dùng đồng hồ máy cho chu kỳ trang trí. Chưa có NPC state authoritative hoặc va chạm NPC/người chơi qua Colyseus.",
+    "evidence": [
+      "test-results/rosetta-greeting-check.json",
+      "test-results/galaxy-walk-check.json",
+      "test-results/logs/npc-motion-tests.log",
+      "test-results/logs/npc-motion-build.log",
+      "test-results/logs/npc-motion-e2e.log",
+      "test-results/screenshots/rosetta-greeting-30-offline.png",
+      "test-results/screenshots/rosetta-greeting-120-offline.png",
+      "test-results/screenshots/galaxy-walk-37-offline.png",
+      "test-results/screenshots/galaxy-walk-54-offline.png"
+    ],
+    "browserStatus": "SKIPPED theo yêu cầu người dùng; chưa xác nhận hình ảnh/FPS trong game."
+  },
+  "characterLoading": {
+    "status": "PARTIAL",
+    "mode": "Cache cố định bốn rig/mixer qua các lần đổi phòng; xếp hàng xử lý khi nhàn rỗi, preload gần cửa, upload texture lần lượt. Không cam kết hết giật trước khi đo trong browser.",
+    "tests": [
+      "apps/web/test/character-cache.spec.ts",
+      "test-results/club-greeter-assets.json"
+    ],
+    "report": "docs/reports/CLUB_GREETER_LOADING_REPORT.md"
+  },
+  "rosettaRestoration": {
+    "status": "PARTIAL",
+    "runtime": "/assets/characters/club-local/rosetta-restored.glb",
+    "source": "assets/source/characters/club-import/Rosetta/Render/Render.blend",
+    "mode": "Giữ pose/biểu cảm nguồn, mắt và miệng riêng, bake màu shader nguồn; idle 8 giây bổ sung và morph chớp mắt độc lập khi nhảy",
+    "report": "docs/reports/ROSETTA_RESTORATION_REPORT.md",
+    "evidence": [
+      "test-results/club-greeter-assets.json",
+      "test-results/screenshots/rosetta-restored-offline-preview.png",
+      "test-results/screenshots/rosetta-restored-offline-preview-portrait.png"
+    ],
+    "browserStatus": "SKIPPED theo yêu cầu người dùng"
+  },
+  "rosettaInteraction": {
+    "status": "PARTIAL",
+    "position": [
+      3.5,
+      0,
+      2.5
+    ],
+    "height": 2.12,
+    "patrol": "Đã tắt, đứng cố định; quay mặt chào người chơi ở gần",
+    "outfit": "Cố định váy ngắn đen–đỏ, tất cao, giày cao gót từ model Rosetta có sẵn",
+    "hotkey": "F",
+    "reachMeters": 2,
+    "prompt": "Anh cần gì ạ?",
+    "options": [
+      "Nhảy",
+      "Hủy"
+    ],
+    "danceSource": "Rosetta_dance2.fbx do người dùng cung cấp",
+    "retarget": "Bind pose thật có bù parent Armature 90 độ; 51 quaternion tracks và hips Y, gộp Spine2 vào Chest, không root X/Z",
+    "sync": "Local preview only; lựa chọn nhảy chưa đồng bộ qua Colyseus",
+    "chat": "Thu gọn mặc định thành icon; có thể mở lại",
+    "evidence": [
+      "test-results/user-dances-check.json",
+      "test-results/screenshots/rosetta-user-dance-30-offline.png",
+      "test-results/screenshots/rosetta-user-dance-150-offline.png"
+    ]
+  },
+  "audio": {
+    "status": "PARTIAL",
+    "source": {
+      "path": "assets/source/audio/club/music.mp3",
+      "bytes": 9762481,
+      "sha256": "a230aacb00f6e1a352dfdb71672211f0f9d3871bfd5e299b77ea009162361b47"
+    },
+    "runtime": {
+      "path": "apps/web/public/assets/audio/club/music.mp3",
+      "bytes": 9762481,
+      "sha256": "a230aacb00f6e1a352dfdb71672211f0f9d3871bfd5e299b77ea009162361b47"
+    },
+    "track": {
+      "id": "club-music",
+      "title": "music.mp3",
+      "url": "/assets/audio/club/music.mp3",
+      "durationSeconds": 244.062041,
+      "bpm": 140.0,
+      "beatOffsetSeconds": 0.269,
+      "cues": [
+        {
+          "atSeconds": 0.0,
+          "cue": "lounge"
+        },
+        {
+          "atSeconds": 13.714,
+          "cue": "groove"
+        },
+        {
+          "atSeconds": 27.429,
+          "cue": "peak"
+        },
+        {
+          "atSeconds": 41.143,
+          "cue": "groove"
+        },
+        {
+          "atSeconds": 54.857,
+          "cue": "peak"
+        },
+        {
+          "atSeconds": 68.571,
+          "cue": "groove"
+        },
+        {
+          "atSeconds": 96.0,
+          "cue": "peak"
+        },
+        {
+          "atSeconds": 123.429,
+          "cue": "groove"
+        },
+        {
+          "atSeconds": 137.143,
+          "cue": "lounge"
+        },
+        {
+          "atSeconds": 178.286,
+          "cue": "peak"
+        },
+        {
+          "atSeconds": 192.0,
+          "cue": "groove"
+        },
+        {
+          "atSeconds": 205.714,
+          "cue": "peak"
+        },
+        {
+          "atSeconds": 219.429,
+          "cue": "groove"
+        },
+        {
+          "atSeconds": 233.143,
+          "cue": "lounge"
+        }
+      ],
+      "analysis": "Spectral-flux tempo/phase and phrase RMS cues; estimated, not manually verified",
+      "sampleRate": 44100.0,
+      "channels": 2,
+      "bytes": 9762481,
+      "sha256": "a230aacb00f6e1a352dfdb71672211f0f9d3871bfd5e299b77ea009162361b47",
+      "license": "User supplied for this local project; redistribution rights not independently verified"
+    },
+    "note": "MP3 người dùng giữ nguyên. Audio element tồn tại cùng World, giữ buffer giữa các phòng. E/click vào cửa gọi play trong user gesture; khi vào club mở âm lượng và seek theo epoch chung. Có nút dự phòng nếu chính sách trình duyệt chặn; không gửi byte nhạc qua Colyseus. Chưa kiểm thử playback vì người dùng chưa cho mở browser.",
+    "sourceDirectory": "assets/source/audio/club",
+    "publicDirectory": "apps/web/public/assets/audio/club"
+  },
+  "discoProjection": {
+    "status": "PARTIAL",
+    "implementation": "DiscoProjectionSystem.tsx + clubProjection.ts",
+    "mode": "Continuous rotating surface decals and three rainbow rings; original light-effect shaders; existing GLB disco ball retained",
+    "spotsByQuality": {
+      "low": 168,
+      "medium": 288,
+      "high": 420
+    },
+    "drawCalls": 3,
+    "browserStatus": "SKIPPED by explicit user instruction; visual match and FPS not verified"
+  },
+  "blender": {
+    "status": "DONE",
+    "version": "5.2.3 LTS",
+    "method": "local CLI",
+    "mcpStatus": "BLOCKED: cannot connect to Blender addon",
+    "files": [
+      {
+        "path": "assets/processed/denmu-premium-club.blend",
+        "bytes": 28472009,
+        "sha256": "091e3d4bc623bc7b5f8b5d85e7ff2a6049c07a151183b0ae21d5e57f099e1351"
+      },
+      {
+        "path": "assets/processed/denmu-premium-lighting.glb",
+        "bytes": 1500084,
+        "sha256": "a846fd700dfc661c79f5ab148660567f705079ee45ecd85bf5772f8fadc0baa1"
+      }
+    ],
+    "note": "Blend contains preserved Denmu interior, imported lighting models and hidden reference FBX rigs/actions. Runtime loads individual quantized source GLBs; combined GLB is a portable layout reference."
+  },
+  "evidence": [
+    "test-results/club-premium-qa.json",
+    "test-results/club-audio-bloom-qa.json",
+    "assets/processed/club-gltf-validation.json",
+    "assets/processed/club-blender-validation.json",
+    "test-results/screenshots/club-premium-before.png",
+    "test-results/screenshots/club-premium-after.png",
+    "test-results/club-greeter-assets.json",
+    "assets/processed/greeter-gltf-validation.json",
+    "assets/processed/rosetta-export-validation.json",
+    "test-results/screenshots/rosetta-offline-preview.png",
+    "test-results/logs/club-greeter-build.log",
+    "test-results/logs/club-greeter-typecheck.log",
+    "test-results/logs/club-greeter-e2e.log"
+  ]
+}

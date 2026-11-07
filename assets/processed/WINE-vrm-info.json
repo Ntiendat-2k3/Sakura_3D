@@ -1,0 +1,2696 @@
+{
+  "extensions": {
+    "VRM": {
+      "exporterVersion": "VRoidStudio-0.13.2",
+      "specVersion": "0.0",
+      "meta": {
+        "version": "",
+        "author": "BABYCORE / NANAMI",
+        "contactInformation": "https://twitter.com/bab1ecore",
+        "reference": "",
+        "title": "WINE",
+        "texture": 24,
+        "allowedUserName": "Everyone",
+        "violentUssageName": "Allow",
+        "sexualUssageName": "Allow",
+        "commercialUssageName": "Allow",
+        "otherPermissionUrl": "",
+        "licenseName": "Other",
+        "otherLicenseUrl": ""
+      },
+      "humanoid": {
+        "humanBones": [
+          {
+            "bone": "hips",
+            "node": 3,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftUpperLeg",
+            "node": 79,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightUpperLeg",
+            "node": 84,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftLowerLeg",
+            "node": 80,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightLowerLeg",
+            "node": 85,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftFoot",
+            "node": 81,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightFoot",
+            "node": 86,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "spine",
+            "node": 4,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "chest",
+            "node": 5,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "neck",
+            "node": 19,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "head",
+            "node": 20,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftShoulder",
+            "node": 31,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightShoulder",
+            "node": 55,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftUpperArm",
+            "node": 32,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightUpperArm",
+            "node": 56,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftLowerArm",
+            "node": 33,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightLowerArm",
+            "node": 57,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftHand",
+            "node": 34,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightHand",
+            "node": 58,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftToes",
+            "node": 82,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightToes",
+            "node": 87,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftEye",
+            "node": 21,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightEye",
+            "node": 22,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftThumbProximal",
+            "node": 51,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftThumbIntermediate",
+            "node": 52,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftThumbDistal",
+            "node": 53,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftIndexProximal",
+            "node": 35,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftIndexIntermediate",
+            "node": 36,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftIndexDistal",
+            "node": 37,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftMiddleProximal",
+            "node": 43,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftMiddleIntermediate",
+            "node": 44,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftMiddleDistal",
+            "node": 45,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftRingProximal",
+            "node": 47,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftRingIntermediate",
+            "node": 48,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftRingDistal",
+            "node": 49,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftLittleProximal",
+            "node": 39,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftLittleIntermediate",
+            "node": 40,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "leftLittleDistal",
+            "node": 41,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightThumbProximal",
+            "node": 75,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightThumbIntermediate",
+            "node": 76,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightThumbDistal",
+            "node": 77,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightIndexProximal",
+            "node": 59,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightIndexIntermediate",
+            "node": 60,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightIndexDistal",
+            "node": 61,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightMiddleProximal",
+            "node": 67,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightMiddleIntermediate",
+            "node": 68,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightMiddleDistal",
+            "node": 69,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightRingProximal",
+            "node": 71,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightRingIntermediate",
+            "node": 72,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightRingDistal",
+            "node": 73,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightLittleProximal",
+            "node": 63,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightLittleIntermediate",
+            "node": 64,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "rightLittleDistal",
+            "node": 65,
+            "useDefaultValues": true
+          },
+          {
+            "bone": "upperChest",
+            "node": 6,
+            "useDefaultValues": true
+          }
+        ],
+        "armStretch": 0.05,
+        "legStretch": 0.05,
+        "upperArmTwist": 0.5,
+        "lowerArmTwist": 0.5,
+        "upperLegTwist": 0.5,
+        "lowerLegTwist": 0.5,
+        "feetSpacing": 0,
+        "hasTranslationDoF": false
+      },
+      "firstPerson": {
+        "firstPersonBone": 20,
+        "firstPersonBoneOffset": {
+          "x": 0,
+          "y": 0.06,
+          "z": 0
+        },
+        "meshAnnotations": [],
+        "lookAtTypeName": "Bone",
+        "lookAtHorizontalInner": {
+          "curve": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "xRange": 90,
+          "yRange": 8
+        },
+        "lookAtHorizontalOuter": {
+          "curve": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "xRange": 90,
+          "yRange": 12
+        },
+        "lookAtVerticalDown": {
+          "curve": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "xRange": 90,
+          "yRange": 10
+        },
+        "lookAtVerticalUp": {
+          "curve": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "xRange": 90,
+          "yRange": 10
+        }
+      },
+      "blendShapeMaster": {
+        "blendShapeGroups": [
+          {
+            "name": "Neutral",
+            "presetName": "neutral",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 0,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "A",
+            "presetName": "a",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 37,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "I",
+            "presetName": "i",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 38,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "U",
+            "presetName": "u",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 39,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "E",
+            "presetName": "e",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 40,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "O",
+            "presetName": "o",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 41,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Blink",
+            "presetName": "blink",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 13,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Blink_L",
+            "presetName": "blink_l",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 15,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Blink_R",
+            "presetName": "blink_r",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 14,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Angry",
+            "presetName": "angry",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 1,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Fun",
+            "presetName": "fun",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 2,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Joy",
+            "presetName": "joy",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 3,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Sorrow",
+            "presetName": "sorrow",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 4,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Surprised",
+            "presetName": "unknown",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 5,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          },
+          {
+            "name": "Extra",
+            "presetName": "unknown",
+            "isBinary": false,
+            "binds": [
+              {
+                "mesh": 0,
+                "index": 25,
+                "weight": 100
+              },
+              {
+                "mesh": 0,
+                "index": 55,
+                "weight": 100
+              }
+            ],
+            "materialValues": []
+          }
+        ]
+      },
+      "secondaryAnimation": {
+        "boneGroups": [
+          {
+            "comment": "Bust",
+            "stiffiness": 0.75,
+            "gravityPower": 0,
+            "gravityDir": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "dragForce": 0.05,
+            "center": 2,
+            "hitRadius": 0.02,
+            "bones": [
+              7,
+              9
+            ],
+            "colliderGroups": []
+          },
+          {
+            "comment": "",
+            "stiffiness": 0.5,
+            "gravityPower": 0,
+            "gravityDir": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "dragForce": 0.4,
+            "center": 2,
+            "hitRadius": 0,
+            "bones": [
+              23
+            ],
+            "colliderGroups": [
+              3,
+              4,
+              7,
+              5,
+              8,
+              6,
+              9,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "comment": "",
+            "stiffiness": 0.4,
+            "gravityPower": 0,
+            "gravityDir": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "dragForce": 0.4,
+            "center": 2,
+            "hitRadius": 0.06439168,
+            "bones": [
+              26
+            ],
+            "colliderGroups": [
+              3,
+              4,
+              7,
+              5,
+              8,
+              6,
+              9,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "comment": "HoodString",
+            "stiffiness": 0.26,
+            "gravityPower": 0.25,
+            "gravityDir": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "dragForce": 0,
+            "center": 2,
+            "hitRadius": 0.02,
+            "bones": [
+              14,
+              17
+            ],
+            "colliderGroups": []
+          },
+          {
+            "comment": "Hood",
+            "stiffiness": 0.75,
+            "gravityPower": 0,
+            "gravityDir": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "dragForce": 0.05,
+            "center": 2,
+            "hitRadius": 0.02,
+            "bones": [
+              11
+            ],
+            "colliderGroups": []
+          }
+        ],
+        "colliderGroups": [
+          {
+            "node": 4,
+            "colliders": [
+              {
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "radius": 0.119999982
+              }
+            ]
+          },
+          {
+            "node": 6,
+            "colliders": [
+              {
+                "offset": {
+                  "x": 1.45519152e-10,
+                  "y": 0.00279736519,
+                  "z": 0.00960076
+                },
+                "radius": 0.099999994
+              },
+              {
+                "offset": {
+                  "x": -0.0499999933,
+                  "y": 0.0596075058,
+                  "z": -0.0277838167
+                },
+                "radius": 0.06999999
+              },
+              {
+                "offset": {
+                  "x": 0.05000001,
+                  "y": 0.0596075058,
+                  "z": -0.0277838167
+                },
+                "radius": 0.06999999
+              }
+            ]
+          },
+          {
+            "node": 19,
+            "colliders": [
+              {
+                "offset": {
+                  "x": -7.799827e-09,
+                  "y": 0.0280920267,
+                  "z": 0.01672827
+                },
+                "radius": 0.0499999933
+              }
+            ]
+          },
+          {
+            "node": 20,
+            "colliders": [
+              {
+                "offset": {
+                  "x": -1.90339051e-08,
+                  "y": 0.100247264,
+                  "z": -0.012563467
+                },
+                "radius": 0.09999999
+              }
+            ]
+          },
+          {
+            "node": 32,
+            "colliders": [
+              {
+                "offset": {
+                  "x": 0.00045453012,
+                  "y": -0.009940386,
+                  "z": -0.0009915917
+                },
+                "radius": 0.05
+              },
+              {
+                "offset": {
+                  "x": -0.07446168,
+                  "y": -0.013428688,
+                  "z": -0.0003630831
+                },
+                "radius": 0.05
+              },
+              {
+                "offset": {
+                  "x": -0.1493779,
+                  "y": -0.01691699,
+                  "z": 0.000265425537
+                },
+                "radius": 0.05
+              }
+            ]
+          },
+          {
+            "node": 33,
+            "colliders": [
+              {
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 9.313226e-09
+                },
+                "radius": 0.0299999882
+              },
+              {
+                "offset": {
+                  "x": -0.0498303771,
+                  "y": -0.000108599663,
+                  "z": 0.00411333237
+                },
+                "radius": 0.03499999
+              },
+              {
+                "offset": {
+                  "x": -0.0996607542,
+                  "y": -0.000217199326,
+                  "z": 0.008226655
+                },
+                "radius": 0.0299999882
+              },
+              {
+                "offset": {
+                  "x": -0.149491161,
+                  "y": -0.0003259182,
+                  "z": 0.0123399794
+                },
+                "radius": 0.0299999882
+              }
+            ]
+          },
+          {
+            "node": 34,
+            "colliders": [
+              {
+                "offset": {
+                  "x": -0.01993227,
+                  "y": -0.00011408329,
+                  "z": 0.00164034031
+                },
+                "radius": 0.03
+              }
+            ]
+          },
+          {
+            "node": 56,
+            "colliders": [
+              {
+                "offset": {
+                  "x": -0.000454522669,
+                  "y": -0.009940386,
+                  "z": -0.00099154
+                },
+                "radius": 0.05000002
+              },
+              {
+                "offset": {
+                  "x": 0.07446172,
+                  "y": -0.0134285688,
+                  "z": -0.000363102648
+                },
+                "radius": 0.05000002
+              },
+              {
+                "offset": {
+                  "x": 0.149377942,
+                  "y": -0.0169168711,
+                  "z": 0.000265334733
+                },
+                "radius": 0.05000002
+              }
+            ]
+          },
+          {
+            "node": 57,
+            "colliders": [
+              {
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 5.58793545e-09
+                },
+                "radius": 0.0300000031
+              },
+              {
+                "offset": {
+                  "x": 0.0498304665,
+                  "y": -0.000108480453,
+                  "z": 0.00411320245
+                },
+                "radius": 0.0350000039
+              },
+              {
+                "offset": {
+                  "x": 0.09966093,
+                  "y": -0.000217080116,
+                  "z": 0.008226398
+                },
+                "radius": 0.0300000031
+              },
+              {
+                "offset": {
+                  "x": 0.149491429,
+                  "y": -0.00032556057,
+                  "z": 0.0123395957
+                },
+                "radius": 0.0300000031
+              }
+            ]
+          },
+          {
+            "node": 58,
+            "colliders": [
+              {
+                "offset": {
+                  "x": 0.01993227,
+                  "y": -0.000113964081,
+                  "z": 0.0016402863
+                },
+                "radius": 0.0300000217
+              }
+            ]
+          }
+        ]
+      },
+      "materialProperties": [
+        {
+          "name": "F00_000_00_FaceMouth_00_FACE",
+          "renderQueue": 2000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 0,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              0.97,
+              0.81,
+              0.86,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 0,
+            "_ShadeTexture": 0,
+            "_BumpMap": 1,
+            "_SphereAdd": 2,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_EyeWhite_00_EYE",
+          "renderQueue": 2000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 0,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 4,
+            "_ShadeTexture": 4,
+            "_BumpMap": 1,
+            "_SphereAdd": 2,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_FaceEyeline_00_FACE",
+          "renderQueue": 3000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 2,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 0,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 5,
+            "_DstBlend": 10,
+            "_ZWrite": 0
+          },
+          "vectorProperties": {
+            "_Color": [
+              0.0644952,
+              0.03353752,
+              0.03353752,
+              1
+            ],
+            "_ShadeColor": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 5,
+            "_ShadeTexture": 5,
+            "_BumpMap": 1,
+            "_SphereAdd": 6,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHABLEND_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_FaceEyelash_00_FACE",
+          "renderQueue": 4500,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 2,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 0,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 5,
+            "_DstBlend": 10,
+            "_ZWrite": 0
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              0.8489625,
+              0.46720022,
+              1
+            ],
+            "_ShadeColor": [
+              0.5699574,
+              0.5390334,
+              0.504298449,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 7,
+            "_ShadeTexture": 7,
+            "_BumpMap": 1,
+            "_SphereAdd": 2,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHABLEND_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_FaceBrow_00_FACE",
+          "renderQueue": 3000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.193,
+            "_OutlineScaledMaxDistance": 4.63,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 2,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 0,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 5,
+            "_DstBlend": 10,
+            "_ZWrite": 0
+          },
+          "vectorProperties": {
+            "_Color": [
+              0.9724786,
+              0.7719328,
+              0.2582904,
+              1
+            ],
+            "_ShadeColor": [
+              0.8783611,
+              0.8044396,
+              0.6127448,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 8,
+            "_ShadeTexture": 8,
+            "_BumpMap": 1,
+            "_SphereAdd": 2,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHABLEND_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_EyeIris_00_EYE",
+          "renderQueue": 2450,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 1,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 9,
+            "_ShadeTexture": 9,
+            "_BumpMap": 1,
+            "_SphereAdd": 2,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHATEST_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_EyeHighlight_00_EYE",
+          "renderQueue": 3000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 2,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 0,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 5,
+            "_DstBlend": 10,
+            "_ZWrite": 0
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 10,
+            "_ShadeTexture": 10,
+            "_BumpMap": 1,
+            "_SphereAdd": 2,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHABLEND_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_Face_00_SKIN",
+          "renderQueue": 2000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.9,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.075,
+            "_OutlineScaledMaxDistance": 4.63,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 0,
+            "_OutlineWidthMode": 1,
+            "_OutlineColorMode": 0,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              0.97,
+              0.81,
+              0.86,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 11,
+            "_ShadeTexture": 11,
+            "_BumpMap": 12,
+            "_SphereAdd": 6,
+            "_EmissionMap": 2,
+            "_OutlineWidthTexture": 13
+          },
+          "keywordMap": {
+            "MTOON_OUTLINE_COLOR_FIXED": true,
+            "MTOON_OUTLINE_WIDTH_WORLD": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_00_EyeExtra_01_EYE",
+          "renderQueue": 3000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.193,
+            "_OutlineScaledMaxDistance": 4.63,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 2,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 5,
+            "_DstBlend": 10,
+            "_ZWrite": 0
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 14,
+            "_ShadeTexture": 14,
+            "_BumpMap": 1,
+            "_SphereAdd": 6,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHABLEND_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_001_01_Body_00_SKIN",
+          "renderQueue": 2450,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.075,
+            "_OutlineScaledMaxDistance": 4.63,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 1,
+            "_OutlineWidthMode": 1,
+            "_OutlineColorMode": 1,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              0.97,
+              0.81,
+              0.86,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 15,
+            "_ShadeTexture": 15,
+            "_BumpMap": 16,
+            "_SphereAdd": 6,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "MTOON_OUTLINE_COLOR_MIXED": true,
+            "MTOON_OUTLINE_WIDTH_WORLD": true,
+            "_ALPHATEST_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_006_01_Tops_01_CLOTH",
+          "renderQueue": 2450,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.6,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.075,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 1,
+            "_OutlineWidthMode": 1,
+            "_OutlineColorMode": 0,
+            "_CullMode": 0,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "_ShadeColor": [
+              0.8117647,
+              0.8392157,
+              0.968627453,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0.274509817,
+              0.09019608,
+              0.1254902,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 17,
+            "_ShadeTexture": 17,
+            "_BumpMap": 1,
+            "_SphereAdd": 6,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "MTOON_OUTLINE_COLOR_FIXED": true,
+            "MTOON_OUTLINE_WIDTH_WORLD": true,
+            "_ALPHATEST_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Opaque"
+          }
+        },
+        {
+          "name": "F00_000_HairBack_00_HAIR",
+          "renderQueue": 3000,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.3,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0.165,
+            "_OutlineScaledMaxDistance": 1,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 2,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 1,
+            "_CullMode": 2,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 5,
+            "_DstBlend": 10,
+            "_ZWrite": 0
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              0.9669347,
+              0.8095999,
+              1
+            ],
+            "_ShadeColor": [
+              1,
+              0.968627453,
+              0.807843149,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 18,
+            "_ShadeTexture": 18,
+            "_BumpMap": 19,
+            "_SphereAdd": 20,
+            "_EmissionMap": 2
+          },
+          "keywordMap": {
+            "_ALPHABLEND_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "Transparent"
+          }
+        },
+        {
+          "name": "F00_000_Hair_00_HAIR",
+          "renderQueue": 2450,
+          "shader": "VRM/MToon",
+          "floatProperties": {
+            "_Cutoff": 0.5,
+            "_BumpScale": 1,
+            "_ReceiveShadowRate": 1,
+            "_ShadingGradeRate": 1,
+            "_ShadeShift": -0.3,
+            "_ShadeToony": 0,
+            "_LightColorAttenuation": 0,
+            "_IndirectLightIntensity": 0.1,
+            "_OutlineWidth": 0,
+            "_OutlineScaledMaxDistance": 2.71,
+            "_OutlineLightingMix": 1,
+            "_DebugMode": 0,
+            "_BlendMode": 1,
+            "_OutlineWidthMode": 0,
+            "_OutlineColorMode": 0,
+            "_CullMode": 0,
+            "_OutlineCullMode": 1,
+            "_SrcBlend": 1,
+            "_DstBlend": 0,
+            "_ZWrite": 1
+          },
+          "vectorProperties": {
+            "_Color": [
+              1,
+              0.9669347,
+              0.8095999,
+              1
+            ],
+            "_ShadeColor": [
+              1,
+              0.968627453,
+              0.807843149,
+              1
+            ],
+            "_MainTex": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_BumpMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ReceiveShadowTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_ShadingGradeTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_SphereAdd": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_EmissionColor": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "_EmissionMap": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineWidthTexture": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "_OutlineColor": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "textureProperties": {
+            "_MainTex": 21,
+            "_ShadeTexture": 21,
+            "_BumpMap": 22,
+            "_SphereAdd": 20,
+            "_EmissionMap": 23
+          },
+          "keywordMap": {
+            "_ALPHATEST_ON": true,
+            "_NORMALMAP": true
+          },
+          "tagMap": {
+            "RenderType": "TransparentCutout"
+          }
+        }
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "name": "Face"
+    },
+    {
+      "name": "Body"
+    },
+    {
+      "name": "Root"
+    },
+    {
+      "name": "J_Bip_C_Hips"
+    },
+    {
+      "name": "J_Bip_C_Spine"
+    },
+    {
+      "name": "J_Bip_C_Chest"
+    },
+    {
+      "name": "J_Bip_C_UpperChest"
+    },
+    {
+      "name": "J_Sec_L_Bust1"
+    },
+    {
+      "name": "J_Sec_L_Bust2"
+    },
+    {
+      "name": "J_Sec_R_Bust1"
+    },
+    {
+      "name": "J_Sec_R_Bust2"
+    },
+    {
+      "name": "J_Sec_C_Hood"
+    },
+    {
+      "name": "J_Sec_C_Hood_end"
+    },
+    {
+      "name": "J_Sec_L_HoodString1"
+    },
+    {
+      "name": "J_Sec_L_HoodString2"
+    },
+    {
+      "name": "J_Sec_L_HoodString2_end"
+    },
+    {
+      "name": "J_Sec_R_HoodString1"
+    },
+    {
+      "name": "J_Sec_R_HoodString2"
+    },
+    {
+      "name": "J_Sec_R_HoodString2_end"
+    },
+    {
+      "name": "J_Bip_C_Neck"
+    },
+    {
+      "name": "J_Bip_C_Head"
+    },
+    {
+      "name": "J_Adj_L_FaceEye"
+    },
+    {
+      "name": "J_Adj_R_FaceEye"
+    },
+    {
+      "name": "HairJoint-63918024-33ac-435a-a700-fd775f7c6613"
+    },
+    {
+      "name": "HairJoint-337ab4d8-9c0e-4354-88ae-0a88d479eb1d"
+    },
+    {
+      "name": "HairJoint-61b2a95a-fea5-4f21-bea4-447067b833df"
+    },
+    {
+      "name": "HairJoint-52871f42-2bba-4608-8600-f8d5875c4f4a"
+    },
+    {
+      "name": "HairJoint-79977226-0598-4370-a846-eb365a35f312"
+    },
+    {
+      "name": "HairJoint-48bef1dd-eda7-4476-bbe0-89bc5ffa695a"
+    },
+    {
+      "name": "HairJoint-45150eb2-5e8e-42f8-bc1b-d401c863e1a3"
+    },
+    {
+      "name": "HairJoint-c1e884e1-65bc-4560-b977-49064214912e"
+    },
+    {
+      "name": "J_Bip_L_Shoulder"
+    },
+    {
+      "name": "J_Bip_L_UpperArm"
+    },
+    {
+      "name": "J_Bip_L_LowerArm"
+    },
+    {
+      "name": "J_Bip_L_Hand"
+    },
+    {
+      "name": "J_Bip_L_Index1"
+    },
+    {
+      "name": "J_Bip_L_Index2"
+    },
+    {
+      "name": "J_Bip_L_Index3"
+    },
+    {
+      "name": "J_Bip_L_Index3_end"
+    },
+    {
+      "name": "J_Bip_L_Little1"
+    },
+    {
+      "name": "J_Bip_L_Little2"
+    },
+    {
+      "name": "J_Bip_L_Little3"
+    },
+    {
+      "name": "J_Bip_L_Little3_end"
+    },
+    {
+      "name": "J_Bip_L_Middle1"
+    },
+    {
+      "name": "J_Bip_L_Middle2"
+    },
+    {
+      "name": "J_Bip_L_Middle3"
+    },
+    {
+      "name": "J_Bip_L_Middle3_end"
+    },
+    {
+      "name": "J_Bip_L_Ring1"
+    },
+    {
+      "name": "J_Bip_L_Ring2"
+    },
+    {
+      "name": "J_Bip_L_Ring3"
+    },
+    {
+      "name": "J_Bip_L_Ring3_end"
+    },
+    {
+      "name": "J_Bip_L_Thumb1"
+    },
+    {
+      "name": "J_Bip_L_Thumb2"
+    },
+    {
+      "name": "J_Bip_L_Thumb3"
+    },
+    {
+      "name": "J_Bip_L_Thumb3_end"
+    },
+    {
+      "name": "J_Bip_R_Shoulder"
+    },
+    {
+      "name": "J_Bip_R_UpperArm"
+    },
+    {
+      "name": "J_Bip_R_LowerArm"
+    },
+    {
+      "name": "J_Bip_R_Hand"
+    },
+    {
+      "name": "J_Bip_R_Index1"
+    },
+    {
+      "name": "J_Bip_R_Index2"
+    },
+    {
+      "name": "J_Bip_R_Index3"
+    },
+    {
+      "name": "J_Bip_R_Index3_end"
+    },
+    {
+      "name": "J_Bip_R_Little1"
+    },
+    {
+      "name": "J_Bip_R_Little2"
+    },
+    {
+      "name": "J_Bip_R_Little3"
+    },
+    {
+      "name": "J_Bip_R_Little3_end"
+    },
+    {
+      "name": "J_Bip_R_Middle1"
+    },
+    {
+      "name": "J_Bip_R_Middle2"
+    },
+    {
+      "name": "J_Bip_R_Middle3"
+    },
+    {
+      "name": "J_Bip_R_Middle3_end"
+    },
+    {
+      "name": "J_Bip_R_Ring1"
+    },
+    {
+      "name": "J_Bip_R_Ring2"
+    },
+    {
+      "name": "J_Bip_R_Ring3"
+    },
+    {
+      "name": "J_Bip_R_Ring3_end"
+    },
+    {
+      "name": "J_Bip_R_Thumb1"
+    },
+    {
+      "name": "J_Bip_R_Thumb2"
+    },
+    {
+      "name": "J_Bip_R_Thumb3"
+    },
+    {
+      "name": "J_Bip_R_Thumb3_end"
+    },
+    {
+      "name": "J_Bip_L_UpperLeg"
+    },
+    {
+      "name": "J_Bip_L_LowerLeg"
+    },
+    {
+      "name": "J_Bip_L_Foot"
+    },
+    {
+      "name": "J_Bip_L_ToeBase"
+    },
+    {
+      "name": "J_Bip_L_ToeBase_end"
+    },
+    {
+      "name": "J_Bip_R_UpperLeg"
+    },
+    {
+      "name": "J_Bip_R_LowerLeg"
+    },
+    {
+      "name": "J_Bip_R_Foot"
+    },
+    {
+      "name": "J_Bip_R_ToeBase"
+    },
+    {
+      "name": "J_Bip_R_ToeBase_end"
+    },
+    {
+      "name": "Hairs"
+    },
+    {
+      "name": "Hair001"
+    },
+    {
+      "name": "secondary"
+    }
+  ],
+  "animations": []
+}

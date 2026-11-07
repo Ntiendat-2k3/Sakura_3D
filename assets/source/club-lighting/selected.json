@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "34089",
+    "slug": "nightclub-and-dj-booth-dj-booth-desk-b052b722",
+    "title": "DJ Booth Desk (Nightclub and DJ Booth)",
+    "summary": "A 1.9 m DJ desk: a pale laminate top at 1 m on dark steel cheeks, a brushed nosing along the working edge, a dropped shelf below for the laptop and a record crate, and a cable trough with its lid along the back.",
+    "description": "A 1.9 m DJ desk: a pale laminate top at 1 m on dark steel cheeks, a brushed nosing along the working edge, a dropped shelf below for the laptop and a record crate, and a cable trough with its lid along the back. The decks, mixer and players are separate models: lay them out on the top the way the club does. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-dj-booth-desk-b052b722",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34089/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-dj-booth-desk-b052b722",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34089/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34089/v1/poster.webp",
+    "blurhash": "UVDvfyt7D%of~qxuIURjM{%LofM{9FxuxuRj",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 32688,
+      "triangles": 688,
+      "vertices": 1559,
+      "meshes": 4,
+      "materials": 4,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.9559999704360962,
+          -7.248145909594106e-05,
+          -0.3900372276872385
+        ],
+        "max": [
+          0.9559999704360962,
+          1.0030301930459304,
+          0.40403131212696153
+        ]
+      },
+      "sizeMeters": [
+        1.912,
+        1.003,
+        0.794
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 18,
+    "publishedAt": "2026-09-11T06:24:18.957Z",
+    "updatedAt": "2026-11-02T01:57:18.146Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34089/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function DJBoothDeskNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34089/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34089/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34089/v1/model.glb\" alt=\"DJ Booth Desk (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34089/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34089/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34088",
+    "slug": "nightclub-and-dj-booth-turntable-deck-aa917183",
+    "title": "Turntable Deck (Nightclub and DJ Booth)",
+    "summary": "A direct drive turntable: a 450 mm plinth with a cast aluminium platter on a magenta slipmat, the spindle, a counterweighted S arm with its headshell and cartridge, and the pitch fader plate beside it.",
+    "description": "A direct drive turntable: a 450 mm plinth with a cast aluminium platter on a magenta slipmat, the spindle, a counterweighted S arm with its headshell and cartridge, and the pitch fader plate beside it. The platter is a named node that spins; the arm is fixed, because an arm tracking a groove is a linkage, not one rigid transform. No record is modelled on the mat. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Named pivoted nodes: platter, platter/mat. Rigid node-transform clips: spin. No skinning. No collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-turntable-deck-aa917183",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34088/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-turntable-deck-aa917183",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34088/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34088/v1/poster.webp",
+    "blurhash": "U8AvhO#s0JKc=NxHExSw00O8}^m.1WJ5]=#s",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "animated",
+        "title": "Animated"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 40736,
+      "triangles": 848,
+      "vertices": 1869,
+      "meshes": 6,
+      "materials": 5,
+      "textures": 0,
+      "animations": [
+        "spin"
+      ],
+      "boundingBox": {
+        "min": [
+          -0.22499999403953552,
+          6.104231356643744e-06,
+          -0.18000960856185869
+        ],
+        "max": [
+          0.22499999403953552,
+          0.16400377691566542,
+          0.18000960856185869
+        ]
+      },
+      "sizeMeters": [
+        0.45,
+        0.164,
+        0.36
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 17,
+    "publishedAt": "2026-09-11T06:24:18.836Z",
+    "updatedAt": "2026-11-02T02:37:07.461Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\nimport { AnimationMixer } from 'three'\n\nlet mixer\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34088/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n  mixer = new AnimationMixer(gltf.scene)\n  mixer.clipAction(gltf.animations[0]).play()\n})\n\n// Call from your render loop; deltaSeconds is time since the previous frame.\nfunction updateAssetAnimation(deltaSeconds) {\n  mixer?.update(deltaSeconds)\n}",
+      "r3f": "import { useGLTF, useAnimations } from '@react-three/drei'\nimport { useEffect } from 'react'\n\nexport function TurntableDeckNightclubAndDJBooth(props) {\n  const { scene, animations } = useGLTF('https://cdn.3dassets.dev/assets/34088/v1/model.glb')\n  const { actions, names } = useAnimations(animations, scene)\n  useEffect(() => {\n    const action = actions[names[0]]\n    action?.reset().play()\n    return () => { action?.stop() }\n  }, [actions, names])\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34088/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34088/v1/model.glb\" alt=\"Turntable Deck (Nightclub and DJ Booth)\" camera-controls auto-rotate autoplay></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34088/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.\n# Clips arrive as actions; play them from the Dope Sheet > Action Editor.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)\nvar player := model.find_child(\"AnimationPlayer\", true, false) as AnimationPlayer\nplayer.play(player.get_animation_list()[0])",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34088/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);\n// Clips import as legacy AnimationClips on the root; GetComponent<Animation>().Play() starts the first."
+    }
+  },
+  {
+    "id": "34090",
+    "slug": "nightclub-and-dj-booth-dj-mixer-b2b93529",
+    "title": "DJ Mixer (Nightclub and DJ Booth)",
+    "summary": "A four channel club mixer: a raked control surface with the channel faders and a crossfader in pale caps, a bank of gain and EQ knobs, the printed channel strip and rack ears on both cheeks.",
+    "description": "A four channel club mixer: a raked control surface with the channel faders and a crossfader in pale caps, a bank of gain and EQ knobs, the printed channel strip and rack ears on both cheeks. The faders and knobs are geometry, not controls: nothing on the surface is rigged. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-dj-mixer-b2b93529",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34090/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-dj-mixer-b2b93529",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34090/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34090/v1/poster.webp",
+    "blurhash": "U5AJ_~%i00xT_1RoIVxs00IS~qNI00$_-oD,",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 57268,
+      "triangles": 1338,
+      "vertices": 2853,
+      "meshes": 6,
+      "materials": 6,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.1940000057220459,
+          6.6229775759450715e-06,
+          -0.24514522664829902
+        ],
+        "max": [
+          0.1940000057220459,
+          0.10180836917027168,
+          0.20999999344348907
+        ]
+      },
+      "sizeMeters": [
+        0.388,
+        0.102,
+        0.455
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 13,
+    "publishedAt": "2026-09-11T06:24:18.998Z",
+    "updatedAt": "2026-11-01T19:13:03.812Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34090/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function DJMixerNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34090/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34090/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34090/v1/model.glb\" alt=\"DJ Mixer (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34090/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34090/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34104",
+    "slug": "nightclub-and-dj-booth-moving-head-light-fd0c42b4",
+    "title": "Moving Head Light (Nightclub and DJ Booth)",
+    "summary": "A moving head spot: a base with a display panel and hook clamp rails, a yoke that pans on it and a head that tilts in the yoke behind a cyan tinted lens. About 750 mm tall at level.",
+    "description": "A moving head spot: a base with a display panel and hook clamp rails, a yoke that pans on it and a head that tilts in the yoke behind a cyan tinted lens. About 750 mm tall at level. The head is parented to the yoke, so panning carries the tilt with it. The beam itself is not modelled: a light cone is a shader, not geometry. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Named pivoted nodes: yoke, head, lens. Rigid node-transform clips: spin and tilt. No skinning. No collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-moving-head-light-fd0c42b4",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34104/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-moving-head-light-fd0c42b4",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34104/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34104/v1/poster.webp",
+    "blurhash": "U28EPV?c0000DNR%kXxv00IA.m%$~qtRInM_",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "animated",
+        "title": "Animated"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 35448,
+      "triangles": 724,
+      "vertices": 1571,
+      "meshes": 6,
+      "materials": 4,
+      "textures": 0,
+      "animations": [
+        "spin",
+        "tilt"
+      ],
+      "boundingBox": {
+        "min": [
+          -0.23000000417232513,
+          6.866057372375417e-06,
+          -0.18000640326692335
+        ],
+        "max": [
+          0.23000000417232513,
+          0.7979999713897705,
+          0.22599850165248045
+        ]
+      },
+      "sizeMeters": [
+        0.46,
+        0.798,
+        0.406
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 27,
+    "publishedAt": "2026-09-11T06:24:29.181Z",
+    "updatedAt": "2026-11-02T11:37:07.508Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\nimport { AnimationMixer } from 'three'\n\nlet mixer\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34104/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n  mixer = new AnimationMixer(gltf.scene)\n  mixer.clipAction(gltf.animations[0]).play()\n})\n\n// Call from your render loop; deltaSeconds is time since the previous frame.\nfunction updateAssetAnimation(deltaSeconds) {\n  mixer?.update(deltaSeconds)\n}",
+      "r3f": "import { useGLTF, useAnimations } from '@react-three/drei'\nimport { useEffect } from 'react'\n\nexport function MovingHeadLightNightclubAndDJBooth(props) {\n  const { scene, animations } = useGLTF('https://cdn.3dassets.dev/assets/34104/v1/model.glb')\n  const { actions, names } = useAnimations(animations, scene)\n  useEffect(() => {\n    const action = actions[names[0]]\n    action?.reset().play()\n    return () => { action?.stop() }\n  }, [actions, names])\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34104/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34104/v1/model.glb\" alt=\"Moving Head Light (Nightclub and DJ Booth)\" camera-controls auto-rotate autoplay></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34104/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.\n# Clips arrive as actions; play them from the Dope Sheet > Action Editor.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)\nvar player := model.find_child(\"AnimationPlayer\", true, false) as AnimationPlayer\nplayer.play(player.get_animation_list()[0])",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34104/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);\n// Clips import as legacy AnimationClips on the root; GetComponent<Animation>().Play() starts the first."
+    }
+  },
+  {
+    "id": "34105",
+    "slug": "nightclub-and-dj-booth-strobe-bar-9b670476",
+    "title": "Strobe Bar (Nightclub and DJ Booth)",
+    "summary": "A 1.1 m four cell strobe bar: four lamp windows behind pale diffusers in a dark extrusion, with a yoke and hook clamp on top for clamping to a truss chord.",
+    "description": "A 1.1 m four cell strobe bar: four lamp windows behind pale diffusers in a dark extrusion, with a yoke and hook clamp on top for clamping to a truss chord. The flash is the engine's: nothing here is rigged, and no light or beam geometry is included. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-strobe-bar-9b670476",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34105/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-strobe-bar-9b670476",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34105/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34105/v1/poster.webp",
+    "blurhash": "U59tJx^+4m?b%g~q%LIn00IV~qIUDi009G-=",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 30052,
+      "triangles": 656,
+      "vertices": 1459,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.550000011920929,
+          4.615583178074756e-06,
+          -0.07996460026219385
+        ],
+        "max": [
+          0.550000011920929,
+          0.25599539657616943,
+          0.10799679708082646
+        ]
+      },
+      "sizeMeters": [
+        1.1,
+        0.256,
+        0.188
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 15,
+    "publishedAt": "2026-09-11T06:24:28.781Z",
+    "updatedAt": "2026-11-02T03:00:37.367Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34105/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function StrobeBarNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34105/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34105/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34105/v1/model.glb\" alt=\"Strobe Bar (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34105/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34105/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34106",
+    "slug": "nightclub-and-dj-booth-uv-bar-9812d548",
+    "title": "UV Blacklight Bar (Nightclub and DJ Booth)",
+    "summary": "A 1.1 m ultraviolet wash bar: a single long tube in a dark reflector housing with end caps, on a yoke and hook clamp. Modelled in the deep magenta a UV tube actually reads as.",
+    "description": "A 1.1 m ultraviolet wash bar: a single long tube in a dark reflector housing with end caps, on a yoke and hook clamp. Modelled in the deep magenta a UV tube actually reads as. The tube is a coloured solid, not an emitter, and nothing on the fixture moves. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-uv-bar-9812d548",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34106/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-uv-bar-9812d548",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34106/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34106/v1/poster.webp",
+    "blurhash": "U59jG==}0Js;o}?b$+E100Ex~Dr@v~0d9@=}",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 25076,
+      "triangles": 552,
+      "vertices": 1187,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.550000011920929,
+          -1.750915090234506e-05,
+          -0.07996460026219385
+        ],
+        "max": [
+          0.550000011920929,
+          0.2560175213102499,
+          0.1319723922255533
+        ]
+      },
+      "sizeMeters": [
+        1.1,
+        0.256,
+        0.212
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 13,
+    "publishedAt": "2026-09-11T06:24:29.179Z",
+    "updatedAt": "2026-11-01T07:33:48.699Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34106/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function UVBlacklightBarNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34106/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34106/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34106/v1/model.glb\" alt=\"UV Blacklight Bar (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34106/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34106/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34107",
+    "slug": "nightclub-and-dj-booth-laser-unit-c9ba16d0",
+    "title": "Laser Effect Unit (Nightclub and DJ Booth)",
+    "summary": "A housed laser effect: a cast aluminium box with the aperture window and a fan of five emitter lenses behind it, an interlock key panel, a yoke on both cheeks and a rubber base plate.",
+    "description": "A housed laser effect: a cast aluminium box with the aperture window and a fan of five emitter lenses behind it, an interlock key panel, a yoke on both cheeks and a rubber base plate. The beams are not modelled: a laser fan is a shader effect, and a mesh cone reads as a plastic horn on the front of the box. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-laser-unit-c9ba16d0",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34107/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-laser-unit-c9ba16d0",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34107/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34107/v1/poster.webp",
+    "blurhash": "U7BDf{_N008_V]RQtQx[00D$V?%f%htSM{Mw",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 33788,
+      "triangles": 712,
+      "vertices": 1566,
+      "meshes": 5,
+      "materials": 5,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.19499999284744263,
+          2.207624971189981e-06,
+          -0.14999450824600655
+        ],
+        "max": [
+          0.19499999284744263,
+          0.3249990780021452,
+          0.16300237820584274
+        ]
+      },
+      "sizeMeters": [
+        0.39,
+        0.325,
+        0.313
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 14,
+    "publishedAt": "2026-09-11T06:24:29.683Z",
+    "updatedAt": "2026-11-02T11:52:32.839Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34107/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function LaserEffectUnitNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34107/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34107/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34107/v1/model.glb\" alt=\"Laser Effect Unit (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34107/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34107/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34108",
+    "slug": "nightclub-and-dj-booth-disco-ball-on-motor-055bf9ff",
+    "title": "Disco Ball on a Motor (Nightclub and DJ Booth)",
+    "summary": "A 520 mm mirror ball hung under its rotator: the faceted ball on a capped spindle, a drop rod and a dark motor box with its indicator and a shackle on top for the truss clamp.",
+    "description": "A 520 mm mirror ball hung under its rotator: the faceted ball on a capped spindle, a drop rod and a dark motor box with its indicator and a shackle on top for the truss clamp. The ball is a named node that spins under a fixed motor. Modelled standing on y=0 so it can be checked on the ground; lift the whole model to trim height to hang it. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Named pivoted nodes: ball, ball/cap, ball/bands. Rigid node-transform clips: spin. No skinning. No collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-disco-ball-on-motor-055bf9ff",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34108/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-disco-ball-on-motor-055bf9ff",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34108/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34108/v1/poster.webp",
+    "blurhash": "U78qNixu00IUD*ayxujr00Rj~qt7?bofIUWA",
+    "category": {
+      "slug": "props",
+      "title": "Props & Furniture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "animated",
+        "title": "Animated"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 52800,
+      "triangles": 1096,
+      "vertices": 2538,
+      "meshes": 6,
+      "materials": 5,
+      "textures": 0,
+      "animations": [
+        "spin"
+      ],
+      "boundingBox": {
+        "min": [
+          -0.25999999046325684,
+          9.536743394988889e-09,
+          -0.25999999046325684
+        ],
+        "max": [
+          0.25999999046325684,
+          1.149999976158142,
+          0.25999999046325684
+        ]
+      },
+      "sizeMeters": [
+        0.52,
+        1.15,
+        0.52
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 12,
+    "publishedAt": "2026-09-11T06:24:30.498Z",
+    "updatedAt": "2026-11-02T02:16:54.864Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\nimport { AnimationMixer } from 'three'\n\nlet mixer\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34108/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n  mixer = new AnimationMixer(gltf.scene)\n  mixer.clipAction(gltf.animations[0]).play()\n})\n\n// Call from your render loop; deltaSeconds is time since the previous frame.\nfunction updateAssetAnimation(deltaSeconds) {\n  mixer?.update(deltaSeconds)\n}",
+      "r3f": "import { useGLTF, useAnimations } from '@react-three/drei'\nimport { useEffect } from 'react'\n\nexport function DiscoBallOnAMotorNightclubAndDJBooth(props) {\n  const { scene, animations } = useGLTF('https://cdn.3dassets.dev/assets/34108/v1/model.glb')\n  const { actions, names } = useAnimations(animations, scene)\n  useEffect(() => {\n    const action = actions[names[0]]\n    action?.reset().play()\n    return () => { action?.stop() }\n  }, [actions, names])\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34108/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34108/v1/model.glb\" alt=\"Disco Ball on a Motor (Nightclub and DJ Booth)\" camera-controls auto-rotate autoplay></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34108/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.\n# Clips arrive as actions; play them from the Dope Sheet > Action Editor.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)\nvar player := model.find_child(\"AnimationPlayer\", true, false) as AnimationPlayer\nplayer.play(player.get_animation_list()[0])",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34108/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);\n// Clips import as legacy AnimationClips on the root; GetComponent<Animation>().Play() starts the first."
+    }
+  },
+  {
+    "id": "34111",
+    "slug": "nightclub-and-dj-booth-led-floor-tile-module-f241f0a9",
+    "title": "LED Dance Floor Tile (Nightclub and DJ Booth)",
+    "summary": "A 1 m LED dance floor tile 80 mm deep: a dark tray with a magenta diffuser face set into a brushed aluminium frame, ported on all four edges so tiles lay out into a floor of any size.",
+    "description": "A 1 m LED dance floor tile 80 mm deep: a dark tray with a magenta diffuser face set into a brushed aluminium frame, ported on all four edges so tiles lay out into a floor of any size. The face is a coloured diffuser, not an emitter: drive the pattern with a material in the engine. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-led-floor-tile-module-f241f0a9",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34111/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-led-floor-tile-module-f241f0a9",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34111/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34111/v1/poster.webp",
+    "blurhash": "UDC=obt70cW.?HfiNFj[00R%}cjG0cjuxIWB",
+    "category": {
+      "slug": "buildings",
+      "title": "Buildings & Architecture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "modular",
+        "title": "Modular"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 18768,
+      "triangles": 384,
+      "vertices": 857,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.5,
+          3.082302401850173e-05,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.08400088363606566,
+          0.5
+        ]
+      },
+      "sizeMeters": [
+        1,
+        0.084,
+        1
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 19,
+    "publishedAt": "2026-09-11T06:24:32.352Z",
+    "updatedAt": "2026-11-02T12:19:24.957Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34111/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function LEDDanceFloorTileNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34111/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34111/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34111/v1/model.glb\" alt=\"LED Dance Floor Tile (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34111/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34111/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34112",
+    "slug": "nightclub-and-dj-booth-led-floor-tile-module-cyan-83ec37b2",
+    "title": "LED Dance Floor Tile, Cyan (Nightclub and DJ Booth)",
+    "summary": "The 1 m LED dance floor tile with a cyan diffuser face, for laying a chequered floor that reads as a pattern rather than one flat colour.",
+    "description": "The 1 m LED dance floor tile with a cyan diffuser face, for laying a chequered floor that reads as a pattern rather than one flat colour. Identical geometry to the magenta tile; only the diffuser material differs. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-led-floor-tile-module-cyan-83ec37b2",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34112/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-led-floor-tile-module-cyan-83ec37b2",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34112/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34112/v1/poster.webp",
+    "blurhash": "UBA1nrt84TjF.8juRPj[00Ri*JW:4Tfio}WB",
+    "category": {
+      "slug": "buildings",
+      "title": "Buildings & Architecture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "modular",
+        "title": "Modular"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 18804,
+      "triangles": 384,
+      "vertices": 857,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.5,
+          3.082302401850173e-05,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.08400088363606566,
+          0.5
+        ]
+      },
+      "sizeMeters": [
+        1,
+        0.084,
+        1
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 14,
+    "publishedAt": "2026-09-11T06:24:33.354Z",
+    "updatedAt": "2026-11-02T01:49:54.935Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34112/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function LEDDanceFloorTileCyanNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34112/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34112/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34112/v1/model.glb\" alt=\"LED Dance Floor Tile, Cyan (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34112/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34112/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  },
+  {
+    "id": "34114",
+    "slug": "nightclub-and-dj-booth-led-floor-tile-module-pale-b999aef0",
+    "title": "LED Dance Floor Tile, White (Nightclub and DJ Booth)",
+    "summary": "The 1 m LED dance floor tile with a white diffuser face, the third colour in a three way chequer and the one a floor reads as when the pattern is off.",
+    "description": "The 1 m LED dance floor tile with a white diffuser face, the third colour in a three way chequer and the one a floor reads as when the pattern is off. Identical geometry to the magenta tile; only the diffuser material differs. Metre units, +Y up, the dance floor side toward +Z, resting on y=0. Static geometry; no rig, collision or navigation data.",
+    "status": "published",
+    "url": "https://3dassets.dev/assets/nightclub-and-dj-booth-led-floor-tile-module-pale-b999aef0",
+    "cdnUrl": "https://cdn.3dassets.dev/assets/34114/v1/model.glb",
+    "downloadUrl": "https://3dassets.dev/download/nightclub-and-dj-booth-led-floor-tile-module-pale-b999aef0",
+    "thumbnailUrl": "https://cdn.3dassets.dev/assets/34114/v1/thumb.webp",
+    "posterUrl": "https://cdn.3dassets.dev/assets/34114/v1/poster.webp",
+    "blurhash": "UCCsmstR00WV?bfkM{j]00Rj~qjs00jaxuWA",
+    "category": {
+      "slug": "buildings",
+      "title": "Buildings & Architecture"
+    },
+    "tags": [
+      {
+        "slug": "modern",
+        "title": "Modern"
+      },
+      {
+        "slug": "realistic",
+        "title": "Realistic"
+      },
+      {
+        "slug": "modular",
+        "title": "Modular"
+      },
+      {
+        "slug": "interior",
+        "title": "Interior"
+      }
+    ],
+    "license": {
+      "slug": "cc0-1.0",
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false
+    },
+    "contributor": {
+      "username": "3dassets",
+      "name": "3D Assets",
+      "url": "https://3dassets.dev/u/3dassets"
+    },
+    "stats": {
+      "fileSize": 18808,
+      "triangles": 384,
+      "vertices": 857,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "animations": [],
+      "boundingBox": {
+        "min": [
+          -0.5,
+          3.082302401850173e-05,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.08400088363606566,
+          0.5
+        ]
+      },
+      "sizeMeters": [
+        1,
+        0.084,
+        1
+      ],
+      "hasDraco": false,
+      "hasMeshopt": false,
+      "hasKTX2": false,
+      "extensionsUsed": [
+        "KHR_mesh_quantization"
+      ]
+    },
+    "aiGenerated": true,
+    "aiModel": "Claude Opus 5",
+    "downloads": 15,
+    "publishedAt": "2026-09-11T06:24:33.835Z",
+    "updatedAt": "2026-11-02T11:59:44.318Z",
+    "usage": {
+      "threejs": "import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'\n\nconst loader = new GLTFLoader()\nloader.load('https://cdn.3dassets.dev/assets/34114/v1/model.glb', (gltf) => {\n  scene.add(gltf.scene)\n})",
+      "r3f": "import { useGLTF } from '@react-three/drei'\n\nexport function LEDDanceFloorTileWhiteNightclubAndDJBooth(props) {\n  const { scene } = useGLTF('https://cdn.3dassets.dev/assets/34114/v1/model.glb')\n  return <primitive object={scene} {...props} />\n}\nuseGLTF.preload('https://cdn.3dassets.dev/assets/34114/v1/model.glb')",
+      "modelViewer": "<model-viewer src=\"https://cdn.3dassets.dev/assets/34114/v1/model.glb\" alt=\"LED Dance Floor Tile, White (Nightclub and DJ Booth)\" camera-controls auto-rotate></model-viewer>",
+      "blender": "# Blender 4.x: File > Import > glTF 2.0, or from the Python console after downloading the file.\nimport bpy\nbpy.ops.import_scene.gltf(filepath='model.glb')  # from https://cdn.3dassets.dev/assets/34114/v1/model.glb\n# Metres and +Y up are converted to Blender's Z-up scene automatically.",
+      "godot": "# Godot 4: copy model.glb into res://models/ and the editor imports it as a scene.\nvar packed := load(\"res://models/model.glb\") as PackedScene\nvar model := packed.instantiate()\nadd_child(model)",
+      "unity": "// Unity: import model.glb with glTFast (Package Manager: com.unity.cloud.gltfast) and drag the prefab in,\n// or load it at runtime straight from the CDN:\nusing GLTFast;\nvar gltf = new GltfImport();\nif (await gltf.Load(\"https://cdn.3dassets.dev/assets/34114/v1/model.glb\")) await gltf.InstantiateMainSceneAsync(transform);"
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "source": "assets\\processed\\unity\\yui\\Assets\\YUI\\FBX\\YUI_1.fbx",
+  "sourceSha256": "ac5859b8caf83d788388c164fdc8f3e56b37f755cb9606bf8c96edf2ed1422bd",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\yui.glb",
+  "runtimeSha256": "8c37139df9dbc027c7383862d683f9cdd9795fd9628dab2301023f84a9a615c5",
+  "bytes": 5278080,
+  "heightMeters": 1.78,
+  "trianglesInSource": 92620,
+  "trianglesBeforeExport": 51120,
+  "boneCount": 174,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": false,
+  "characterId": "yui",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "sourcePackage": "assets\\source\\characters\\figure\\yui\\YUI_1.0.0.unitypackage",
+  "sourcePackageSha256": "cc66947e2ba525e0861cdc31c11dd88225264e91a4bf9e6201ada2e5ee384744",
+  "textureMaxResolution": 1024,
+  "materialConversion": "MainTex Unity sang glTF PBR, giữ màu gốc; không mang shader/script Unity sang Web.",
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "DancingMedium",
+    "duration": 16,
+    "originalDuration": 30.45833396911621,
+    "bones": 66,
+    "tracks": 24,
+    "bytes": 445159
+  },
+  {
+    "id": "DoTheRobot",
+    "duration": 16,
+    "originalDuration": 35.25,
+    "bones": 66,
+    "tracks": 24,
+    "bytes": 443821
+  },
+  {
+    "id": "DoTheTwist",
+    "duration": 16,
+    "originalDuration": 26.08333396911621,
+    "bones": 66,
+    "tracks": 24,
+    "bytes": 443780
+  },
+  {
+    "id": "GentleSwayingDancing",
+    "duration": 16,
+    "originalDuration": 52.375,
+    "bones": 66,
+    "tracks": 24,
+    "bytes": 444077
+  },
+  {
+    "id": "NPC_DancingParty",
+    "duration": 16,
+    "originalDuration": 30.54166603088379,
+    "bones": 66,
+    "tracks": 24,
+    "bytes": 442890
+  }
+]

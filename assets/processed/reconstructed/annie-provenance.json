@@ -1,0 +1,9 @@
+{
+  "approximation": true,
+  "base": "assets\\processed\\yui-player.blend",
+  "baseSha256": "0036f55abb5c284b68935441592b66f129066c8ef7379542d03935382bfcafcd",
+  "extraSource": null,
+  "reference": "test-results/annie-reference/image2.png",
+  "referenceUrl": null,
+  "note": "Bản dựng lại cho thử nghiệm, ghép và chỉnh hình học từ rig Yui do người dùng cung cấp; không phải model Airi/Annie/Kuroki gốc."
+}

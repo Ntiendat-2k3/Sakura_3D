@@ -1,0 +1,47 @@
+{
+  "source": "assets\\source\\characters\\figure\\kita\\kita dl.blend",
+  "sourceSha256": "cdb978fbf3f6ffa9025c50d0fca6086a867e70378265783d3f6d5984137dcab3",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\kita.glb",
+  "runtimeSha256": "d2c6b0cb2dfe4ac2bfb79840d5711fc9d1f4bbfcbe101f1847d92fc7120ace3a",
+  "bytes": 2724320,
+  "heightMeters": 1.78,
+  "trianglesBeforeExport": 12901,
+  "boneCount": 70,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "blinkAction",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": true,
+  "characterId": "kita",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

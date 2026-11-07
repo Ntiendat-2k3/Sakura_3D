@@ -1,0 +1,30 @@
+{
+  "meshCount": 7,
+  "meshNames": [
+    "Body_main",
+    "Costume",
+    "Eye_decal",
+    "Hair",
+    "mouth_decal",
+    "Wing&Tail",
+    "Face.001"
+  ],
+  "height": 1.7000979449912847,
+  "bounds": [
+    [
+      -0.6620217561721802,
+      -0.6547474265098572,
+      -1.4689223462482914e-05
+    ],
+    [
+      0.468708872795105,
+      0.5386902093887329,
+      1.7000832557678223
+    ]
+  ],
+  "animationActions": [
+    "Rosetta_Render_Idle"
+  ],
+  "runtimeSha256": "88dbbdefc1fc5ac170cd46423bab966d6c78b186c68ec53c274e74836d78666c",
+  "browserTest": false
+}

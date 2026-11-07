@@ -1,0 +1,47 @@
+{
+  "source": "assets\\source\\characters\\figure\\miorine\\mio mio booth.fbx",
+  "sourceSha256": "2efa97759855c8db64b87abfcec663f751bb39fbb998e3b18279c3a44e94b502",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\miorine.glb",
+  "runtimeSha256": "32a5cc14d46dddd70d53380c5d416bb009578820ae5f7307c545f4b31e905907",
+  "bytes": 1065604,
+  "heightMeters": 1.78,
+  "trianglesBeforeExport": 4427,
+  "boneCount": 86,
+  "animations": [
+    "Armature|miorine idle",
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": false,
+  "characterId": "miorine",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

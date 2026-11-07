@@ -1,0 +1,9 @@
+{
+  "home":{"x":0,"y":0.77,"z":-7.35,"yaw":0},
+  "stairs":[{"x":2.9,"z":-3.35,"width":1.1,"depth":0.3,"top":0.59},{"x":2.9,"z":-3.05,"width":1.1,"depth":0.3,"top":0.42},{"x":2.9,"z":-2.75,"width":1.1,"depth":0.3,"top":0.25}],
+  "booth": {"id":"dj-rio-console","role":"booth","position":[0,0.77,-6.5],"rotation":[0,0,0]},
+  "leftHand":[0.29,1.84,-7.08],
+  "rightHand":[-0.12,1.84,-7.08],
+  "keyLight":{"position":[0,4.5,-4.8],"target":[0,2.05,-7.35],"color":"#ffe1c2","intensity":32},
+  "rimLight":{"position":[1.5,3.7,-7.3],"target":[0,2.0,-7.35],"color":"#ff79c9","intensity":12}
+}

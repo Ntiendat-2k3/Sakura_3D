@@ -1,0 +1,36 @@
+{
+  "supportsBounds": {
+    "min": [
+      -5.940000057220459,
+      5.250000178813934,
+      -17.144999995827675
+    ],
+    "max": [
+      5.940001010894775,
+      6.680000126361847,
+      13.145000457763672
+    ]
+  },
+  "newLanterns": 24,
+  "newLanternBottomY": 5.2700000000000005,
+  "oldLanternBottomY": 4.5,
+  "centerClearWidth": 7,
+  "realSpotLights": 6,
+  "bytes": 964872,
+  "browser": "SKIPPED",
+  "sharedTextures": [
+    {
+      "url": "/assets/textures/atlas-114900868ed0.png",
+      "status": 200
+    },
+    {
+      "url": "/assets/textures/atlas-25d4aff776b8.png",
+      "status": 200
+    },
+    {
+      "url": "/assets/textures/atlas-140b2b6e4470.png",
+      "status": 200
+    }
+  ],
+  "http": 200
+}

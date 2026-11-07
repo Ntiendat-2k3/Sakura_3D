@@ -1,0 +1,23 @@
+{
+  "fps": 60.006818956699625,
+  "stage": {
+    "pan": 0.5232783154344817,
+    "tilt": -0.690914134048558,
+    "color": "ffe8dd",
+    "mode": "steady-key",
+    "spectrumIndex": null,
+    "intensity": 42,
+    "active": true
+  },
+  "show": {
+    "bpm": 112,
+    "offset": 0,
+    "cue": "groove",
+    "quality": "low",
+    "reducedFlashing": true,
+    "beat": 397.96586666666667,
+    "epoch": 1793896126941,
+    "pulse": 0.9885450849928513
+  },
+  "webglLost": false
+}

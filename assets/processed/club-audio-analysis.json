@@ -1,0 +1,72 @@
+{
+  "id": "club-music",
+  "title": "music.mp3",
+  "url": "/assets/audio/club/music.mp3",
+  "durationSeconds": 244.062041,
+  "bpm": 140.0,
+  "beatOffsetSeconds": 0.269,
+  "cues": [
+    {
+      "atSeconds": 0.0,
+      "cue": "lounge"
+    },
+    {
+      "atSeconds": 13.714,
+      "cue": "groove"
+    },
+    {
+      "atSeconds": 27.429,
+      "cue": "peak"
+    },
+    {
+      "atSeconds": 41.143,
+      "cue": "groove"
+    },
+    {
+      "atSeconds": 54.857,
+      "cue": "peak"
+    },
+    {
+      "atSeconds": 68.571,
+      "cue": "groove"
+    },
+    {
+      "atSeconds": 96.0,
+      "cue": "peak"
+    },
+    {
+      "atSeconds": 123.429,
+      "cue": "groove"
+    },
+    {
+      "atSeconds": 137.143,
+      "cue": "lounge"
+    },
+    {
+      "atSeconds": 178.286,
+      "cue": "peak"
+    },
+    {
+      "atSeconds": 192.0,
+      "cue": "groove"
+    },
+    {
+      "atSeconds": 205.714,
+      "cue": "peak"
+    },
+    {
+      "atSeconds": 219.429,
+      "cue": "groove"
+    },
+    {
+      "atSeconds": 233.143,
+      "cue": "lounge"
+    }
+  ],
+  "analysis": "Spectral-flux tempo/phase and phrase RMS cues; estimated, not manually verified",
+  "sampleRate": 44100.0,
+  "channels": 2,
+  "bytes": 9762481,
+  "sha256": "a230aacb00f6e1a352dfdb71672211f0f9d3871bfd5e299b77ea009162361b47",
+  "license": "User supplied for this local project; redistribution rights not independently verified"
+}

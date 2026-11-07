@@ -1,0 +1,46 @@
+{
+  "source": "assets\\source\\characters\\figure\\gotou_booth\\bocchi.blend",
+  "sourceSha256": "a5658faf0d2027789bb5c7058df02f6cb5e07458cb906f61c3a836187d5dbdec",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\bocchi.glb",
+  "runtimeSha256": "6703db4946c28ec0ef90a05364c6bb2444079c44932a219efa4b0767f37fd22b",
+  "bytes": 1592076,
+  "heightMeters": 1.78,
+  "trianglesBeforeExport": 10853,
+  "boneCount": 65,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": true,
+  "characterId": "bocchi",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

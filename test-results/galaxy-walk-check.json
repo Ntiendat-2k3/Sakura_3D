@@ -1,0 +1,12 @@
+{
+  "maxError": 2.2232198742534223e-15,
+  "maxPlantError": 2.2232198742534223e-15,
+  "maxLift": 0.08999870318842434,
+  "minSoleY": 0.08594331067903456,
+  "armSwingMeters": [
+    0.23786643924992434,
+    0.23776207163573815
+  ],
+  "frames": 1861,
+  "browser": "SKIPPED theo yêu cầu người dùng"
+}

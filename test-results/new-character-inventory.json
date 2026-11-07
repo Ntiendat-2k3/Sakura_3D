@@ -1,0 +1,827 @@
+{
+  "Airi": {
+    "package": "assets\\source\\characters\\figure\\Airi\\Airi FF14 Scale v1.0.unitypackage",
+    "entries": [
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Replace Material/lilToon_Body B.mat",
+        "bytes": 29523,
+        "guid": "1256a50c1f4252b44a6d5bfc5ed100b3"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture",
+        "bytes": 0,
+        "guid": "26e36a617cf02274d8a8a2b158e06ff6"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Replace Material/lilToon_Body W.mat",
+        "bytes": 29531,
+        "guid": "32be844e04c085e428114ef1d4072e42"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/1.png",
+        "bytes": 365186,
+        "guid": "54336ef4a52a63541b7c0fd30085e030"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi_Face_Normal.png",
+        "bytes": 497696,
+        "guid": "5aacaaa0eef37bb47ad24ad405f3232f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi_Face_scale_White.png",
+        "bytes": 314138,
+        "guid": "5bab7e6ffb4ac18479006df2e82eb116"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi Bibo Body white scales.png",
+        "bytes": 7301302,
+        "guid": "7282fb767d0d27f4cbb5d44edac56491"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi_Face_scale_Mask.png",
+        "bytes": 119211,
+        "guid": "83509ee55f276054eabd5e5e7d67af6c"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi_Face_scale_Black.png",
+        "bytes": 340677,
+        "guid": "98b099dda2eb55745a4edeb7b6c7aaff"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi Bibo Body scales Mask.png",
+        "bytes": 1257535,
+        "guid": "99355998c4c88db4385d33c9bff8fde3"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Replace Material",
+        "bytes": 0,
+        "guid": "ae17d3d4579bf4b469d2a04a84cea3c0"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Replace Material/lilToon_Body all B.mat",
+        "bytes": 28925,
+        "guid": "d6bf4d10870ef2440b81ab1202486f1c"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi Body Scales normal.png",
+        "bytes": 52653549,
+        "guid": "d8adef410d4e05e4fa79c6b6dbe7b64f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Replace Material/lilToon_Body all W.mat",
+        "bytes": 28935,
+        "guid": "db61efe9a0b3cd54fb3490f9f3c00bde"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale/Texture/Airi Bibo Body Black scales.png",
+        "bytes": 7924140,
+        "guid": "ddd91d83f32caaf4fb0a080dc05147e4"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Airi FF14 Scale",
+        "bytes": 0,
+        "guid": "e6478337d00d55646aa292f263141904"
+      }
+    ]
+  },
+  "Annie": {
+    "package": "assets\\source\\characters\\figure\\Annie\\PoleDanceSystem v1.0.unitypackage",
+    "entries": [
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-3 ClimbTop.anim",
+        "bytes": 6267837,
+        "guid": "071e9a8e8e7c4ea4cb7b02e432f8c027"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/PoleDance system M.asset",
+        "bytes": 730,
+        "guid": "0b565198ec7123845a5a5a78fa30a640"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/0_Material",
+        "bytes": 0,
+        "guid": "0bd76a0acb772a442aa276a8970a6659"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/PoleDance Empty.anim",
+        "bytes": 1303,
+        "guid": "0c678da6299410046927429ccddf10f7"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/2-2 GroundEffects.anim",
+        "bytes": 15820370,
+        "guid": "11827e2dfa774ce439d50baa5bcbfda9"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/0_Material/Latex Base.mat",
+        "bytes": 23448,
+        "guid": "122e36c002ebce74a90b2b3a38a4a30a"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/6.png",
+        "bytes": 67692,
+        "guid": "15af71da2a3083743b2bf0efce4500d3"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/DancePole Off.anim",
+        "bytes": 2412,
+        "guid": "177da51308d69b44a84956f94f390fdc"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/4-4 KneelStand.anim",
+        "bytes": 18077451,
+        "guid": "1cb9f542257dcb546b2a92831fc8128d"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/DancePole On.anim",
+        "bytes": 2411,
+        "guid": "1df6f082c19b1284ca230dd031385f5e"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/PoleDance Animation For Item.controller",
+        "bytes": 4326,
+        "guid": "322d3ede14b8e2a408d5a90395bab8a5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/7.png",
+        "bytes": 66622,
+        "guid": "3a82024b95796234d97ed9bf6679e4aa"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/2-1 RollerGround.anim",
+        "bytes": 6967817,
+        "guid": "430a747526e464545ad2cc446682e3a0"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/10.png",
+        "bytes": 63035,
+        "guid": "4b419b9c42eab7c44a902be221cf2b7c"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/0_Material/matcap/Matcap_7.png",
+        "bytes": 12373038,
+        "guid": "5b89572dc7b454141af4d3968322b1f5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/0_Material/Metal.mat",
+        "bytes": 23500,
+        "guid": "5c1c82255eaa30540b8f31e1cb24d89f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem",
+        "bytes": 0,
+        "guid": "5ddd7ef25f81e014c96fe97c796f6604"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/PoleDance system SubMenu.asset",
+        "bytes": 1391,
+        "guid": "637ead83eae5852499ab59dfd818d0e0"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/1.png",
+        "bytes": 31732,
+        "guid": "6cafba20d498f104a855e9be1c3d18b7"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/3-3 ComfyTop.anim",
+        "bytes": 3569834,
+        "guid": "7362e862f5edf5a498b355c84f91a078"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-1 BackScratch.anim",
+        "bytes": 25971555,
+        "guid": "76cd576d59697454cb2937bee64ed0b8"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/PoleDance Animation For Avatar.controller",
+        "bytes": 98866,
+        "guid": "7f621a4bf4e03c646b5aea0f43486dd0"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-1 FlySpin.anim",
+        "bytes": 13340730,
+        "guid": "8166032a5d5914948af4a4ea00d96d8e"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/4-1 PullSpinUp.anim",
+        "bytes": 5060360,
+        "guid": "878e78c0e25c99746a6c5d0e54c4e9a6"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/4-4 Kneels.anim",
+        "bytes": 2359147,
+        "guid": "8e6bd2cbf1f6fb445a2e830c1b5a8190"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/0_Material/matcap",
+        "bytes": 0,
+        "guid": "948325e594a54bc4f9d8e76e80bf3fd3"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon",
+        "bytes": 0,
+        "guid": "96d38c235bf7d5849aeda145f9723f4b"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/0_Material/matcap/matCap 2.png",
+        "bytes": 158935,
+        "guid": "9904a896075de1342ac12331f07dbb74"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-1 StripStand.anim",
+        "bytes": 24389973,
+        "guid": "9d3166ae5f770354c9449cd3626bd82f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/2-4 FlipiingiT.anim",
+        "bytes": 4887250,
+        "guid": "a066c772892f5584a970248e400036d4"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/9.png",
+        "bytes": 61763,
+        "guid": "b08aa07c4e5ff2145a3b1763fcb02b51"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/4-2 CrawlDown.anim",
+        "bytes": 5534747,
+        "guid": "b0cc3b01c3a9ad049b1678958e98e0c0"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/5.png",
+        "bytes": 64334,
+        "guid": "b0e402c8d970d69409ff1a9d815d2cc5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/8.png",
+        "bytes": 64526,
+        "guid": "b12c9f4a7dcccd04ba81a1358725e142"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/PoleDanceSystem.prefab",
+        "bytes": 14460,
+        "guid": "ba65bac3ed5492643a4048d9c1d9fce5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/3-4 ComeDown.anim",
+        "bytes": 1698818,
+        "guid": "c46935152a1db39468686009b61146fe"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/Repeat.png",
+        "bytes": 16046,
+        "guid": "c73d73ee11e14b641892735a29fc691f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/Random.png",
+        "bytes": 14994,
+        "guid": "c8ebbac8d11a21d4fba4a21c8afe488a"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX",
+        "bytes": 0,
+        "guid": "c9e1c59320b63ef4690aac69816932e5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-1 KickPole.anim",
+        "bytes": 15219033,
+        "guid": "cf2c3583cf72ed64db7949ed20d1a26f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/3.png",
+        "bytes": 65304,
+        "guid": "d38c672a6c585d848a37c3bb9fda362e"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/PoleDance system SubMenu Repeat.asset",
+        "bytes": 2490,
+        "guid": "d68644ebd404eb04fa122b5b942c8d90"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/PoleDance system P.asset",
+        "bytes": 632,
+        "guid": "da8a2e7c0d8441847b23330329386391"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-1 No-FeetSPin.anim",
+        "bytes": 12028578,
+        "guid": "e476ddb917a80054fb58f92da2f54cf4"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-2 BackBend.anim",
+        "bytes": 6514703,
+        "guid": "e54037502ebdabe4aa0930b63c1e97d0"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/4.png",
+        "bytes": 66868,
+        "guid": "ed633b5a5fa933e4fb308f8fc6d9b700"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Menu Icon/2.png",
+        "bytes": 59524,
+        "guid": "f89ebb354543b1c488e27ba81345900a"
+      },
+      {
+        "path": "Assets/YaokiSubWork/PoleDanceSystem/Animation&FX/1-4 Kneel.anim",
+        "bytes": 3536454,
+        "guid": "ff70d924ad199d64d99c9fbec29f38b8"
+      }
+    ]
+  },
+  "Kuroki": {
+    "package": "assets\\source\\characters\\figure\\Kuroki\\LivingBodysuit Alpha Kuroki v1.0.unitypackage",
+    "entries": [
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Body.mat",
+        "bytes": 23897,
+        "guid": "03a627d6291d12c42b7f0e9c4e30ea32"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial",
+        "bytes": 0,
+        "guid": "0e3d740fbe3e2274d971004e65142d75"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/MatCapNail.png",
+        "bytes": 351336,
+        "guid": "0f7f5de426c4b75429ea729fe915f439"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Living Bodysuit Alpha Kuroki.unity",
+        "bytes": 110968,
+        "guid": "139af977b5adeae4b99b34bc2ce260e5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial/Tentacles.mat",
+        "bytes": 27261,
+        "guid": "1a353a2b886dd4c41ad816a35f9ac7b8"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle B_base.png",
+        "bytes": 24547280,
+        "guid": "1bbf784ee182b6f4cb33709f8e7d4c98"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Bodysuit.mat",
+        "bytes": 24049,
+        "guid": "2037b801bce00944aa51ee34de8f63ac"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/BodyEyeNeck.mat",
+        "bytes": 23939,
+        "guid": "275a70e95e271db4b9067450d9003b85"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage Empty.anim",
+        "bytes": 1313,
+        "guid": "28de6a2af1fb07e469bde6997c2447ae"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Backgrand.mat",
+        "bytes": 2208,
+        "guid": "297c88dd781b9494599a73c2e494b948"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage Mask.mask",
+        "bytes": 368,
+        "guid": "35acdc57ca748044dacc4e30ecaa149f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Tentacles.mat",
+        "bytes": 23797,
+        "guid": "38d5ba6f9ff099e4dbac521167d0a4b5"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial/Body.mat",
+        "bytes": 27476,
+        "guid": "3944925f08d6ca04ab5ff7d59220b4bc"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/matcapHair.png",
+        "bytes": 73708,
+        "guid": "408e0e3e96a466a418b54c4ec24e20bb"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage Toggle On.anim",
+        "bytes": 2438,
+        "guid": "4ddb02de8e059064ca3d0f4a853c6585"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/MatCap 5.png",
+        "bytes": 1372241,
+        "guid": "54037363ff99d154897e142784f68e49"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/1.png",
+        "bytes": 85979,
+        "guid": "589d2d56f71ae5841a7545a6b6a7594f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage Menu.asset",
+        "bytes": 699,
+        "guid": "592a7a3de0b5cd34bba49d64ea293e04"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial/TentaclesSlime.mat",
+        "bytes": 27560,
+        "guid": "599a068f6bf81ea4d8b20ad431f757de"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/TBS alpha for Kuroki ST.prefab",
+        "bytes": 7063,
+        "guid": "5fb396671ebbc9d408d8ef6c7a6dbb65"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/3.png",
+        "bytes": 84477,
+        "guid": "709976a7cd58f0f4dbb4bd8b4cfd6053"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentaclesSlime.mat",
+        "bytes": 23988,
+        "guid": "78c26c724cba88a4cae0798afaae340f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/4.png",
+        "bytes": 77285,
+        "guid": "7f0c92f4f1b25054fa243557c749126f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage Pose.anim",
+        "bytes": 84910,
+        "guid": "8cdeaa8d6e7d4d24da7a3935c76f8d90"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Slime_FlowRG.png",
+        "bytes": 19335,
+        "guid": "966ae67f39725f34cb27953fdae659c7"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/fbx",
+        "bytes": 0,
+        "guid": "98012e929f8c24f46b6f3d4b2b651db2"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle suit B_base.png",
+        "bytes": 21774,
+        "guid": "a14815368e3f4394d93da486de296c05"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki",
+        "bytes": 0,
+        "guid": "b30a89d1306c5504c8fbef1cfef9684f"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/TBS alpha for Kuroki.prefab",
+        "bytes": 151557,
+        "guid": "b3631f691849d8447aad31cec82311af"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture",
+        "bytes": 0,
+        "guid": "ba509acf3e806ee4ca84d33370c2fc60"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Matcap 3.png",
+        "bytes": 131771,
+        "guid": "c0d3f4c9ce4fdab42ada854aed67eda7"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/2.png",
+        "bytes": 83061,
+        "guid": "c40b4decd9c29bd419fe60436d837091"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/fbx/TBS alpha for Kuroki.fbx",
+        "bytes": 7978012,
+        "guid": "cead04f9c899d2b4aa074965a2715d85"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle B_normal.png",
+        "bytes": 45917175,
+        "guid": "d7d528dfaf9714c41a4b5e535edcf06e"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material",
+        "bytes": 0,
+        "guid": "d94648de456816a48896e4e088868439"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle suit A_base.png",
+        "bytes": 22408,
+        "guid": "db22f27dfb4ad2a4ea50f619cfcad616"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage Toggle Off.anim",
+        "bytes": 2439,
+        "guid": "f18b35acd09795a4da545c01776f53b9"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation",
+        "bytes": 0,
+        "guid": "f29bb2cd62e40a74fa1cb30d7ee6f700"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage FX for Avatar.controller",
+        "bytes": 19004,
+        "guid": "f2e25a565a3e57f41b4349719bc79a93"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/BodyEye.mat",
+        "bytes": 23935,
+        "guid": "f95241f9eeebb5448b658559e9d9f5c8"
+      },
+      {
+        "path": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/BindingGloveBondage FX for item.controller",
+        "bytes": 4372,
+        "guid": "fc76e22698cce1b439e7d8ffd0a019cd"
+      }
+    ]
+  },
+  "yui": {
+    "package": "assets\\source\\characters\\figure\\yui\\YUI_1.0.0.unitypackage",
+    "entries": [
+      {
+        "path": "Assets/YUI",
+        "bytes": 0,
+        "guid": "0373eec46239cca4cb32cc73606642ca"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Controllers/YUI_ActionLayer.controller",
+        "bytes": 244147,
+        "guid": "037ec3492b9f5e04ebde47fdc5ad6da7"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/Peace.anim",
+        "bytes": 39959,
+        "guid": "04f1e88185645194db7f7025a94b45c8"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Expressions/Sub menu/YUI_costume.asset",
+        "bytes": 499,
+        "guid": "109918f1f39347449b257b2d53314d0f"
+      },
+      {
+        "path": "Assets/YUI/Tacture",
+        "bytes": 0,
+        "guid": "132cd5ac8497a1e4cb6b2faf621d1d61"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Controllers/YUI_FX.controller",
+        "bytes": 168969,
+        "guid": "14a0a28e28c6fe0469f4011ab6b9af50"
+      },
+      {
+        "path": "Assets/YUI/Tacture/head.png",
+        "bytes": 3838467,
+        "guid": "15b2d1ed947584d4abbb953b8f54d8d6"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/AFK/YUI_AFK_END.anim",
+        "bytes": 217769,
+        "guid": "15c069372dd295949a045dc5157bb558"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/YUI_Prone.anim",
+        "bytes": 112515,
+        "guid": "19be48d861107e24aa39b7328c4bf5a3"
+      },
+      {
+        "path": "Assets/YUI/yui.unity",
+        "bytes": 15299,
+        "guid": "1c810216db181534e8905c955f61cf4f"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture",
+        "bytes": 0,
+        "guid": "1f5b8b40e0112b2418b898cd99ceceac"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/AFK",
+        "bytes": 0,
+        "guid": "21b0c1d0657a84349a95d4079dc32889"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Controllers",
+        "bytes": 0,
+        "guid": "2314e77aca9f3534ca79bcdbca5c31b6"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/YUI_crouch.anim",
+        "bytes": 131535,
+        "guid": "2771d010b2966c34f807ae274aee652d"
+      },
+      {
+        "path": "Assets/YUI/Tacture/hair_Mask.png",
+        "bytes": 113802,
+        "guid": "289f9d8645c9aa14588e7f3ad838c2a0"
+      },
+      {
+        "path": "Assets/YUI/Tacture/head_Mask.png",
+        "bytes": 1312808,
+        "guid": "327a20caa9ec4ec4894605849e6d7074"
+      },
+      {
+        "path": "Assets/YUI/matcap/Yui_matcap.jpg",
+        "bytes": 102981,
+        "guid": "33da73886417bdf458c264fb8ed797c0"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/Fist.anim",
+        "bytes": 59236,
+        "guid": "34e9d91b11e7fa14c824ed8beb951c52"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/Finger point.anim",
+        "bytes": 40036,
+        "guid": "3ca4287da46fe384eba80642f898fd7c"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/YUI_Standing.anim",
+        "bytes": 103329,
+        "guid": "44568d6351dee4542af116c6137bee1a"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Expressions",
+        "bytes": 0,
+        "guid": "46d7047fc0e9d7a469cf213980133e0c"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/Hand gun.anim",
+        "bytes": 40036,
+        "guid": "47aebef33493252498e906f9ea1277d0"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Expressions/YUI_ExpressionsMenu.asset",
+        "bytes": 507,
+        "guid": "4c147587346aa0b4ca2aa3019af402fb"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Blend tree/YUI_CrouchingLocomotion.asset",
+        "bytes": 3022,
+        "guid": "519a7430fc25d0b4ea32b3b76f542af7"
+      },
+      {
+        "path": "Assets/YUI/FBX",
+        "bytes": 0,
+        "guid": "59ceb586ab63d504c9587301bc20bfc8"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0",
+        "bytes": 0,
+        "guid": "602b653fe26479d4aab8221df69c500c"
+      },
+      {
+        "path": "Assets/YUI/Materials/hair.mat",
+        "bytes": 145814,
+        "guid": "657c800d87d9eae4c8277d6ac15e1dca"
+      },
+      {
+        "path": "Assets/YUI/matcap",
+        "bytes": 0,
+        "guid": "6630661f1dc63554ea0177e3142edf87"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/AFK/YUI_AFK_LOOP.anim",
+        "bytes": 217399,
+        "guid": "6b3a3e9228ac9ce4891aab9cab543707"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/Thumbs up.anim",
+        "bytes": 40081,
+        "guid": "6cbe9ef8dc574484d8a5f79ebd3d1a0c"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Controllers/YUI_Locomotion.controller",
+        "bytes": 165706,
+        "guid": "71d010950da8c6743959b3fbce061cb7"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture",
+        "bytes": 0,
+        "guid": "7323fcff842a3b1409014bd80befa31e"
+      },
+      {
+        "path": "Assets/YUI/Materials/head.mat",
+        "bytes": 145656,
+        "guid": "7607ed8a1f1e67a47a8c2bc369ae9d53"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Expressions/Sub menu/YUI_option.asset",
+        "bytes": 2465,
+        "guid": "7a879816fa35d1b4186c1ad871b39179"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Expressions/YUI_ExpressionParameters.asset",
+        "bytes": 446,
+        "guid": "7f61b97ddcf1b21439aa6532227ed8d9"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Blend tree/YUI_ProneLocomotion.asset",
+        "bytes": 2699,
+        "guid": "850cf4f475e03df40a172454d55f9e9d"
+      },
+      {
+        "path": "Assets/YUI/Tacture/hair.png",
+        "bytes": 4956865,
+        "guid": "874f5141034791540b52a945726b8a75"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/Hand open.anim",
+        "bytes": 39857,
+        "guid": "87d2bb32f8424dd4ab8b7da5abf8b71c"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Hand gesture/Main gesture/R&R.anim",
+        "bytes": 40071,
+        "guid": "90a5ea77d6dbaa94daff7eeecdb181ca"
+      },
+      {
+        "path": "Assets/YUI/Tacture/Costume.png",
+        "bytes": 8391422,
+        "guid": "9b2907313bee5224395334ef03f13f76"
+      },
+      {
+        "path": "Assets/YUI/Tacture/Costume_LIGHT.png",
+        "bytes": 386876,
+        "guid": "b305e404a7d87aa448decc23d61d8639"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Controllers/YUI_Gesture.controller",
+        "bytes": 166479,
+        "guid": "b7408e592d5cfe846b3b1dc2d88ba066"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Expressions/Sub menu",
+        "bytes": 0,
+        "guid": "bddaea698f4000142b3663e472635779"
+      },
+      {
+        "path": "Assets/YUI/Prefab/YUI_liltoon.prefab",
+        "bytes": 341419,
+        "guid": "be7c62d51986ce84a9e8070019346b64"
+      },
+      {
+        "path": "Assets/YUI/Tacture/body.png",
+        "bytes": 3692043,
+        "guid": "c121d7e78ade96f41a2fa5af405dc4ca"
+      },
+      {
+        "path": "Assets/YUI/Materials/body.mat",
+        "bytes": 145687,
+        "guid": "c56fb85924ad8964f91472eb97eace70"
+      },
+      {
+        "path": "Assets/YUI/Materials",
+        "bytes": 0,
+        "guid": "c7d60480159bc4043897e026d0223402"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation",
+        "bytes": 0,
+        "guid": "ddda65e2c452ff54e8a3c699b55762b7"
+      },
+      {
+        "path": "Assets/YUI/Materials/Customization.mat",
+        "bytes": 145565,
+        "guid": "de6a7005c2f2cc845a80fa89c5ffe8e1"
+      },
+      {
+        "path": "Assets/YUI/FBX/YUI_1.fbx",
+        "bytes": 6141036,
+        "guid": "e61570c7c305b52498de0ac824d8d363"
+      },
+      {
+        "path": "Assets/YUI/Tacture/body_Mask.png",
+        "bytes": 96744,
+        "guid": "eed7fe960b17a0e4fb2a53626594ccee"
+      },
+      {
+        "path": "Assets/YUI/Prefab",
+        "bytes": 0,
+        "guid": "f13792979af71894ba77d75f3b352a43"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Blend tree/YUI_StandingLocomotion.asset",
+        "bytes": 5103,
+        "guid": "f658eb2e4a9daa740a609c8de635eb82"
+      },
+      {
+        "path": "Assets/YUI/Materials/Customization 1.mat",
+        "bytes": 145621,
+        "guid": "f6c48ee15021b1b41a888bb7c1c46287"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Idle animation/AFK/YUI_AFK_START.anim",
+        "bytes": 223593,
+        "guid": "fa8a42390c732104eb8331bd42f044cb"
+      },
+      {
+        "path": "Assets/YUI/YUI_1.0/Blend tree",
+        "bytes": 0,
+        "guid": "fd92ef31b40dd03459f7429751d8a731"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "neon-sakura-architecture-v2",
+  "version": "0.2.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "engines": {"node": ">=20.19.0"},
+  "scripts": {
+    "predev": "docker compose up -d --wait --wait-timeout 90 postgres && corepack.cmd pnpm --filter @metaverse/database build && corepack.cmd pnpm --filter @metaverse/game-protocol build",
+    "dev": "set \"PATH=%CD%\\scripts\\bin;%PATH%\" && turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:e2e": "pnpm --filter @metaverse/web test:e2e",
+    "db:migrate": "pnpm --filter @metaverse/database migrate",
+    "db:undo": "pnpm --filter @metaverse/database undo",
+    "db:seed": "pnpm --filter @metaverse/database seed",
+    "db:status": "pnpm --filter @metaverse/database status",
+    "music:sync": "python scripts/import-club-playlist.py",
+    "characters:flair": "node scripts/prepare-club-motion.mjs --mixamo --file=Flair.fbx && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts"
+  },
+  "devDependencies": {"turbo":"^2.3.3", "typescript":"^5.7.3"}
+}

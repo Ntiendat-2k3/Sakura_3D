@@ -1,0 +1,29 @@
+{
+  "name": "@metaverse/database",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "migrate": "tsx src/migrate.ts up",
+    "undo": "tsx src/migrate.ts down",
+    "status": "tsx src/migrate.ts pending",
+    "seed": "tsx src/seed.ts"
+  },
+  "dependencies": {
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "umzug": "^3.8.2",
+    "reflect-metadata": "^0.2.2",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.10.0",
+    "@types/validator": "^13.12.2"
+  }
+}

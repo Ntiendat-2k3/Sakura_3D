@@ -1,0 +1,11 @@
+{
+  "rows":[-17,-11,-5,1,7,13],
+  "anchorY":6.32,
+  "lanternX":[-4.85,-3.8,3.8,4.85],
+  "cordTop":1.05,
+  "facadeBaseY":4.5,
+  "bracket":{"wallX":5.65,"tipX":3.3,"beamY":6.4,"postBottomY":5.25,"postTopY":6.68},
+  "lightRows":[-11,1,13],
+  "light":{"x":4.35,"height":5.7,"targetX":2.7,"intensity":65,"color":"#ff2439","distance":14,"angle":0.6},
+  "road":{"roughness":0.28,"metalness":0.12}
+}

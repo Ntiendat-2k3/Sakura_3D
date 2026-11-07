@@ -1,0 +1,47 @@
+{
+  "source": "assets\\source\\characters\\figure\\nijika\\nijika.blend",
+  "sourceSha256": "22a4524db745eee97bb4de73a14abde93f627def601032300faca1f8373b39c8",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\nijika.glb",
+  "runtimeSha256": "2838f9f996979f11d14058a2894c5f8bae91f375bb2902711a2268f58cf3ff40",
+  "bytes": 1528836,
+  "heightMeters": 1.78,
+  "trianglesInSource": 9291,
+  "trianglesBeforeExport": 9291,
+  "boneCount": 67,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": false,
+  "characterId": "nijika",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

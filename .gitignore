@@ -1,0 +1,46 @@
+node_modules/
+.pnpm-store/
+.next/
+.turbo/
+.history/
+.playwright-mcp/
+dist/
+coverage/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.env
+.env.*.local
+*.log
+.DS_Store
+
+# Bản sao lưu tự động của Blender; giữ file .blend nguồn.
+*.blend[0-9]
+
+# Bộ Kenney có nhiều định dạng tương đương; pipeline chỉ nhập GLB/glTF.
+/assets/source/kenney-*/Models/*
+!/assets/source/kenney-*/Models/GLB format/
+!/assets/source/kenney-*/Models/GLTF format/
+!/assets/source/kenney-*/Models/Textures/
+/assets/source/kenney-*/Previews/
+/assets/source/kenney-*/Isometric/
+/assets/source/kenney-*/Side/
+/assets/source/kenney-*/*.png
+
+# Asset do người dùng cung cấp đang chờ xác minh quyền phân phối.
+/*.rar
+/assets/source/characters/club-import/
+/apps/web/public/assets/characters/club-local/
+/assets/processed/rosetta-greeter.blend
+/assets/processed/rosetta-greeter.blend1
+/assets/processed/rosetta-dance-preview.glb
+/assets/processed/rosetta-before-restore/
+/assets/processed/rosetta-restored.glb
+/assets/processed/rosetta-restored.blend
+/assets/processed/rosetta-restored.blend1
+/assets/processed/rosetta-greeting-preview.glb
+/assets/processed/galaxy-walk-preview.glb
+/assets/processed/*-user-dance-preview.glb
+/assets/processed/dj-rio-preview.glb
+/assets/processed/dj-rio-stage-preview.blend*
+/test-results/tmp/

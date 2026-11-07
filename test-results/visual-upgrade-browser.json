@@ -1,0 +1,123 @@
+{
+  "pass": true,
+  "start": {
+    "x": -1.399999976158142,
+    "z": 5,
+    "camera": [
+      0.09770394567795737,
+      4.599999999999993,
+      13
+    ]
+  },
+  "wall": {
+    "x": 5.070400238037109,
+    "z": 1.169600009918213,
+    "camera": [
+      3.2701097070149787,
+      4.599999999999993,
+      9.169601496909955
+    ]
+  },
+  "stopped": {
+    "x": 5.070400238037109,
+    "z": 1.169600009918213,
+    "camera": [
+      3.2703634596502393,
+      4.599999999999993,
+      9.169600198156829
+    ]
+  },
+  "collisionPassed": true,
+  "cameraInside": false,
+  "timing": {
+    "frames": 208,
+    "fps": 59.12850984504253,
+    "frameTimeP95Ms": 17.199999999999818
+  },
+  "rendering": {
+    "viewport": [
+      1536,
+      776
+    ],
+    "gpu": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "contextLost": false,
+    "renderStats": {
+      "calls": 40,
+      "triangles": 47372,
+      "textures": 9,
+      "geometries": 48
+    },
+    "bloom": "false",
+    "assets": [
+      {
+        "url": "http://localhost:3000/assets/buildings/sakura-street.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/ground.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/road-straight.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/road-crossing.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/light-curved.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/lantern.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/electricity-pole.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/electricity-wires.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/tree_oak.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/vending-machine.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/props/dumpster.glb",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/textures/atlas-25d4aff776b8.png",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/textures/atlas-140b2b6e4470.png",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/textures/atlas-114900868ed0.png",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/textures/atlas-312bebec6c97.png",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/textures/atlas-b6d6a7e0d5b6.png",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/assets/textures/atlas-4ec2cd813f95.png",
+        "status": 200
+      }
+    ]
+  },
+  "errors": []
+}

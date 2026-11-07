@@ -1,0 +1,33 @@
+{
+  "name": "@metaverse/web",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1 -p 3000",
+    "build": "next build",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test test/club-projection.spec.ts test/club-dance.spec.ts test/character-cache.spec.ts test/rosetta-motion.spec.ts test/host-motion.spec.ts test/player-animation.spec.ts test/player-presentation.spec.ts test/club-preparation.spec.ts test/dj-music.spec.ts",
+    "test:player:e2e": "node --test test/player-room.e2e.cjs",
+    "start": "next start -H 127.0.0.1 -p 3000",
+    "test:e2e": "node --test --test-concurrency=1 test/multiplayer.e2e.cjs test/club.e2e.cjs"
+  },
+  "dependencies": {
+    "@metaverse/game-protocol": "workspace:*",
+    "@pixiv/three-vrm": "3.5.5",
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "colyseus.js": "^0.16.0",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.173.0",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,1275 @@
+{
+  "project": "Neon Sakura City",
+  "generatedAt": "2026-11-06T10:49:39.594839+00:00",
+  "overallStatus": "PARTIAL",
+  "sources": [
+    {
+      "id": "kenney-commercial",
+      "title": "City Kit Commercial",
+      "version": "2.1",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/city-kit-commercial",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseEvidence": "assets/source/kenney-commercial/License.txt",
+      "licenseSha256": "c38cee408d022e57e44e49f1cd655c2fe0dc881a07b881276b795215cdc0de69",
+      "files": [
+        {
+          "path": "assets/source/kenney-commercial/Models/GLB format/building-a.glb",
+          "sha256": "5cf220f90ee3f21e7abe38055ca409a48aa8ef1d5ffab6e2deb99e5a5e1ed5e0"
+        },
+        {
+          "path": "assets/source/kenney-commercial/Models/GLB format/building-d.glb",
+          "sha256": "40605608e9aca0c98e294acff4af0f74afa417a51d589be490ca98f33ce4c2f5"
+        },
+        {
+          "path": "assets/source/kenney-commercial/Models/GLB format/building-f.glb",
+          "sha256": "633a25f7fb3ccf98e304a885a36ed900aecee5bde7ecd554729dec753cceea78"
+        },
+        {
+          "path": "assets/source/kenney-commercial/Models/GLB format/building-h.glb",
+          "sha256": "6881613ce218bb33a0f56137d4d33b00d307c47e518fbb21ccba1083efbea896"
+        },
+        {
+          "path": "assets/source/kenney-commercial/Models/GLB format/building-skyscraper-a.glb",
+          "sha256": "d8339bbb75944ff91d1ec9a70ec6dead71bd98b94a42d3dd0fc1f3b107ddbe85"
+        },
+        {
+          "path": "assets/source/kenney-commercial/Models/GLB format/detail-awning-wide.glb",
+          "sha256": "d37ba34be414cef84db966e548e2c558088aec3fdf68763565b9caf95c11ac5f"
+        }
+      ],
+      "status": "DONE"
+    },
+    {
+      "id": "kenney-roads",
+      "title": "City Kit Roads",
+      "version": "2.2",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/city-kit-roads",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseEvidence": "assets/source/kenney-roads/License.txt",
+      "licenseSha256": "d23f51360ca2cd81711bc5b09ddfb28ac94da96d7ca2dbdef12c50f33f35c353",
+      "files": [
+        {
+          "path": "assets/source/kenney-roads/Models/GLB format/dumpster.glb",
+          "sha256": "d87d4a812567d0e8b91c545387d758aa18f7652eb8fc0aed2513a83abb988dd6"
+        },
+        {
+          "path": "assets/source/kenney-roads/Models/GLB format/electricity-pole.glb",
+          "sha256": "08c9b924e297eaa46bbd79ac09795c045848a4e38a72b2ce4f973517f840c2d3"
+        },
+        {
+          "path": "assets/source/kenney-roads/Models/GLB format/electricity-wires.glb",
+          "sha256": "514027014328d1465c9cb60755efc184a2b53a9c1ecd77fd34c5265856bd699f"
+        },
+        {
+          "path": "assets/source/kenney-roads/Models/GLB format/light-curved.glb",
+          "sha256": "154dcce9d58ec2cd165e26c91a89c97bdd2838cf06d255099b3570df84f82ec6"
+        },
+        {
+          "path": "assets/source/kenney-roads/Models/GLB format/road-crossing.glb",
+          "sha256": "eb8575335f77da513add4a5277a7b60cad4886c07966f024b15cf55e5966cde3"
+        },
+        {
+          "path": "assets/source/kenney-roads/Models/GLB format/road-straight.glb",
+          "sha256": "f8f744fb6fc96dedd5ad1f763b550166f2624a3757bf36b4b39969d2e7cacac5"
+        }
+      ],
+      "status": "DONE"
+    },
+    {
+      "id": "kenney-nature",
+      "title": "Nature Kit",
+      "version": "2.1",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseEvidence": "assets/source/kenney-nature/License.txt",
+      "licenseSha256": "cb96b75e3560ac78d7a53ce6f083f4cdb5c53faea6141b62d63458dcfe1e4b9d",
+      "files": [
+        {
+          "path": "assets/source/kenney-nature/Models/GLTF format/tree_oak.glb",
+          "sha256": "d7fd8773674928c50c11b66d12c636d49bdcc15a8b1c7fbb98e6f63a3439a3f3"
+        }
+      ],
+      "status": "DONE"
+    }
+  ],
+  "originalWork": {
+    "author": "Neon Sakura City project, authored with Codex",
+    "license": "Original project work; project licensing applies. Third-party bases remain CC0.",
+    "files": [
+      "scripts/build-sakura-street.py",
+      "scripts/create-street-textures.py"
+    ],
+    "work": [
+      "UV remapping and shared surface atlas",
+      "Japanese venue signs and blade signs",
+      "Pleated lantern mesh",
+      "Vending machine mesh and original soda labels",
+      "Street assembly and collision proxies"
+    ],
+    "fontNote": "Yu Gothic and Arial were rasterized locally from Windows fonts. No font files are redistributed."
+  },
+  "processing": {
+    "blender": "5.2.3 LTS",
+    "gltfTransform": "4.5.0",
+    "steps": [
+      "import CC0 GLB",
+      "normalize meters, pivots, Y-up export",
+      "remap UV/materials",
+      "dedup, weld, quantize, prune",
+      "external shared PNG atlases",
+      "Khronos glTF Validator"
+    ],
+    "sourceScene": "assets/processed/neon-sakura-street.blend",
+    "runtimeGLBBytes": 1920728,
+    "runtimeTextureBytes": 1851226,
+    "textureFiles": [
+      {
+        "file": "apps/web/public/assets/textures/atlas-114900868ed0.png",
+        "bytes": 160159,
+        "sha256": "114900868ed08d5dba769e78d08b628226592ff46e69c8049e45409b201b721e"
+      },
+      {
+        "file": "apps/web/public/assets/textures/atlas-140b2b6e4470.png",
+        "bytes": 4579,
+        "sha256": "140b2b6e4470ea33de61fce645cac150170d0bef6509de5789330e17af97ee40"
+      },
+      {
+        "file": "apps/web/public/assets/textures/atlas-25d4aff776b8.png",
+        "bytes": 1577519,
+        "sha256": "25d4aff776b8c81b8fbfc7c15693396411962ad2ee68e87cd49a7855cc9292ed"
+      },
+      {
+        "file": "apps/web/public/assets/textures/atlas-312bebec6c97.png",
+        "bytes": 61126,
+        "sha256": "312bebec6c97f11385892d696378569c4c66cb4abf7da6ff1d0d1a19c4a67db7"
+      },
+      {
+        "file": "apps/web/public/assets/textures/atlas-4ec2cd813f95.png",
+        "bytes": 5426,
+        "sha256": "4ec2cd813f9577d2d08b7be6787b00de223cf20a805e3b91ba345f49f198d67b"
+      },
+      {
+        "file": "apps/web/public/assets/textures/atlas-b6d6a7e0d5b6.png",
+        "bytes": 42417,
+        "sha256": "b6d6a7e0d5b6fb76c16de659b1ff85c8748035cdb4d6b90d7a6c9270f6a6cc87"
+      }
+    ]
+  },
+  "runtimeAssets": [
+    {
+      "file": "apps/web/public/assets/buildings/denmu-club.glb",
+      "bytes": 292816,
+      "triangles": 6200,
+      "meshes": 7,
+      "materials": 4,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "08240abe4848c26aa8873a680d8ba575b29e3e5c310a11dd8d5ca5bc89f6d4db"
+    },
+    {
+      "file": "apps/web/public/assets/buildings/sakura-street.glb",
+      "bytes": 548304,
+      "triangles": 19146,
+      "meshes": 11,
+      "materials": 3,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png",
+        "../textures/atlas-312bebec6c97.png",
+        "../textures/atlas-b6d6a7e0d5b6.png"
+      ],
+      "sha256": "53bfbbe81ead9a9295ac936069185badd0882c561bcaac6d86087772e23fd0e9"
+    },
+    {
+      "file": "apps/web/public/assets/props/dumpster.glb",
+      "bytes": 10276,
+      "triangles": 234,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "90041bf1d36c023dcc4713bd93b2f080ad1b9b07252f9cc2f3ca8ec5653a2d45"
+    },
+    {
+      "file": "apps/web/public/assets/props/electricity-pole.glb",
+      "bytes": 16668,
+      "triangles": 416,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "3eb5e37a365111b8d815bfff3dc8c0c441748259f51be0d6761f21cf4efe5953"
+    },
+    {
+      "file": "apps/web/public/assets/props/electricity-wires.glb",
+      "bytes": 4068,
+      "triangles": 72,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "171f1d99c160ccf56d4cd874d93be71ae0404fdc0577fd4c3f0d73ddfb44047d"
+    },
+    {
+      "file": "apps/web/public/assets/props/ground.glb",
+      "bytes": 2368,
+      "triangles": 12,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "fd1af491bf1a8cdd2510575fe6f8390e11aeb13c6972c2ad5a70318c9e75e926"
+    },
+    {
+      "file": "apps/web/public/assets/props/lantern-garlands.glb",
+      "bytes": 964872,
+      "triangles": 14256,
+      "meshes": 3,
+      "materials": 3,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "b237641bdbbc3b1b1040910ccadd9915949fe44edcb2a198e7e72d1edb89f47b"
+    },
+    {
+      "file": "apps/web/public/assets/props/lantern.glb",
+      "bytes": 44620,
+      "triangles": 932,
+      "meshes": 1,
+      "materials": 2,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "14ff50a9ef89dd7ddeb57da8dc77d5b0d217d30b69c0f26e35b7d7ee539fdf05"
+    },
+    {
+      "file": "apps/web/public/assets/props/light-curved.glb",
+      "bytes": 5332,
+      "triangles": 92,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "024cde6855cfe0d7a4311d6c755c81fb0f62319806b158228c0d95e75f148b50"
+    },
+    {
+      "file": "apps/web/public/assets/props/road-crossing.glb",
+      "bytes": 5280,
+      "triangles": 104,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "cf7c0dc3fa22e2c0e11d3f33a74f2dc4522492f24487ada27be8c2b50b825d54"
+    },
+    {
+      "file": "apps/web/public/assets/props/road-straight.glb",
+      "bytes": 3660,
+      "triangles": 44,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "310cc7ea1399ff4d3fbc61bfa2097a26a9873416a35b2d404a1e995320fde09d"
+    },
+    {
+      "file": "apps/web/public/assets/props/tree_oak.glb",
+      "bytes": 9556,
+      "triangles": 196,
+      "meshes": 1,
+      "materials": 1,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png"
+      ],
+      "sha256": "d20b390c62927da49d3137242f86bee313388470256c0c227f28c49a2342ae6c"
+    },
+    {
+      "file": "apps/web/public/assets/props/vending-machine.glb",
+      "bytes": 12908,
+      "triangles": 218,
+      "meshes": 1,
+      "materials": 2,
+      "textures": [
+        "../textures/atlas-114900868ed0.png",
+        "../textures/atlas-25d4aff776b8.png",
+        "../textures/atlas-140b2b6e4470.png",
+        "../textures/atlas-4ec2cd813f95.png"
+      ],
+      "sha256": "7140ee7d65392f537c0474bb0b7f139ef213b222853901fb867a768f6f6183da"
+    }
+  ],
+  "layout": {
+    "venues": 8,
+    "backgroundTowers": 3,
+    "props": 85,
+    "authoritativeLayout": "packages/game-protocol/src/street-layout.json",
+    "propLayout": "apps/web/public/assets/props/placements.json"
+  },
+  "characters": [
+    {
+      "name": "Reina",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Mizuki",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Sora",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Yuna",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Kaede",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Hana",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Rika",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Emi",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Ayame",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    },
+    {
+      "name": "Madam Kurenai",
+      "status": "BLOCKED",
+      "runtimeAsset": null,
+      "reason": "No adult anime model with verified redistribution license has been supplied or imported."
+    }
+  ],
+  "limitations": [
+    "Kenney low-poly architecture restyled for a Japanese nightlife street; premium anime art direction is PARTIAL.",
+    "Player avatar remains the existing geometric placeholder, not a finished anime character.",
+    "Trees are recolored stylized Kenney foliage, not botanical sakura models.",
+    "Authoritative collisions cover building rectangles; decorative props and trees do not have individual colliders.",
+    "GLB files reference shared textures; distribute the entire public/assets directory.",
+    "WINE and POP VRM0/MToon and procedural dance are tested locally; the original ten-name roster is not completed.",
+    "Denmu has a local test interior and a separate room; other venues have no enterable interiors yet.",
+    "Club character redistribution is pending complete license evidence."
+  ],
+  "evidence": {
+    "before": "test-results/screenshots/asset-upgrade-before.png",
+    "after": "test-results/screenshots/asset-upgrade-after.png",
+    "validator": "assets/processed/gltf-validation.json",
+    "collision": "assets/processed/collision-audit.json",
+    "browser": "test-results/visual-upgrade-browser.json"
+  },
+  "clubPrototype": {
+    "status": "DONE_LOCAL_TEST",
+    "report": "docs/reports/CLUB_TEST_REPORT.md",
+    "sourceScene": "assets/processed/denmu-club.blend",
+    "environmentModel": "apps/web/public/assets/buildings/denmu-club.glb",
+    "environmentAuthor": "Neon Sakura City project; original geometry with the existing project atlas",
+    "characters": [
+      {
+        "name": "wine",
+        "source": "assets/source/characters/club-import/WINE/MODEL/WINE.vrm",
+        "runtime": "apps/web/public/assets/characters/club-local/wine.vrm",
+        "sourceSha256": "fc95b5a559b15c9a06e2ea7d9a997cc880622e46b39c10827007ed098354aea7",
+        "runtimeSha256": "6680597d139181a313487bbd1d61b40f8f7f57a4a77a3539f3851574a824b373",
+        "bytes": 8910036,
+        "metadata": {
+          "version": "",
+          "author": "BABYCORE / NANAMI",
+          "contactInformation": "https://twitter.com/bab1ecore",
+          "reference": "",
+          "title": "WINE",
+          "texture": 24,
+          "allowedUserName": "Everyone",
+          "violentUssageName": "Allow",
+          "sexualUssageName": "Allow",
+          "commercialUssageName": "Allow",
+          "otherPermissionUrl": "",
+          "licenseName": "Other",
+          "otherLicenseUrl": ""
+        },
+        "textures": [
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              256,
+              256
+            ],
+            "runtime": [
+              256,
+              256
+            ]
+          },
+          {
+            "original": [
+              512,
+              256
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          }
+        ],
+        "animationsInSource": 0,
+        "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+      },
+      {
+        "name": "pop",
+        "source": "assets/source/characters/club-import/POP!/MODEL/POP!.vrm",
+        "runtime": "apps/web/public/assets/characters/club-local/pop.vrm",
+        "sourceSha256": "b044fe88a3a69af085e225a80dfe2f43c190b8bf2a2a6724f0e93f07c69b9e54",
+        "runtimeSha256": "21560b7ab9464c6a7061849ea54dc960a54391dc1e8c592d3b9b7c880510f5e0",
+        "bytes": 7389400,
+        "metadata": {
+          "version": "",
+          "author": "nanami / babycore",
+          "contactInformation": "https://twitter.com/bab1ecore",
+          "reference": "",
+          "title": "POP",
+          "texture": 26,
+          "allowedUserName": "Everyone",
+          "violentUssageName": "Allow",
+          "sexualUssageName": "Allow",
+          "commercialUssageName": "Allow",
+          "otherPermissionUrl": "",
+          "licenseName": "Other",
+          "otherLicenseUrl": ""
+        },
+        "textures": [
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              768,
+              192
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              768,
+              384
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              256,
+              256
+            ],
+            "runtime": [
+              256,
+              256
+            ]
+          },
+          {
+            "original": [
+              512,
+              256
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              384,
+              768
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              768,
+              768
+            ]
+          }
+        ],
+        "animationsInSource": 0,
+        "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+      },
+      {
+        "name": "galaxy",
+        "source": "assets/source/characters/club-import/club-e1/Galaxy Summer.vrm",
+        "runtime": "apps/web/public/assets/characters/club-local/galaxy.vrm",
+        "sourceSha256": "5c69543db3387e4db026a0920ebd56bac46038ddfc4ead3fa1b1ef8addb9dfd9",
+        "runtimeSha256": "8d5c14f89a19b34b0b929cc6869e1a37455f7451d576465b6e609252b7c4a79e",
+        "bytes": 8610220,
+        "metadata": {
+          "version": "1",
+          "author": "OneLazerBunny (Nanasita)",
+          "contactInformation": "https://www.instagram.com/onelazerbunny/",
+          "title": "Galaxy Summer",
+          "texture": 21,
+          "allowedUserName": "ExplicitlyLicensedPerson",
+          "violentUssageName": "Disallow",
+          "sexualUssageName": "Disallow",
+          "commercialUssageName": "Allow",
+          "licenseName": "Redistribution_Prohibited"
+        },
+        "textures": [
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              8,
+              8
+            ],
+            "runtime": [
+              8,
+              8
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              1024,
+              1024
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              256,
+              256
+            ],
+            "runtime": [
+              256,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              512
+            ],
+            "runtime": [
+              512,
+              256
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              512,
+              128
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              512,
+              128
+            ]
+          },
+          {
+            "original": [
+              1024,
+              256
+            ],
+            "runtime": [
+              512,
+              128
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              256,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              256,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              512
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          },
+          {
+            "original": [
+              512,
+              1024
+            ],
+            "runtime": [
+              256,
+              512
+            ]
+          },
+          {
+            "original": [
+              2048,
+              2048
+            ],
+            "runtime": [
+              512,
+              512
+            ]
+          }
+        ],
+        "animationsInSource": 0,
+        "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+      }
+    ],
+    "animation": "Original procedural humanoid club dance; 112 BPM, room epoch, no external dance clip or audio",
+    "licenseStatus": "User supplied VRM files for local testing. Full redistribution license is pending; these models are not CC0."
+  },
+  "streetLanterns": {
+    "status": "PARTIAL",
+    "implementationStatus": "DONE",
+    "additionalLanterns": 24,
+    "oldLanternsRaised": 24,
+    "cantileverMounts": 12,
+    "newBottomY": 5.2700000000000005,
+    "facadeBottomY": 4.5,
+    "model": "apps/web/public/assets/props/lantern.glb",
+    "modelOrigin": "Lồng đèn giấy có nếp do dự án tạo trong build-sakura-street.py; dùng lại mesh/material bằng instancing.",
+    "layout": "apps/web/game/scenes/street-lantern-layout.json",
+    "wire": {
+      "file": "apps/web/public/assets/props/lantern-garlands.glb",
+      "bytes": 964872,
+      "sha256": "b237641bdbbc3b1b1040910ccadd9915949fe44edcb2a198e7e72d1edb89f47b"
+    },
+    "sourceBlend": "assets/processed/street-lantern-garlands.blend",
+    "sourceBuilder": "scripts/build-street-lanterns.py",
+    "lighting": "Sáu SpotLight đỏ thật hắt xuống đường; vật liệu đường giảm roughness để có ánh phản xạ specular. Không SSR/mirror hoặc shadow map riêng từng đèn.",
+    "report": "docs/reports/STREET_LANTERN_HEIGHT_REPORT.md",
+    "browserStatus": "SKIPPED theo yêu cầu người dùng"
+  }
+}

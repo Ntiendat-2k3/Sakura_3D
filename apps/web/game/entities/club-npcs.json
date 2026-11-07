@@ -1,0 +1,6 @@
+{
+  "wine": {"name":"WINE","url":"/assets/characters/club-local/wine.vrm","format":"vrm","height":1.78,"role":"dancer"},
+  "pop": {"name":"POP","url":"/assets/characters/club-local/pop.vrm","format":"vrm","height":1.78,"role":"dancer"},
+  "rosetta": {"name":"Rosetta","url":"/assets/characters/club-local/rosetta-restored.glb","format":"glb","height":2.12,"role":"door-greeter","position":[3.5,0,2.5],"yaw":-1.5707963267948966,"caption":"F · Trò chuyện"},
+  "galaxy": {"name":"DJ Rio","url":"/assets/characters/club-local/galaxy.vrm","format":"vrm","height":1.78,"role":"dj","caption":"DENMU · Resident DJ"}
+}

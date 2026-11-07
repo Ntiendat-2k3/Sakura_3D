@@ -1,0 +1,30 @@
+{
+  "meshCount": 7,
+  "meshNames": [
+    "Body",
+    "Body_main",
+    "Costume",
+    "Eye_decal",
+    "Hair",
+    "mouth_decal",
+    "Wing&Tail"
+  ],
+  "height": 1.8044544365257025,
+  "bounds": [
+    [
+      -0.49420222640037537,
+      -0.6473773121833801,
+      0.015835175290703773
+    ],
+    [
+      0.4818151295185089,
+      0.3779444694519043,
+      1.8202896118164062
+    ]
+  ],
+  "animationActions": [
+    "Rosetta_GentleSwayingDancing"
+  ],
+  "runtimeSha256": "fdecad3decccc735f39c7c0029d571bd27b3d62c3ec5f9272068a3c69f5a1ab9",
+  "browserTest": false
+}

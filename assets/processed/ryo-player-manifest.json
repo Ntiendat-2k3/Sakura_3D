@@ -1,0 +1,46 @@
+{
+  "source": "assets\\source\\characters\\figure\\ryo model\\ryo.blend",
+  "sourceSha256": "f176fb208f93f47a4f275f52ff30ab6946acbdb91c8d15661c68c150c7afa5be",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\ryo.glb",
+  "runtimeSha256": "f651d4d0e7cdd9d61d9348f31002c92445a256925e64d06becaec6f8fb1a2402",
+  "bytes": 1684884,
+  "heightMeters": 1.78,
+  "trianglesBeforeExport": 12585,
+  "boneCount": 60,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": true,
+  "characterId": "ryo",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

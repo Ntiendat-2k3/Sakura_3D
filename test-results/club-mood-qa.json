@@ -1,0 +1,150 @@
+{
+  "pass": true,
+  "performance": {
+    "low": {
+      "fps": 59.66993998908894,
+      "p95": 17.100000000002183,
+      "render": {
+        "calls": 296,
+        "triangles": 131984,
+        "textures": 86,
+        "geometries": 261
+      },
+      "viewport": [
+        1536,
+        776
+      ],
+      "dpr": 1.25
+    },
+    "medium": {
+      "fps": 59.29824561403508,
+      "p95": 17.100000000002183,
+      "render": {
+        "calls": 299,
+        "triangles": 132032,
+        "textures": 86,
+        "geometries": 265
+      },
+      "viewport": [
+        1536,
+        776
+      ],
+      "dpr": 1.25
+    },
+    "high": {
+      "fps": 60.00976903216801,
+      "p95": 17.099999999998545,
+      "render": {
+        "calls": 302,
+        "triangles": 132080,
+        "textures": 86,
+        "geometries": 268
+      },
+      "viewport": [
+        1536,
+        776
+      ],
+      "dpr": 1.25
+    }
+  },
+  "wine": [
+    "NPC_DancingParty",
+    "GentleSwayingDancing",
+    "DoTheTwist",
+    "DancingMedium"
+  ],
+  "pop": [
+    "DancingMedium",
+    "DoTheTwist",
+    "NPC_DancingParty",
+    "GentleSwayingDancing"
+  ],
+  "spectrum": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    0,
+    1
+  ],
+  "style": "hip-sway-body-roll",
+  "blended": true,
+  "minRootY": -0.030262573728486383,
+  "maxRootY": 0.08961766154205365,
+  "lightA": {
+    "pan": -0.846326279933021,
+    "tilt": -0.34676693866883224,
+    "color": "39d9fe",
+    "mode": "spectrum",
+    "spectrumIndex": 3,
+    "intensity": 48.74978665920846,
+    "active": true
+  },
+  "lightB": {
+    "pan": -0.7936056145584708,
+    "tilt": -0.35747855208662926,
+    "color": "3ad8ff",
+    "mode": "spectrum",
+    "spectrumIndex": 4,
+    "intensity": 49.909313817154086,
+    "active": true
+  },
+  "keyA": {
+    "pan": 0.5232783154344817,
+    "tilt": -0.690914134048558,
+    "color": "ffe8dd",
+    "mode": "steady-key",
+    "spectrumIndex": null,
+    "intensity": 80,
+    "active": true
+  },
+  "keyB": {
+    "pan": 0.5232783154344817,
+    "tilt": -0.690914134048558,
+    "color": "ffe8dd",
+    "mode": "steady-key",
+    "spectrumIndex": null,
+    "intensity": 80,
+    "active": true
+  },
+  "room": "j6Ni9gXIP",
+  "sync": {
+    "a": {
+      "bpm": 180,
+      "offset": 0,
+      "cue": "peak",
+      "quality": "medium",
+      "reducedFlashing": true,
+      "beat": 84.297,
+      "epoch": 1793896042846,
+      "pulse": 0.354481916585873
+    },
+    "b": {
+      "bpm": 180,
+      "offset": 0,
+      "cue": "peak",
+      "quality": "low",
+      "reducedFlashing": true,
+      "beat": 84.666,
+      "epoch": 1793896042846,
+      "pulse": 0.24818839918211105
+    },
+    "phaseError": 0.07199999999999979
+  },
+  "chat": true,
+  "disconnect": true,
+  "noMusic": true,
+  "errors": [],
+  "failed": [],
+  "sockets": [
+    "ws://localhost:3000/_next/webpack-hmr",
+    "ws://localhost:2567/DxCWdaXg3/Rpv4l1QSb",
+    "ws://localhost:2567/DxCWdaXg3/F0i6f2P7H",
+    "ws://localhost:2567/DxCWdaXg3/j6Ni9gXIP",
+    "ws://localhost:3000/_next/webpack-hmr",
+    "ws://localhost:2567/DxCWdaXg3/ZT_AwfG68",
+    "ws://localhost:2567/DxCWdaXg3/Z3ISZuTcy",
+    "ws://localhost:2567/DxCWdaXg3/j6Ni9gXIP"
+  ]
+}

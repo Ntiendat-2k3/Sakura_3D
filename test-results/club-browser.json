@@ -1,0 +1,63 @@
+{
+  "pass": true,
+  "animationChanged": true,
+  "first": {
+    "wine": {
+      "seconds": 8.148,
+      "hipsZ": -0.06119136319095262,
+      "armZ": -0.8825438259987185
+    },
+    "pop": {
+      "seconds": 8.15,
+      "hipsZ": 0.062114778027830955,
+      "armZ": -0.4681183398099606
+    }
+  },
+  "second": {
+    "wine": {
+      "seconds": 9.486,
+      "hipsZ": -0.07955157848875943,
+      "armZ": -0.43073749410855466
+    },
+    "pop": {
+      "seconds": 9.489,
+      "hipsZ": 0.07847330998817086,
+      "armZ": -0.8674849970745574
+    }
+  },
+  "performanceSample": {
+    "fps": 60.00342876735813,
+    "p95": 17.100000000002183,
+    "stats": {
+      "calls": 190,
+      "triangles": 108822,
+      "textures": 86,
+      "geometries": 214
+    },
+    "viewport": [
+      1536,
+      776
+    ]
+  },
+  "sameRoom": true,
+  "chat": true,
+  "disconnect": true,
+  "returnAndReentry": true,
+  "reentry": {
+    "npcWINE": "ready",
+    "npcPOP": "ready",
+    "contextLost": false,
+    "stats": {
+      "calls": 191,
+      "triangles": 108834,
+      "textures": 88,
+      "geometries": 215
+    }
+  },
+  "errors": [],
+  "focusRegression": {
+    "typingEDidNotTransfer": true,
+    "focusedButtonEExit": true,
+    "clickEntryAndWASD": true
+  }
+}

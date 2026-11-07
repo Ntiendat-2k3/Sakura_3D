@@ -1,0 +1,276 @@
+{
+  "source": "assets\\source\\characters\\club-import\\Rosetta\\Render\\Render.blend",
+  "sourceSha256": "add0116b16d8b414eb95a1ea3f207f570813c8a7a6028d443fd74a2dbd3db4f7",
+  "candidate": "assets\\processed\\rosetta-restored.glb",
+  "bytes": 8953288,
+  "sha256": "88dbbdefc1fc5ac170cd46423bab966d6c78b186c68ec53c274e74836d78666c",
+  "meshes": [
+    "Body",
+    "Body_main",
+    "Costume",
+    "Eye_decal",
+    "Hair",
+    "mouth_decal",
+    "Wing&Tail"
+  ],
+  "expression": {
+    "Body": {
+      "ふ": 1.0,
+      "にやり": 0.7429999709129333
+    },
+    "Costume": {},
+    "Eye_decal": {
+      "Eye_down": 0.564084529876709,
+      "Eye_left": 0.25
+    }
+  },
+  "materials": [
+    {
+      "name": "Tail&Wing",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Face_transparent",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": true,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Nail",
+      "albedoSize": null,
+      "metallic": 0,
+      "roughness": 0.12727272510528564,
+      "alpha": false,
+      "sourceColorBaked": false
+    },
+    {
+      "name": "Costume_Sub",
+      "albedoSize": [
+        2048,
+        2048
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Eye_Right",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": true,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Hair",
+      "albedoSize": [
+        2048,
+        2048
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Tights",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0.3181818127632141,
+      "roughness": 0.3181818127632141,
+      "alpha": false,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Costume_Metal",
+      "albedoSize": null,
+      "metallic": 1,
+      "roughness": 0.2454545497894287,
+      "alpha": false,
+      "sourceColorBaked": false
+    },
+    {
+      "name": "Costume_Jewel",
+      "albedoSize": null,
+      "metallic": 1,
+      "roughness": 0.25,
+      "alpha": false,
+      "sourceColorBaked": false
+    },
+    {
+      "name": "Face",
+      "albedoSize": [
+        2048,
+        2048
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": true,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Skin",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Neck",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "Eye_Left",
+      "albedoSize": [
+        1024,
+        1024
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": true,
+      "sourceColorBaked": true
+    },
+    {
+      "name": "mouth",
+      "albedoSize": null,
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": false
+    },
+    {
+      "name": "Costume_Main",
+      "albedoSize": [
+        2048,
+        2048
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alpha": false,
+      "sourceColorBaked": true
+    }
+  ],
+  "animation": "Rosetta_Render_Idle",
+  "durationSeconds": 8,
+  "outfit": "Fixed original black/red costume; castoff excluded",
+  "license": "User supplied, local testing only; redistribution not verified",
+  "materialPolicy": {
+    "Face_transparent": "MASK",
+    "Face": "MASK",
+    "Skin": "OPAQUE",
+    "Tights": "OPAQUE",
+    "Nail": "OPAQUE",
+    "Neck": "OPAQUE",
+    "Costume_Main": "OPAQUE",
+    "Costume_Sub": "OPAQUE",
+    "Costume_Metal": "OPAQUE",
+    "Costume_Jewel": "OPAQUE",
+    "Eye_Left": "MASK",
+    "Eye_Right": "MASK",
+    "Hair": "OPAQUE",
+    "mouth": "OPAQUE",
+    "Tail&Wing": "OPAQUE"
+  },
+  "runtimeSha256": "88dbbdefc1fc5ac170cd46423bab966d6c78b186c68ec53c274e74836d78666c",
+  "textureCompression": [
+    {
+      "image": "Rosetta_Skin_Albedo",
+      "before": 485418,
+      "after": 155051,
+      "meanAbsoluteErrorRGB": [
+        0.5489015579223633,
+        0.38304710388183594,
+        0.8886985778808594
+      ]
+    },
+    {
+      "image": "Rosetta_Tights_Albedo",
+      "before": 695101,
+      "after": 220215,
+      "meanAbsoluteErrorRGB": [
+        0.6458959579467773,
+        0.4337892532348633,
+        0.6843729019165039
+      ]
+    },
+    {
+      "image": "Rosetta_Neck_Albedo",
+      "before": 656852,
+      "after": 216123,
+      "meanAbsoluteErrorRGB": [
+        0.5347747802734375,
+        0.4461507797241211,
+        0.6377182006835938
+      ]
+    },
+    {
+      "image": "Rosetta_Costume_Main_Albedo",
+      "before": 919062,
+      "after": 214577,
+      "meanAbsoluteErrorRGB": [
+        0.3141622543334961,
+        0.46904468536376953,
+        0.5592925548553467
+      ]
+    },
+    {
+      "image": "Rosetta_Costume_Sub_Albedo",
+      "before": 1787555,
+      "after": 552194,
+      "meanAbsoluteErrorRGB": [
+        0.6524527072906494,
+        0.370025634765625,
+        0.7106499671936035
+      ]
+    },
+    {
+      "image": "Rosetta_Hair_Albedo",
+      "before": 1625069,
+      "after": 450474,
+      "meanAbsoluteErrorRGB": [
+        0.4987053871154785,
+        0.24340271949768066,
+        0.7740151882171631
+      ]
+    },
+    {
+      "image": "Rosetta_Tail&Wing_Albedo",
+      "before": 668956,
+      "after": 219723,
+      "meanAbsoluteErrorRGB": [
+        0.5900964736938477,
+        0.44449710845947266,
+        0.6735515594482422
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "meshCount": 5,
+  "meshNames": [
+    "Body",
+    "Body_main",
+    "Costume",
+    "Hair",
+    "Tail_Wing"
+  ],
+  "height": 1.7738095833919942,
+  "bounds": [
+    [
+      -0.2918642461299896,
+      -0.1267663836479187,
+      0.0021491930820047855
+    ],
+    [
+      0.21451802551746368,
+      0.5253871083259583,
+      1.775958776473999
+    ]
+  ],
+  "animationActions": [
+    "Rosetta_Welcome_Wave"
+  ],
+  "runtimeSha256": "30fa6935df574b00baa964deed829e623cd9f5ec43451da88ee897b6cb1461db",
+  "browserTest": false
+}

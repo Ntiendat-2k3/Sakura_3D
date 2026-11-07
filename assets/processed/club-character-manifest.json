@@ -1,0 +1,820 @@
+[
+  {
+    "name": "wine",
+    "source": "assets/source/characters/club-import/WINE/MODEL/WINE.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/wine.vrm",
+    "sourceSha256": "fc95b5a559b15c9a06e2ea7d9a997cc880622e46b39c10827007ed098354aea7",
+    "runtimeSha256": "6680597d139181a313487bbd1d61b40f8f7f57a4a77a3539f3851574a824b373",
+    "bytes": 8910036,
+    "metadata": {
+      "version": "",
+      "author": "BABYCORE / NANAMI",
+      "contactInformation": "https://twitter.com/bab1ecore",
+      "reference": "",
+      "title": "WINE",
+      "texture": 24,
+      "allowedUserName": "Everyone",
+      "violentUssageName": "Allow",
+      "sexualUssageName": "Allow",
+      "commercialUssageName": "Allow",
+      "otherPermissionUrl": "",
+      "licenseName": "Other",
+      "otherLicenseUrl": ""
+    },
+    "textures": [
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          256,
+          256
+        ],
+        "runtime": [
+          256,
+          256
+        ]
+      },
+      {
+        "original": [
+          512,
+          256
+        ],
+        "runtime": [
+          512,
+          256
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      }
+    ],
+    "animationsInSource": 0,
+    "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+  },
+  {
+    "name": "pop",
+    "source": "assets/source/characters/club-import/POP!/MODEL/POP!.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/pop.vrm",
+    "sourceSha256": "b044fe88a3a69af085e225a80dfe2f43c190b8bf2a2a6724f0e93f07c69b9e54",
+    "runtimeSha256": "21560b7ab9464c6a7061849ea54dc960a54391dc1e8c592d3b9b7c880510f5e0",
+    "bytes": 7389400,
+    "metadata": {
+      "version": "",
+      "author": "nanami / babycore",
+      "contactInformation": "https://twitter.com/bab1ecore",
+      "reference": "",
+      "title": "POP",
+      "texture": 26,
+      "allowedUserName": "Everyone",
+      "violentUssageName": "Allow",
+      "sexualUssageName": "Allow",
+      "commercialUssageName": "Allow",
+      "otherPermissionUrl": "",
+      "licenseName": "Other",
+      "otherLicenseUrl": ""
+    },
+    "textures": [
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          256,
+          256
+        ],
+        "runtime": [
+          256,
+          256
+        ]
+      },
+      {
+        "original": [
+          512,
+          256
+        ],
+        "runtime": [
+          512,
+          256
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      }
+    ],
+    "animationsInSource": 0,
+    "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+  },
+  {
+    "name": "galaxy",
+    "source": "assets/source/characters/club-import/club-e1/Galaxy Summer.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/galaxy.vrm",
+    "sourceSha256": "5c69543db3387e4db026a0920ebd56bac46038ddfc4ead3fa1b1ef8addb9dfd9",
+    "runtimeSha256": "8d5c14f89a19b34b0b929cc6869e1a37455f7451d576465b6e609252b7c4a79e",
+    "bytes": 8610220,
+    "metadata": {
+      "version": "1",
+      "author": "OneLazerBunny (Nanasita)",
+      "contactInformation": "https://www.instagram.com/onelazerbunny/",
+      "title": "Galaxy Summer",
+      "texture": 21,
+      "allowedUserName": "ExplicitlyLicensedPerson",
+      "violentUssageName": "Disallow",
+      "sexualUssageName": "Disallow",
+      "commercialUssageName": "Allow",
+      "licenseName": "Redistribution_Prohibited"
+    },
+    "textures": [
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          512,
+          256
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          512,
+          256
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          256,
+          256
+        ],
+        "runtime": [
+          256,
+          256
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          512,
+          256
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          512,
+          128
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          512,
+          128
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          512,
+          128
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          256,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          256,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          256,
+          512
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      }
+    ],
+    "animationsInSource": 0,
+    "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+  }
+]

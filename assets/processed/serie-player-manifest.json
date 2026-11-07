@@ -1,0 +1,47 @@
+{
+  "source": "assets\\source\\characters\\figure\\booth_serie\\serie.blend",
+  "sourceSha256": "ecba2142f97ccccaa7554681f571ccba411423b45dfd5779fa9efb47c6659192",
+  "runtime": "apps\\web\\public\\assets\\characters\\player\\serie.glb",
+  "runtimeSha256": "d260eec85e85276a359a202ad6bc79d9df91866ee420e0cc6ca8610151e754aa",
+  "bytes": 1543900,
+  "heightMeters": 1.78,
+  "trianglesInSource": 6946,
+  "trianglesBeforeExport": 6946,
+  "boneCount": 90,
+  "animations": [
+    "Dance",
+    "GuitarDance",
+    "Idle",
+    "Run",
+    "Sit",
+    "Walk",
+    "Blink",
+    "Flair"
+  ],
+  "dance": {
+    "beatsPerLoop": 8,
+    "authorBpm": 120
+  },
+  "locomotion": {
+    "Walk": {
+      "speed": 1.4,
+      "duration": 0.8,
+      "contactRatio": 0.6
+    },
+    "Run": {
+      "speed": 4.8,
+      "duration": 0.6,
+      "contactRatio": 0.26
+    }
+  },
+  "guitar": false,
+  "characterId": "serie",
+  "license": "Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.",
+  "browserVerified": false,
+  "flair": {
+    "source": "assets/source/animations/club/mixamo/Flair.fbx",
+    "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
+    "duration": 0.92,
+    "playback": "natural"
+  }
+}

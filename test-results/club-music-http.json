@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "bytes": 9762481,
+  "sha256": "a230aacb00f6e1a352dfdb71672211f0f9d3871bfd5e299b77ea009162361b47",
+  "durationSeconds": 244.062041,
+  "bpmEstimate": 140,
+  "beatOffsetEstimate": 0.269,
+  "automaticCues": 14,
+  "headStatus": 200,
+  "mime": "audio/mpeg",
+  "rangeStatus": 206,
+  "browserPlayback": "SKIPPED — người dùng chưa cho phép Playwright"
+}

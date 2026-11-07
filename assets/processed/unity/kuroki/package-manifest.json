@@ -1,0 +1,32 @@
+{
+  "source": "assets\\source\\characters\\figure\\Kuroki\\LivingBodysuit Alpha Kuroki v1.0.unitypackage",
+  "sourceSha256": "76f908012a8e878b4fb752ff0ba9597cf76794f8eeba574e24aa395376ca81ba",
+  "assets": {
+    "03a627d6291d12c42b7f0e9c4e30ea32": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Body.mat",
+    "0f7f5de426c4b75429ea729fe915f439": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/MatCapNail.png",
+    "1a353a2b886dd4c41ad816a35f9ac7b8": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial/Tentacles.mat",
+    "1bbf784ee182b6f4cb33709f8e7d4c98": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle B_base.png",
+    "2037b801bce00944aa51ee34de8f63ac": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Bodysuit.mat",
+    "275a70e95e271db4b9067450d9003b85": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/BodyEyeNeck.mat",
+    "297c88dd781b9494599a73c2e494b948": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Backgrand.mat",
+    "38d5ba6f9ff099e4dbac521167d0a4b5": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/Tentacles.mat",
+    "3944925f08d6ca04ab5ff7d59220b4bc": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial/Body.mat",
+    "408e0e3e96a466a418b54c4ec24e20bb": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/matcapHair.png",
+    "54037363ff99d154897e142784f68e49": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/MatCap 5.png",
+    "589d2d56f71ae5841a7545a6b6a7594f": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/1.png",
+    "599a068f6bf81ea4d8b20ad431f757de": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentacleMaterial/TentaclesSlime.mat",
+    "5fb396671ebbc9d408d8ef6c7a6dbb65": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/TBS alpha for Kuroki ST.prefab",
+    "709976a7cd58f0f4dbb4bd8b4cfd6053": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/3.png",
+    "78c26c724cba88a4cae0798afaae340f": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/TentaclesSlime.mat",
+    "7f0c92f4f1b25054fa243557c749126f": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/4.png",
+    "966ae67f39725f34cb27953fdae659c7": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Slime_FlowRG.png",
+    "a14815368e3f4394d93da486de296c05": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle suit B_base.png",
+    "b3631f691849d8447aad31cec82311af": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/TBS alpha for Kuroki.prefab",
+    "c0d3f4c9ce4fdab42ada854aed67eda7": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Matcap 3.png",
+    "c40b4decd9c29bd419fe60436d837091": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/FX&Animation/2.png",
+    "cead04f9c899d2b4aa074965a2715d85": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/fbx/TBS alpha for Kuroki.fbx",
+    "d7d528dfaf9714c41a4b5e535edcf06e": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle B_normal.png",
+    "db22f27dfb4ad2a4ea50f619cfcad616": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Texture/Tentacle suit A_base.png",
+    "f95241f9eeebb5448b658559e9d9f5c8": "Assets/YaokiSubWork/Living Bodysuit Alpha/Kuroki/Material/BodyEye.mat"
+  }
+}

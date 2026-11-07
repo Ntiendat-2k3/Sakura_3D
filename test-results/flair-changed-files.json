@@ -1,0 +1,23 @@
+[
+  "packages/game-protocol/src/index.ts",
+  "packages/game-protocol/test/movement.spec.ts",
+  "apps/web/game/systems/retargetSkeletonMotion.ts",
+  "apps/web/game/systems/rosettaMotion.ts",
+  "apps/web/game/systems/playerAnimation.ts",
+  "apps/web/game/systems/playerDanceShortcuts.ts",
+  "apps/web/game/systems/PlayerInput.tsx",
+  "apps/web/game/entities/Avatar.tsx",
+  "apps/web/game/ui/WorldHud.tsx",
+  "apps/web/scripts/bake-player-flair.ts",
+  "apps/web/test/glb.ts",
+  "apps/web/test/player-animation.spec.ts",
+  "apps/web/test/club-preparation.spec.ts",
+  "apps/web/test/player-room.e2e.cjs",
+  "apps/web/test/rosetta-greeting.check.ts",
+  "apps/web/test/greeter-assets.check.ts",
+  "scripts/prepare-club-motion.mjs",
+  "scripts/build-player-character.py",
+  "scripts/preview-npc-motion.py",
+  "assets/source/animations/club/mixamo/FLAIR.md",
+  "package.json"
+]

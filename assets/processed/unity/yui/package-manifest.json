@@ -1,0 +1,22 @@
+{
+  "source": "assets\\source\\characters\\figure\\yui\\YUI_1.0.0.unitypackage",
+  "sourceSha256": "cc66947e2ba525e0861cdc31c11dd88225264e91a4bf9e6201ada2e5ee384744",
+  "assets": {
+    "15b2d1ed947584d4abbb953b8f54d8d6": "Assets/YUI/Tacture/head.png",
+    "289f9d8645c9aa14588e7f3ad838c2a0": "Assets/YUI/Tacture/hair_Mask.png",
+    "327a20caa9ec4ec4894605849e6d7074": "Assets/YUI/Tacture/head_Mask.png",
+    "33da73886417bdf458c264fb8ed797c0": "Assets/YUI/matcap/Yui_matcap.jpg",
+    "657c800d87d9eae4c8277d6ac15e1dca": "Assets/YUI/Materials/hair.mat",
+    "7607ed8a1f1e67a47a8c2bc369ae9d53": "Assets/YUI/Materials/head.mat",
+    "874f5141034791540b52a945726b8a75": "Assets/YUI/Tacture/hair.png",
+    "9b2907313bee5224395334ef03f13f76": "Assets/YUI/Tacture/Costume.png",
+    "b305e404a7d87aa448decc23d61d8639": "Assets/YUI/Tacture/Costume_LIGHT.png",
+    "be7c62d51986ce84a9e8070019346b64": "Assets/YUI/Prefab/YUI_liltoon.prefab",
+    "c121d7e78ade96f41a2fa5af405dc4ca": "Assets/YUI/Tacture/body.png",
+    "c56fb85924ad8964f91472eb97eace70": "Assets/YUI/Materials/body.mat",
+    "de6a7005c2f2cc845a80fa89c5ffe8e1": "Assets/YUI/Materials/Customization.mat",
+    "e61570c7c305b52498de0ac824d8d363": "Assets/YUI/FBX/YUI_1.fbx",
+    "eed7fe960b17a0e4fb2a53626594ccee": "Assets/YUI/Tacture/body_Mask.png",
+    "f6c48ee15021b1b41a888bb7c1c46287": "Assets/YUI/Materials/Customization 1.mat"
+  }
+}

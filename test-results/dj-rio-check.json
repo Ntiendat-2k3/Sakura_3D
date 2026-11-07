@@ -1,0 +1,13 @@
+{
+  "name": "DJ Rio",
+  "position": [
+    0,
+    0.77,
+    -7.35
+  ],
+  "frames": 901,
+  "maxHandError": 1.6050308076832566e-15,
+  "maxFootDrift": 1.3323399077344022e-15,
+  "handTravel": 0.20122713416544502,
+  "browser": "SKIPPED theo yêu cầu người dùng"
+}
