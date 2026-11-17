@@ -86,5 +86,13 @@
     "addedBytes": 50716,
     "maxCorrection": 0.1255802007737327,
     "runtimeSha256": "6703db4946c28ec0ef90a05364c6bb2444079c44932a219efa4b0767f37fd22b"
+  },
+  {
+    "id": "mint",
+    "duration": 0.92,
+    "tracks": 53,
+    "addedBytes": 37632,
+    "maxCorrection": 0.13118937862502578,
+    "runtimeSha256": "c29843c7c57e6986cd833ddbca27ed2ef20402cd182d94379b75201bc70adc4c"
   }
 ]

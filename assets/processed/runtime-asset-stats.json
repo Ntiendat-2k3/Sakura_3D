@@ -13,9 +13,35 @@
     "sha256": "08240abe4848c26aa8873a680d8ba575b29e3e5c310a11dd8d5ca5bc89f6d4db"
   },
   {
+    "file": "apps/web/public/assets/buildings/love-hotel.glb",
+    "bytes": 545956,
+    "triangles": 9968,
+    "meshes": 92,
+    "materials": 12,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "098b168738cbb88777ddaad4ae63c8793a8f30768cb8010059f78f6e1f45c2a8"
+  },
+  {
+    "file": "apps/web/public/assets/buildings/reika-lounge.glb",
+    "bytes": 963644,
+    "triangles": 13452,
+    "meshes": 129,
+    "materials": 5,
+    "textures": [
+      "../textures/atlas-114900868ed0.png",
+      "../textures/atlas-25d4aff776b8.png",
+      "../textures/atlas-140b2b6e4470.png"
+    ],
+    "sha256": "52eae360a498b137d9b409d53b20be6ddd88d9a3e1530b04e66b1f9f4916878f"
+  },
+  {
     "file": "apps/web/public/assets/buildings/sakura-street.glb",
-    "bytes": 548304,
-    "triangles": 19146,
+    "bytes": 955548,
+    "triangles": 27682,
     "meshes": 11,
     "materials": 3,
     "textures": [
@@ -25,7 +51,7 @@
       "../textures/atlas-312bebec6c97.png",
       "../textures/atlas-b6d6a7e0d5b6.png"
     ],
-    "sha256": "53bfbbe81ead9a9295ac936069185badd0882c561bcaac6d86087772e23fd0e9"
+    "sha256": "e26bda7600ade053c3b55a0d59f6c29d7d0e973e69953f5845addd959ff7e902"
   },
   {
     "file": "apps/web/public/assets/props/dumpster.glb",

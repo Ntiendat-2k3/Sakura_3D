@@ -2332,5 +2332,28 @@
     "test-results/logs/club-greeter-build.log",
     "test-results/logs/club-greeter-typecheck.log",
     "test-results/logs/club-greeter-e2e.log"
-  ]
+  ],
+  "kohakuBluffProps": {
+    "status": "DONE",
+    "source": "tự dựng bằng scripts/build-kohaku-bluff-props.py",
+    "license": "original/project-owned",
+    "textures": "scripts/make-kohaku-bluff-textures.py (Pillow, tự vẽ)",
+    "blend": {
+      "path": "assets/processed/kohaku-bluff-props.blend",
+      "bytes": 151312,
+      "sha256": "41b10eedc88cfc433655f1cb388ac92798260b23876124e1816ecd93235d4dcc"
+    },
+    "files": [
+      {
+        "path": "apps/web/public/assets/props/kohaku-bluff/revolver.glb",
+        "bytes": 33632,
+        "sha256": "5afaff7d289b21d0fbc748e0593c5e3dbe247154d962283cec9517c2d6a350b5"
+      },
+      {
+        "path": "apps/web/public/assets/props/kohaku-bluff/card.glb",
+        "bytes": 44900,
+        "sha256": "c92c05243090278083fccac68b69bccef2fd1c0eff286a797bf8b0e3dc210994"
+      }
+    ]
+  }
 }

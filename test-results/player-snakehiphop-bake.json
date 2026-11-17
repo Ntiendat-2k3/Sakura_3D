@@ -1,0 +1,98 @@
+[
+  {
+    "id": "bocchi",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291356,
+    "maxCorrection": 0.04795743175347241,
+    "runtimeSha256": "a0a68f847c47d345da0e757b55bdbe8f7adff1bbf002f61b69b1823de8de1886"
+  },
+  {
+    "id": "kita",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291056,
+    "maxCorrection": 0.042756846466839506,
+    "runtimeSha256": "15d145dccc30d77fbd9b61ded16d00918345bba84ceda677ebafdb04ffef49dc"
+  },
+  {
+    "id": "ryo",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291056,
+    "maxCorrection": 0.042904208042206134,
+    "runtimeSha256": "796d9a95f1385d499eca67832f11b50d41272ee2322e1907436eb4eae292f59a"
+  },
+  {
+    "id": "ubel",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291056,
+    "maxCorrection": 0.04672914462296989,
+    "runtimeSha256": "2a38439f0bd602312a4964a3ea6cdd6ca1f14996d10aa6658429edba651300f5"
+  },
+  {
+    "id": "miorine",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291216,
+    "maxCorrection": 0.04391246205959285,
+    "runtimeSha256": "47151802c33ca37c11367052800fe676ba78747c45790859d0e4225fdd5ffed5"
+  },
+  {
+    "id": "nijika",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291176,
+    "maxCorrection": 0.05976157524812817,
+    "runtimeSha256": "cad1a71704b8b550f3ca21a34122186dd16cc643291e071c1eb6a29f70035602"
+  },
+  {
+    "id": "serie",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291012,
+    "maxCorrection": 0.055491666133069106,
+    "runtimeSha256": "f37a0562c6083dc7c74313cd2284fc26c6a79151f6338df0b7b7ed13913117a6"
+  },
+  {
+    "id": "yui",
+    "duration": 15.186666412353516,
+    "tracks": 52,
+    "addedBytes": 285364,
+    "maxCorrection": 0.03660252124991998,
+    "runtimeSha256": "d4f4ab410ed7f5e159a0e78cae5109fc7272bbb223d380030cc1956bed6dfc77"
+  },
+  {
+    "id": "airi",
+    "duration": 15.186666412353516,
+    "tracks": 52,
+    "addedBytes": 285348,
+    "maxCorrection": 0.037691525388253426,
+    "runtimeSha256": "710be344b657474c1c28a49c987c132fb809ef37ecfeabd442a407027f847537"
+  },
+  {
+    "id": "annie",
+    "duration": 15.186666412353516,
+    "tracks": 52,
+    "addedBytes": 285364,
+    "maxCorrection": 0.039298732737748795,
+    "runtimeSha256": "3b5b9a74f76a3b3467f765180a97d82fd0016c5b46939f24b475e67fa6822257"
+  },
+  {
+    "id": "kuroki",
+    "duration": 15.186666412353516,
+    "tracks": 52,
+    "addedBytes": 285368,
+    "maxCorrection": 0.039298732737748795,
+    "runtimeSha256": "72092bd58c6d0c71a80c154aa8bbdbb1504f178bfee0aec9edd2074d0f9d93d0"
+  },
+  {
+    "id": "mint",
+    "duration": 15.186666412353516,
+    "tracks": 53,
+    "addedBytes": 291492,
+    "maxCorrection": 0.05789424321681257,
+    "runtimeSha256": "784a8f2d24352d69ada43d12a424b0c4f92de77b3151e1a45acdab51b921e6e3"
+  }
+]

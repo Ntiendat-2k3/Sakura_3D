@@ -1,0 +1,873 @@
+[
+  {
+    "name": "shinku",
+    "role": "kohaku-dealer",
+    "source": "assets/source/characters/kohaku-import/shinku.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/shinku.vrm",
+    "sourceSha256": "a001de9a387d9683d9d23bd06a57bdc36a0eb48e67ce9b753ba43946e17ebb9d",
+    "runtimeSha256": "d18a4844bdf0b84e68ac0dc779ae333a2dd16d2fa5f3bc684eecb3c3e5d5f7d3",
+    "sourceBytes": 36236468,
+    "bytes": 22278376,
+    "maxTexturePx": 768,
+    "textures": [
+      {
+        "name": "T_player_076_shinku_eyes_d.tga",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 477867,
+        "newBytes": 249381
+      },
+      {
+        "name": "eye_touming_d.tga",
+        "origSize": [
+          64,
+          64
+        ],
+        "newSize": [
+          64,
+          64
+        ],
+        "origBytes": 362,
+        "newBytes": 362
+      },
+      {
+        "name": "T_player_076_shinku_face_d.tga",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 1208871,
+        "newBytes": 379624
+      },
+      {
+        "name": "T_player_076_shinku_face_outline.tga",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 595383,
+        "newBytes": 107112
+      },
+      {
+        "name": "T_player_076_shinku_hair_01_d.tga",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 2436022,
+        "newBytes": 693291
+      },
+      {
+        "name": "T_player_076_shinku_hair_02_d.tga",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 2577173,
+        "newBytes": 566229
+      },
+      {
+        "name": "T_player_076_shinku_nighty_01_d.tga",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 6392662,
+        "newBytes": 938302
+      },
+      {
+        "name": "T_player_076_shinku_nighty_02_d.tga",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 3983218,
+        "newBytes": 779697
+      },
+      {
+        "name": "eye_bantou_d.tga",
+        "origSize": [
+          64,
+          64
+        ],
+        "newSize": [
+          64,
+          64
+        ],
+        "origBytes": 363,
+        "newBytes": 363
+      },
+      {
+        "name": "shinku.png",
+        "origSize": [
+          350,
+          350
+        ],
+        "newSize": [
+          350,
+          350
+        ],
+        "origBytes": 155762,
+        "newBytes": 155762
+      }
+    ]
+  },
+  {
+    "name": "hinata",
+    "role": "kohaku-greeter",
+    "source": "assets/source/characters/kohaku-import/hinata.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/hinata.vrm",
+    "sourceSha256": "52cf82991f85b86c9492fa78120b4f00a03ba8fd95dc69bb04363bad5448ce83",
+    "runtimeSha256": "0d7a809bdc4a93a8abed984c2d88560936965ee49132d9d2b8cf4179194c1bdb",
+    "sourceBytes": 16972036,
+    "bytes": 12047900,
+    "maxTexturePx": 768,
+    "textures": [
+      {
+        "name": "_01",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 10964,
+        "newBytes": 10964
+      },
+      {
+        "name": "Shader_NoneBlack",
+        "origSize": [
+          8,
+          8
+        ],
+        "newSize": [
+          8,
+          8
+        ],
+        "origBytes": 69,
+        "newBytes": 69
+      },
+      {
+        "name": "Shader_NoneNormal",
+        "origSize": [
+          8,
+          8
+        ],
+        "newSize": [
+          8,
+          8
+        ],
+        "origBytes": 79,
+        "newBytes": 79
+      },
+      {
+        "name": "_02",
+        "origSize": [
+          1024,
+          512
+        ],
+        "newSize": [
+          768,
+          384
+        ],
+        "origBytes": 115652,
+        "newBytes": 109586
+      },
+      {
+        "name": "_03",
+        "origSize": [
+          1024,
+          512
+        ],
+        "newSize": [
+          768,
+          384
+        ],
+        "origBytes": 52047,
+        "newBytes": 49903
+      },
+      {
+        "name": "_04",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 276628,
+        "newBytes": 189693
+      },
+      {
+        "name": "_05",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 15779,
+        "newBytes": 9448
+      },
+      {
+        "name": "_06",
+        "origSize": [
+          1024,
+          512
+        ],
+        "newSize": [
+          768,
+          384
+        ],
+        "origBytes": 257295,
+        "newBytes": 165085
+      },
+      {
+        "name": "_07",
+        "origSize": [
+          1024,
+          256
+        ],
+        "newSize": [
+          768,
+          192
+        ],
+        "origBytes": 32782,
+        "newBytes": 23356
+      },
+      {
+        "name": "_08",
+        "origSize": [
+          1024,
+          256
+        ],
+        "newSize": [
+          768,
+          192
+        ],
+        "origBytes": 50388,
+        "newBytes": 41274
+      },
+      {
+        "name": "_09",
+        "origSize": [
+          1024,
+          256
+        ],
+        "newSize": [
+          768,
+          192
+        ],
+        "origBytes": 77790,
+        "newBytes": 58618
+      },
+      {
+        "name": "_10",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 916890,
+        "newBytes": 225262
+      },
+      {
+        "name": "_11",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 2958851,
+        "newBytes": 411080
+      },
+      {
+        "name": "_12",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 171218,
+        "newBytes": 129927
+      },
+      {
+        "name": "N00_000_00_HairBack_00_nml",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 86176,
+        "newBytes": 86176
+      },
+      {
+        "name": "_13",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 74629,
+        "newBytes": 74629
+      },
+      {
+        "name": "_14",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 178448,
+        "newBytes": 116009
+      },
+      {
+        "name": "_15",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 334121,
+        "newBytes": 77147
+      },
+      {
+        "name": "_16",
+        "origSize": [
+          128,
+          512
+        ],
+        "newSize": [
+          128,
+          512
+        ],
+        "origBytes": 16721,
+        "newBytes": 16721
+      },
+      {
+        "name": "_17",
+        "origSize": [
+          128,
+          512
+        ],
+        "newSize": [
+          128,
+          512
+        ],
+        "origBytes": 9168,
+        "newBytes": 9168
+      },
+      {
+        "name": "_18",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 34196,
+        "newBytes": 23848
+      },
+      {
+        "name": "_19",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 152181,
+        "newBytes": 103305
+      },
+      {
+        "name": "_20",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 54645,
+        "newBytes": 33372
+      },
+      {
+        "name": "N00_000_Hair_00_nml",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 97368,
+        "newBytes": 85655
+      },
+      {
+        "name": "Thumbnail",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 1414254,
+        "newBytes": 414684
+      },
+      {
+        "name": "MatcapWarp",
+        "origSize": [
+          8,
+          8
+        ],
+        "newSize": [
+          8,
+          8
+        ],
+        "origBytes": 69,
+        "newBytes": 69
+      },
+      {
+        "name": "N00_000_00_Face_00_out",
+        "origSize": [
+          256,
+          256
+        ],
+        "newSize": [
+          256,
+          256
+        ],
+        "origBytes": 14079,
+        "newBytes": 14079
+      }
+    ]
+  },
+  {
+    "name": "bartender",
+    "role": "kohaku-bartender",
+    "source": "assets/source/characters/kohaku-import/caca.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/bartender.vrm",
+    "sourceSha256": "c744983ea5487f370f93ac5e48d1285f7fe94e2629324ec3d73571c800db4d52",
+    "runtimeSha256": "56553face29c049236d8d76ebb7642424d263ffe83fb41b32ae2a40279440d66",
+    "sourceBytes": 16179308,
+    "bytes": 10169624,
+    "maxTexturePx": 768,
+    "textures": [
+      {
+        "name": "_01",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 46064,
+        "newBytes": 46064
+      },
+      {
+        "name": "Shader_NoneBlack",
+        "origSize": [
+          8,
+          8
+        ],
+        "newSize": [
+          8,
+          8
+        ],
+        "origBytes": 69,
+        "newBytes": 69
+      },
+      {
+        "name": "Shader_NoneNormal",
+        "origSize": [
+          8,
+          8
+        ],
+        "newSize": [
+          8,
+          8
+        ],
+        "origBytes": 79,
+        "newBytes": 79
+      },
+      {
+        "name": "_02",
+        "origSize": [
+          1024,
+          512
+        ],
+        "newSize": [
+          768,
+          384
+        ],
+        "origBytes": 111149,
+        "newBytes": 82793
+      },
+      {
+        "name": "_03",
+        "origSize": [
+          1024,
+          512
+        ],
+        "newSize": [
+          768,
+          384
+        ],
+        "origBytes": 27368,
+        "newBytes": 23416
+      },
+      {
+        "name": "_04",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 167885,
+        "newBytes": 120383
+      },
+      {
+        "name": "_05",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 15779,
+        "newBytes": 9448
+      },
+      {
+        "name": "_06",
+        "origSize": [
+          1024,
+          512
+        ],
+        "newSize": [
+          768,
+          384
+        ],
+        "origBytes": 134135,
+        "newBytes": 99046
+      },
+      {
+        "name": "_07",
+        "origSize": [
+          1024,
+          256
+        ],
+        "newSize": [
+          768,
+          192
+        ],
+        "origBytes": 9852,
+        "newBytes": 7821
+      },
+      {
+        "name": "_09",
+        "origSize": [
+          1024,
+          256
+        ],
+        "newSize": [
+          768,
+          192
+        ],
+        "origBytes": 37982,
+        "newBytes": 27916
+      },
+      {
+        "name": "_10",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 2876583,
+        "newBytes": 439564
+      },
+      {
+        "name": "_11",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 2454319,
+        "newBytes": 462745
+      },
+      {
+        "name": "_12",
+        "origSize": [
+          1024,
+          1024
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 172584,
+        "newBytes": 146319
+      },
+      {
+        "name": "N00_000_00_HairBack_00_nml",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 86176,
+        "newBytes": 86176
+      },
+      {
+        "name": "_13",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 155204,
+        "newBytes": 111249
+      },
+      {
+        "name": "_14",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 54645,
+        "newBytes": 33372
+      },
+      {
+        "name": "N00_000_Hair_00_nml_01",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 97368,
+        "newBytes": 85655
+      },
+      {
+        "name": "_19",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 155147,
+        "newBytes": 114869
+      },
+      {
+        "name": "_20",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 54645,
+        "newBytes": 33372
+      },
+      {
+        "name": "N00_000_Hair_00_nml_04",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 97368,
+        "newBytes": 85655
+      },
+      {
+        "name": "_21",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 159097,
+        "newBytes": 121195
+      },
+      {
+        "name": "_22",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 54645,
+        "newBytes": 33372
+      },
+      {
+        "name": "N00_000_Hair_00_nml_05",
+        "origSize": [
+          512,
+          1024
+        ],
+        "newSize": [
+          384,
+          768
+        ],
+        "origBytes": 97368,
+        "newBytes": 85655
+      },
+      {
+        "name": "Thumbnail",
+        "origSize": [
+          2048,
+          2048
+        ],
+        "newSize": [
+          768,
+          768
+        ],
+        "origBytes": 1617006,
+        "newBytes": 416741
+      },
+      {
+        "name": "MatcapWarp_01",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 3512,
+        "newBytes": 3512
+      },
+      {
+        "name": "N00_000_00_Face_00_out",
+        "origSize": [
+          256,
+          256
+        ],
+        "newSize": [
+          256,
+          256
+        ],
+        "origBytes": 14079,
+        "newBytes": 14079
+      },
+      {
+        "name": "MatcapWarp_02",
+        "origSize": [
+          512,
+          512
+        ],
+        "newSize": [
+          512,
+          512
+        ],
+        "origBytes": 3512,
+        "newBytes": 3512
+      }
+    ]
+  }
+]

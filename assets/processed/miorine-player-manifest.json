@@ -2,8 +2,8 @@
   "source": "assets\\source\\characters\\figure\\miorine\\mio mio booth.fbx",
   "sourceSha256": "2efa97759855c8db64b87abfcec663f751bb39fbb998e3b18279c3a44e94b502",
   "runtime": "apps\\web\\public\\assets\\characters\\player\\miorine.glb",
-  "runtimeSha256": "32a5cc14d46dddd70d53380c5d416bb009578820ae5f7307c545f4b31e905907",
-  "bytes": 1065604,
+  "runtimeSha256": "fc0c7f36622ca7c968519d63d9c07e394a9f2e9470bc33037960db452677ce4f",
+  "bytes": 2089940,
   "heightMeters": 1.78,
   "trianglesBeforeExport": 4427,
   "boneCount": 86,
@@ -14,9 +14,13 @@
     "Idle",
     "Run",
     "Sit",
-    "Walk",
     "Blink",
-    "Flair"
+    "Flair",
+    "HipHop",
+    "Maraschino",
+    "Swing",
+    "SnakeHipHop",
+    "Walk"
   ],
   "dance": {
     "beatsPerLoop": 8,
@@ -43,5 +47,39 @@
     "sourceSha256": "7fd5e3b4b174b985f6422a9ac8d8a96ed752b1fc21ec39c1a21de42cca291c00",
     "duration": 0.92,
     "playback": "natural"
+  },
+  "hiphop": {
+    "source": "assets/source/animations/club/mixamo/Hip Hop Dancing.fbx",
+    "sourceSha256": "880e3a7a392359dae7195783611a800ffd5b1d73c5e9d9c3d133ccac66de247e",
+    "duration": 6.986666603088379,
+    "playback": "natural"
+  },
+  "maraschino": {
+    "source": "assets/source/animations/club/mixamo/Dancing Maraschino Step.fbx",
+    "sourceSha256": "95d74b5e60b555b20ae872ebbb8ffdb02322b8edabff5c80874ccfca6f9465d8",
+    "duration": 3.153333349227905,
+    "playback": "natural",
+    "sampling": "24 Hz, giữ 30 Hz cho khớp có sai số vượt 1 độ"
+  },
+  "swing": {
+    "source": "assets/source/animations/club/mixamo/Swing Dancing.fbx",
+    "sourceSha256": "5ec6d0132bbaf15d864a6fd4452dbeef414f43e7154a4c7852a1f24c066c23e6",
+    "duration": 20.819999618530275,
+    "playback": "natural",
+    "sampling": "24 Hz, giữ 30 Hz cho khớp có sai số vượt 1 độ"
+  },
+  "snakehiphop": {
+    "source": "assets/source/animations/club/mixamo/Snake Hip Hop Dance.fbx",
+    "sourceSha256": "05481897b9018a732dd318bb10459c64ee896513110e08807a082fab897f77db",
+    "duration": 15.186666412353516,
+    "playback": "natural",
+    "sampling": "24 Hz, giữ 30 Hz cho khớp có sai số vượt 1 độ"
+  },
+  "walk": {
+    "source": "assets/source/animations/club/mixamo/common/Dwarf Walk.fbx",
+    "sourceSha256": "f53b8a7a0c1f518fa68d447c16d38d7d092f7af4b3852001ebc205d3c4f53d2c",
+    "duration": 1.0200000238418578,
+    "playback": "natural",
+    "sampling": "24 Hz, giữ 30 Hz cho khớp có sai số vượt 1 độ"
   }
 }

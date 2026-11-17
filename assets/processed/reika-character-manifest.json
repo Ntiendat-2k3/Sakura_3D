@@ -1,0 +1,850 @@
+[
+  {
+    "name": "yuzu",
+    "role": "greeter",
+    "source": "assets/source/characters/reika-import/yuzu.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/yuzu.vrm",
+    "sourceSha256": "9d0f5c4d1e13de68bab63c192c0585c089fe7546c6f3a710a55e05ee5c3893cb",
+    "runtimeSha256": "1adb8c4c435282d7e50673deb04cf0bda80100f758ffcbc7470448ce1229beb0",
+    "sourceBytes": 17117852,
+    "bytes": 12114328,
+    "metadata": {
+      "name": "Model",
+      "authors": [
+        "solgryn1027"
+      ],
+      "thumbnailImage": 37,
+      "licenseUrl": "https://vrm.dev/licenses/1.0/",
+      "avatarPermission": "onlyAuthor",
+      "allowExcessivelyViolentUsage": false,
+      "allowExcessivelySexualUsage": false,
+      "commercialUsage": "personalNonProfit",
+      "allowPoliticalOrReligiousUsage": false,
+      "allowAntisocialOrHateUsage": false,
+      "creditNotation": "required",
+      "allowRedistribution": false,
+      "modification": "prohibited"
+    },
+    "textures": [
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          128,
+          512
+        ],
+        "runtime": [
+          128,
+          512
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          256,
+          256
+        ],
+        "runtime": [
+          256,
+          256
+        ]
+      }
+    ],
+    "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+  },
+  {
+    "name": "zankou",
+    "role": "vip-hostess",
+    "source": "assets/source/characters/reika-import/zankou.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/zankou.vrm",
+    "sourceSha256": "9d1ec0ac2c42331af0985bcadb6977050d40559d351816a91b09dce052c11f01",
+    "runtimeSha256": "f8bcf5a46454118080bdef7170157b42397b63b7af01069d2634e5e700de8321",
+    "sourceBytes": 30102036,
+    "bytes": 18055140,
+    "metadata": {
+      "allowedUserName": "Everyone",
+      "author": "Hotta Studio",
+      "commercialUssageName": "Disallow",
+      "contactInformation": "",
+      "licenseName": "Other",
+      "otherLicenseUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=disallow&credit=necessary&modification=allow&personal_commercial_use=disallow&redistribution=allow&sexual_expression=disallow&version=1&violent_expression=disallow",
+      "otherPermissionUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=disallow&credit=necessary&modification=allow&personal_commercial_use=disallow&redistribution=allow&sexual_expression=disallow&version=1&violent_expression=disallow",
+      "reference": "",
+      "sexualUssageName": "Disallow",
+      "texture": 9,
+      "title": "Zankou (Searing Lavender)",
+      "version": "1.3",
+      "violentUssageName": "Disallow"
+    },
+    "textures": [
+      {
+        "original": [
+          64,
+          64
+        ],
+        "runtime": [
+          64,
+          64
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          64,
+          64
+        ],
+        "runtime": [
+          64,
+          64
+        ]
+      },
+      {
+        "original": [
+          350,
+          350
+        ],
+        "runtime": [
+          350,
+          350
+        ]
+      }
+    ],
+    "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+  },
+  {
+    "name": "bunny",
+    "role": "bartender",
+    "source": "assets/source/characters/reika-import/bunny.vrm",
+    "runtime": "apps/web/public/assets/characters/club-local/bunny.vrm",
+    "sourceSha256": "f33d6409f7845e0bb034420fda41ff3f179a5d31bf90bf9ef5c9e4e223e614ad",
+    "runtimeSha256": "a69f25518de744ee34e0e8a1208610c0638df9a0519d50544cfaa4e08e371920",
+    "sourceBytes": 18083496,
+    "bytes": 11368168,
+    "metadata": {
+      "name": "Bunny4",
+      "authors": [
+        "Solgrynn1027"
+      ],
+      "thumbnailImage": 23,
+      "licenseUrl": "https://vrm.dev/licenses/1.0/",
+      "avatarPermission": "onlyAuthor",
+      "allowExcessivelyViolentUsage": false,
+      "allowExcessivelySexualUsage": false,
+      "commercialUsage": "personalNonProfit",
+      "allowPoliticalOrReligiousUsage": false,
+      "allowAntisocialOrHateUsage": false,
+      "creditNotation": "required",
+      "allowRedistribution": false,
+      "modification": "prohibited"
+    },
+    "textures": [
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          1024,
+          512
+        ],
+        "runtime": [
+          768,
+          384
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          1024,
+          256
+        ],
+        "runtime": [
+          768,
+          192
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          1024,
+          1024
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          512
+        ],
+        "runtime": [
+          512,
+          512
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          512,
+          1024
+        ],
+        "runtime": [
+          384,
+          768
+        ]
+      },
+      {
+        "original": [
+          2048,
+          2048
+        ],
+        "runtime": [
+          768,
+          768
+        ]
+      },
+      {
+        "original": [
+          8,
+          8
+        ],
+        "runtime": [
+          8,
+          8
+        ]
+      },
+      {
+        "original": [
+          256,
+          256
+        ],
+        "runtime": [
+          256,
+          256
+        ]
+      }
+    ],
+    "licenseStatus": "LOCAL_TEST_ONLY_PENDING_FULL_LICENSE"
+  }
+]

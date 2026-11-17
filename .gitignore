@@ -52,3 +52,12 @@ __pycache__/
 
 # graphify knowledge graph (local, regenerate with /graphify)
 graphify-out/
+
+# VRM cấm phân phối lại (VRoid Hub redistribution=disallow / VRM 1.0 allowRedistribution=false):
+# bản gốc trước khi nén texture của Espeon/Lindsay/Rina, và Caca/Hinata/Lunox của Kohaku.
+/assets/processed/texture-raw/espeon.vrm
+/assets/processed/texture-raw/lindsay.vrm
+/assets/processed/texture-raw/rina.vrm
+/assets/source/characters/kohaku-import/caca.vrm
+/assets/source/characters/kohaku-import/hinata.vrm
+/assets/source/characters/kohaku-import/lunox.vrm
