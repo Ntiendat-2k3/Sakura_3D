@@ -43,5 +43,158 @@
     "bones": 52,
     "tracks": 53,
     "bytes": 81663
+  },
+  {
+    "id": "Hip Hop Dancing",
+    "source": "Hip Hop Dancing.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 7.066666603088379,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 365405
+  },
+  {
+    "id": "Dancing Maraschino Step",
+    "source": "Dancing Maraschino Step.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 3.2333333492279053,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 235266
+  },
+  {
+    "id": "Swing Dancing",
+    "source": "Swing Dancing.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 20.899999618530273,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 1358027
+  },
+  {
+    "id": "Snake Hip Hop Dance",
+    "source": "Snake Hip Hop Dance.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 15.266666412353516,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 978306
+  },
+  {
+    "id": "Dwarf Walk",
+    "source": "Dwarf Walk.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 1.100000023841858,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 92162
+  },
+  {
+    "id": "zankou_dance",
+    "source": "zankou_dance.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 21.96666717529297,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 1409312
+  },
+  {
+    "id": "Quick Formal Bow",
+    "source": "Quick Formal Bow.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 2.7333333492279053,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 196203
+  },
+  {
+    "id": "Kiss",
+    "source": "Kiss.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 3.7333333492279053,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 275656
+  },
+  {
+    "id": "Kiss_player",
+    "source": "Kiss_player.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 3.7333333492279053,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 267121
+  },
+  {
+    "id": "Cross Punch",
+    "source": "Cross Punch.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 2,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 152072
+  },
+  {
+    "id": "Taking Punch",
+    "source": "Taking Punch.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 5.666666507720947,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 391208
+  },
+  {
+    "id": "Reaction Hit",
+    "source": "Reaction Hit.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 2,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 142637
+  },
+  {
+    "id": "Big Hit To Head",
+    "source": "Big Hit To Head.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 1.6333333253860474,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 128196
+  },
+  {
+    "id": "Dizzy Idle",
+    "source": "Dizzy Idle.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 4.266666889190674,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 288386
+  },
+  {
+    "id": "Falling Idle",
+    "source": "Falling Idle.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 0.699999988079071,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 61997
+  },
+  {
+    "id": "Falling To Landing",
+    "source": "Falling To Landing.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 1.0666667222976685,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 87122
+  },
+  {
+    "id": "Jumping Down",
+    "source": "Jumping Down.fbx",
+    "sourceRig": "Mixamo",
+    "duration": 3.066666603088379,
+    "bones": 52,
+    "tracks": 53,
+    "bytes": 206833
   }
 ]

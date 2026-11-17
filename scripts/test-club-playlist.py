@@ -3,6 +3,7 @@ import importlib.util
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import wave
 
 spec = importlib.util.spec_from_file_location('club_playlist', Path(__file__).with_name('import-club-playlist.py'))
@@ -11,6 +12,19 @@ spec.loader.exec_module(playlist)
 
 
 class PlaylistTest(unittest.TestCase):
+    def test_m4a_keeps_filename_title_and_safe_url(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory)
+            path = source / 'Để anh đi ngủ.M4A'
+            path.write_bytes(b'm4a fixture')
+            with patch.object(playlist, 'probe', return_value=(180, {}, 120)) as probe:
+                tracks, copies = playlist.collect(source, [])
+            probe.assert_called_once_with(path)
+            self.assertEqual(tracks[0]['title'], 'Để anh đi ngủ')
+            self.assertTrue(tracks[0]['url'].isascii())
+            self.assertTrue(tracks[0]['url'].endswith('.m4a'))
+            self.assertEqual(copies[0][0], path)
+
     def test_import_and_preserve_metadata(self):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory)

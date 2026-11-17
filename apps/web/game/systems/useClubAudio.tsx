@@ -1,15 +1,19 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { CLUB_PLAYLIST, DEFAULT_CLUB_TRACK, getClubTrack, getClubPlaybackSeconds } from '@metaverse/game-protocol';
+import { CLUB_PLAYLIST, REIKA_PLAYLIST, DEFAULT_CLUB_TRACK, DEFAULT_REIKA_TRACK, getClubTrack, getReikaTrack, getClubPlaybackSeconds, type WorldZone } from '@metaverse/game-protocol';
 import { createClubAudioBuffer } from './clubAudioBuffer';
 
 type PlayableTrack = { name: string; url: string; duration: number; local: boolean };
 
 
 /** Media element sống cùng World; mở khóa play ngay trong thao tác E/click, giữ buffer qua các lần đổi phòng. */
-export function useClubAudio({ active, switching, epoch, trackId }: { active: boolean; switching: boolean; epoch: number; trackId?: string }) {
-  const definition = getClubTrack(trackId) ?? DEFAULT_CLUB_TRACK;
-  const sharedTrack: PlayableTrack = { name: definition.title, url: definition.url, duration: definition.durationSeconds, local: false };
+export function useClubAudio({ active, zone = 'club', switching, epoch, trackId }: { active: boolean; zone?: WorldZone; switching: boolean; epoch: number; trackId?: string }) {
+  const isLounge = zone === 'lounge' || zone === 'hotel';
+  // Reika Lounge và Cyber Love Hotel chỉ phát khi khách đã order bài cụ thể; mặc định không phát bài nào khi mới vào phòng.
+  const definition = isLounge
+    ? (trackId ? getReikaTrack(trackId) : undefined)
+    : (getClubTrack(trackId) ?? DEFAULT_CLUB_TRACK);
+  const sharedTrack: PlayableTrack = definition ? { name: definition.title, url: definition.url, duration: definition.durationSeconds, local: false } : { name: '', url: '', duration: 0, local: false };
   const bufferRef = useRef<ReturnType<typeof createClubAudioBuffer> | null>(null);
   const wantsAudio = useRef(false), mode = useRef<'shared' | 'local' | 'off'>('shared');
   const [buffered, setBuffered] = useState<Record<string, 'ready' | 'error'>>({});
@@ -69,18 +73,23 @@ export function useClubAudio({ active, switching, epoch, trackId }: { active: bo
   useEffect(() => {
     const buffer = createClubAudioBuffer(); bufferRef.current = buffer;
     setBuffered({});
-    void buffer.preload(CLUB_PLAYLIST, (id, loaded) => setBuffered(current => ({ ...current, [id]: loaded ? 'ready' : 'error' })));
+    void buffer.preload([...CLUB_PLAYLIST, ...REIKA_PLAYLIST], (id, loaded) => setBuffered(current => ({ ...current, [id]: loaded ? 'ready' : 'error' })));
     return () => { buffer.dispose(); bufferRef.current = null; };
   }, [retry]);
   useEffect(() => {
     let cancelled = false;
     setReady(false); setBufferError(false); sharedSource.current = null;
+    if (!definition) {
+      setTrack(null);
+      setReady(true);
+      return;
+    }
     void bufferRef.current!.load(definition).then(url => {
       if (cancelled) return;
       sharedSource.current = { name: definition.title, url, duration: definition.durationSeconds, local: false };
       setBuffered(current => ({ ...current, [definition.id]: 'ready' }));
       if (mode.current === 'shared') setTrack(sharedSource.current);
-    }).catch(() => { if (!cancelled) { setBufferError(true); setError('Không tải trước được nhạc club.'); } });
+    }).catch(() => { if (!cancelled) { setBufferError(true); setError('Không tải trước được nhạc.'); } });
     return () => { cancelled = true; };
   }, [definition, retry]);
   useEffect(() => { if (player.current) player.current.volume = active ? volume : 0; }, [active, volume]);
@@ -101,13 +110,13 @@ export function useClubAudio({ active, switching, epoch, trackId }: { active: bo
     if (context.current.active) seek();
   }} onPause={() => setPlaying(false)} onError={() => { setPlaying(false); setError('Không tải được nhạc club.'); if (!context.current.track?.local) setBufferError(true); }}/>;
   const prepareTrack = useCallback((id: string) => {
-    const selected = getClubTrack(id), buffer = bufferRef.current;
+    const selected = getClubTrack(id) ?? getReikaTrack(id), buffer = bufferRef.current;
     if (!selected || !buffer) return;
     setBuffered(current => { const next = { ...current }; delete next[id]; return next; });
     void buffer.load(selected).then(url => {
       if (bufferRef.current !== buffer) return;
       setBuffered(current => ({ ...current, [id]: 'ready' }));
-      if (selected.id === definition.id) {
+      if (selected.id === definition?.id) {
         sharedSource.current = { name: selected.title, url, duration: selected.durationSeconds, local: false };
         setBufferError(false); setError('');
         if (mode.current === 'shared') setTrack(sharedSource.current);
@@ -116,7 +125,7 @@ export function useClubAudio({ active, switching, epoch, trackId }: { active: bo
   }, [definition]);
   const chooseShared = useCallback(() => { mode.current = 'shared'; wantsAudio.current = true; if (sharedSource.current) setTrack(sharedSource.current); play(false); }, [play]);
   const retryPreparation = useCallback(() => setRetry(value => value + 1), []);
-  return { buffered, prepareTrack, chooseShared, definition, track, playing, volume, error, element, ready, bufferError, retryPreparation, prepareEntry, toggleAudio, selectLocal, clearTrack, useSharedTrack, setVolume, sharedTrack };
+  return { buffered, prepareTrack, chooseShared, definition: definition ?? DEFAULT_CLUB_TRACK, track, playing, volume, error, element, ready, bufferError, retryPreparation, prepareEntry, toggleAudio, selectLocal, clearTrack, useSharedTrack, setVolume, sharedTrack };
 }
 
 export type ClubAudioState = ReturnType<typeof useClubAudio>;

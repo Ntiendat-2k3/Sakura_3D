@@ -38,8 +38,28 @@ export function createLoopingClip(clip: AnimationClip, overlap = .25) {
 }
 
 /** Đồng bộ raw rig và đặt chân trước physics; chia bước 120 Hz để tóc/phụ kiện không nhận cú giật do scale hoặc dịch sàn. */
+/**
+ * Lò xo tóc/váy: một bước mỗi frame (delta đã kẹp ≤ 0.05 s), như three-vrm thiết kế.
+ * Trước đây chia bước con 120 Hz (tới 6 bước + 1 lượt thừa trong vrm.update): frame chậm thì lò xo tính nhiều hơn,
+ * frame càng chậm. Đo trong trình duyệt ở Gekkarō: lò xo 4 VRM tốn ~25 ms/frame, tụt còn ~14 FPS.
+ */
+export function updateSpringBones(vrm: VRM, delta: number) {
+  vrm.springBoneManager?.update(delta);
+}
+
+/**
+ * Như vrm.update(0) nhưng bỏ lượt lò xo: VRM.update luôn gọi springBoneManager.update kể cả delta 0,
+ * tức thêm một lượt va chạm tóc/váy đầy đủ mỗi frame (~1/3 chi phí lò xo) mà không làm gì.
+ */
+export function applyVrmPose(vrm: VRM) {
+  vrm.humanoid.update();
+  vrm.lookAt?.update(0);
+  vrm.expressionManager?.update();
+  vrm.nodeConstraintManager?.update();
+}
+
 export function updateDanceRig(vrm: VRM, delta: number, floorY: number, reset = false) {
-  vrm.update(0); vrm.scene.updateMatrixWorld(true);
+  applyVrmPose(vrm); vrm.scene.updateMatrixWorld(true);
   const left = vrm.humanoid.getRawBoneNode('leftFoot'), right = vrm.humanoid.getRawBoneNode('rightFoot');
   if (!left || !right) throw new Error('Rig nhảy thiếu bàn chân');
   const y = Math.min(left.getWorldPosition(footPoint).y, right.getWorldPosition(footPoint).y);
@@ -50,8 +70,8 @@ export function updateDanceRig(vrm: VRM, delta: number, floorY: number, reset = 
     rotations = Array.from(vrm.springBoneManager?.joints ?? [], joint => ({ node: joint.bone, rotation: joint.bone.quaternion.clone() }));
     springRotations.set(vrm, rotations);
   }
-  const dt = Math.min(Math.max(delta, 0), .05), steps = Math.max(1, Math.ceil(dt * 120));
-  for (let i = 0; i < steps; i++) vrm.springBoneManager?.update(dt / steps);
+  const dt = Math.min(Math.max(delta, 0), .05);
+  updateSpringBones(vrm, dt);
   // Collider tóc có thể đẩy joint sang nghiệm xa ở một frame; giới hạn tốc độ pose hiển thị, không sửa mocap thân.
   for (const { node, rotation } of rotations) { rotation.rotateTowards(node.quaternion, dt * 8); node.quaternion.copy(rotation); }
   vrm.scene.updateMatrixWorld(true);
@@ -98,6 +118,15 @@ export async function createRecordedClubDance(vrm: VRM, name: string, motionIds?
   const motions = await Promise.all(ids.map(loadClubMotion));
   const mixer = new AnimationMixer(vrm.scene);
   const actions = motions.map(m => mixer.clipAction(retarget(m, vrm)).play());
+  // Clip 'natural' lấy mẫu track trực tiếp: mixer chỉ ghi xương khi giá trị khác lần ghi trước, nên nếu caller reset pose mỗi
+  // frame (resetNormalizedPose) mà giữ nguyên thời điểm clip (NPC đứng chờ ở một khung) thì từ frame thứ hai xương về T-pose.
+  const natural = motions[0].playback === 'natural'
+    ? actions[0].getClip().tracks.flatMap(track => {
+        const [nodeName, property] = track.name.split('.');
+        const node = vrm.scene.getObjectByName(nodeName);
+        return node && (property === 'quaternion' || property === 'position') ? [{ node, property, sample: track.createInterpolant() }] : [];
+      })
+    : [];
   const hips = vrm.humanoid.getNormalizedBoneNode('hips')!;
   const spine = vrm.humanoid.getNormalizedBoneNode('spine');
   const chest = vrm.humanoid.getNormalizedBoneNode('chest');
@@ -111,14 +140,18 @@ export async function createRecordedClubDance(vrm: VRM, name: string, motionIds?
   const baseRotations = [hips, spine, chest].flatMap(node => node ? [{ node, rotation: node.quaternion.clone() }] : []);
   let activeIndex = -1, outgoingIndex = -1, outgoingTime = 0, transitionBeat = 0, lastBeat = -1;
   return {
+    /** Độ dài clip đầu tiên (giây) sau khi retarget; clip 'natural' đã trừ đoạn chồng nối vòng. */
+    duration: actions[0].getClip().duration,
     resync() { activeIndex = -1; outgoingIndex = -1; lastBeat = -1; },
     update(beat: number, cueOffset = 0, seconds = beat * 60 / 140) {
       if (motions[0].playback === 'natural') {
         // Clip người dùng chọn chạy nguyên tốc độ; không cộng thêm lắc hông làm sai diễn xuất nguồn.
         const action = actions[0];
-        actions.forEach((value, i) => value.setEffectiveWeight(i === 0 ? 1 : 0));
         action.time = ((seconds % action.getClip().duration) + action.getClip().duration) % action.getClip().duration;
-        mixer.update(0);
+        for (const { node, property, sample } of natural) {
+          const value = sample.evaluate(action.time);
+          if (property === 'quaternion') node.quaternion.fromArray(value); else node.position.fromArray(value);
+        }
         return { clip: ids[0], previous: ids[0], blend: 1, phrase: Math.floor(seconds / action.getClip().duration), style: 'source-clip', provider: motions[0].provider, sway: 0, hipsBaseX: hipsOriginX };
       }
       const phrase = Math.floor(beat / 32);

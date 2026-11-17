@@ -13,7 +13,8 @@ This is the **architecture-hardened playable foundation**, not a complete commer
 - Denmu Night Club bản test: đến vòng sáng cửa DENMU, nhấn E để vào phòng club riêng (tối đa 12 người), xem WINE/POP nhảy mocap, điều khiển show/đèn và ra phố qua EXIT. Xem [hướng dẫn test club](docs/reports/CLUB_TEST_REPORT.md). Model nhân vật do người dùng cung cấp chỉ được xác nhận cho test local, quyền phân phối còn chờ giấy phép đầy đủ.
 - Kéo chuột trái/phải để xoay camera 360°, cuộn để zoom; WASD theo hướng nhìn. Đến gần sofa trong club và nhấn Enter để ngồi/đứng. Xem [báo cáo camera và ghế](docs/reports/CAMERA_SEATING_REPORT.md).
 - Màn chọn có **11 lựa chọn**: Bocchi, Kita, Ryo, Übel, Miorine, Nijika, Serie, Yui và ba **bản dựng lại Airi/Annie/Kuroki**. Tám mẫu đầu được nhập từ nguồn người dùng cung cấp; ba mẫu cuối dựng gần giống theo ảnh trên rig Yui, được ghi rõ “bản dựng” trong game. Chọn mẫu rồi bấm **Vào game** để tạo guest local tự động, không cần tài khoản/mật khẩu; nút **Đổi nhân vật** quay lại màn chọn. Lựa chọn được nhớ trên trình duyệt và đồng bộ cho người khác, giữ khi đổi phòng.
-- Các mẫu có đứng, đi/chạy, ngồi, nhảy và chớp mắt tạo bằng Blender. Trong club giữ **N + 1** để nhảy thường; **N + 2** để cầm guitar/bass với Bocchi, Kita hoặc Ryo. Nhấn lại tổ hợp đang chọn, WASD hoặc ngồi để dừng. Xem [báo cáo nhân vật người chơi](docs/reports/PLAYER_CHARACTER_REPORT.md).
+- Các mẫu có đứng, đi/chạy, ngồi, nhảy và chớp mắt tạo bằng Blender. Trong club giữ **N + 1** để nhảy thường; **N + 2** để cầm guitar/bass với Bocchi, Kita hoặc Ryo; **N + 3** Flair; **N + 4** Hip Hop; **N + 5** Maraschino Step; **N + 6** Swing Dancing; **N + 7** Snake Hip Hop. Nhấn lại tổ hợp đang chọn, WASD hoặc ngồi để dừng. Các điệu không dùng đàn có trên cả 11 mẫu. Xem [báo cáo nhân vật người chơi](docs/reports/PLAYER_CHARACTER_REPORT.md).
+- **Kohaku Bluff**: vào cổng Kohaku, ngồi một trong 4 ghế quanh bàn tròn, bấm Sẵn sàng rồi chơi bài lừa bịp 2–4 người có súng riêng (server quyết định bài, đạn và kết quả). Xem [báo cáo Kohaku Bluff](docs/reports/KOHAKU_BLUFF_REPORT.md).
 - Club, NPC, người chơi, texture và toàn bộ MP3 được chuẩn bị ngay khi mở World; đợi màn chuẩn bị ban đầu hoàn tất rồi mới di chuyển/vào club. Cache và buffer nhạc được giữ qua các lần đổi phòng, không dồn tải model/nhạc vào lúc bước qua cửa.
 - Server-authoritative movement, bounded coordinates, simple building collision, input validation, chat throttling.
 - NestJS 10, Sequelize v6, PostgreSQL 17; dedicated database package and Umzug migrations.
@@ -36,7 +37,7 @@ Do not expose to the public Internet or use it as an adult-content service witho
 ## Requirements (Windows 10/11)
 
 - Node.js 22 LTS (or >=20.19), pnpm 9, Git, Docker Desktop with Linux containers.
-- Local ports 3000, 4000, 2567 and 5434 available.
+- Local ports 3000, 4000, 2567 and 5435 available.
 - PowerShell 5.1+ and Git. All local tools are free; Docker Desktop's licensing may differ for larger commercial organizations.
 
 ## Install & run (PowerShell)
@@ -63,7 +64,7 @@ pnpm test
 ```
 
 Outside VS Code, prepend `scripts\bin` to that terminal's PATH before using bare `pnpm`; the machine's older nvm shim points to a missing Node version. If Corepack is absent, install pnpm 9 with `npm install -g pnpm@9.15.4`. `Init-Local.ps1` creates random local JWT and database passwords only when `.env` does not exist.
-Port 5433 is used by an existing Windows PostgreSQL service on this machine, so this project uses 5434. If 5434 becomes unavailable, change both `docker-compose.yml` port and `DATABASE_URL` in `.env`.
+Port 5433 is used by an existing Windows PostgreSQL service on this machine, and 5434 was also occupied, so this project uses 5435. If 5435 becomes unavailable, change both `docker-compose.yml` port and `DATABASE_URL` in `.env`.
 
 Open:
 
@@ -141,7 +142,7 @@ Tra cứu tài liệu và quy ước lưu file tại [docs/README.md](docs/READM
 - `pnpm db:migrate` fails: make sure `docker compose ps` reports healthy PostgreSQL and DATABASE_URL matches Docker credentials.
 - `Cannot find module @metaverse/database`: run `pnpm --filter @metaverse/database build` (or `pnpm dev` which builds it first).
 - `WORLD` connection fails: confirm `.env` exists and API + World Server use the **same** `DEMO_JWT_SECRET`.
-- `ECONNREFUSED` on 5434: check Docker Desktop and other PostgreSQL instances.
+- `ECONNREFUSED` on 5435: check Docker Desktop and other PostgreSQL instances.
 - Headless Playwright may not render WebGL on all Windows/CI systems; test on a real GPU/browser too.
 - `pnpm test`: unit tests do not prove browser/WebSocket/database integration; run the manual two-tab scenario as well.
 

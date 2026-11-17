@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { Billboard, Text } from '@react-three/drei';
 import { createClubDance } from '../systems/clubDance';
-import { CLUB_NPCS, loadCharacterAsset, type CharacterAsset } from '../systems/characterAssets';
+import { CLUB_NPCS, getCachedCharacterAsset, loadCharacterAsset, type CharacterAsset } from '../systems/characterAssets';
 import { getClubBeat } from '../systems/BeatSyncController';
 import { updateDanceRig } from '../systems/retargetClubMotion';
 import type { ClubShow } from '@metaverse/game-protocol';
@@ -12,7 +12,7 @@ import type { ClubShow } from '@metaverse/game-protocol';
 /** Rig/mixer sống trong cache giới hạn; component chỉ gắn lại model khi quay vào club. */
 export function ClubDancer({ id, x, epoch, phase, show }: { id: 'wine' | 'pop'; x: number; epoch: number; phase: number; show: ClubShow }) {
   const name = CLUB_NPCS[id].name;
-  const [asset, setAsset] = useState<CharacterAsset | null>(null);
+  const [asset, setAsset] = useState<CharacterAsset | null>(() => getCachedCharacterAsset(id) ?? null);
   const model = asset?.vrm;
   const [failed, setFailed] = useState(false);
   const dance = useRef<ReturnType<typeof createClubDance> | null>(null);
@@ -21,9 +21,23 @@ export function ClubDancer({ id, x, epoch, phase, show }: { id: 'wine' | 'pop'; 
   const { gl } = useThree();
   useEffect(() => {
     let cancelled = false;
-    gl.domElement.dataset[`npc${name}`] = 'loading';
     setFailed(false);
-    setAsset(null);
+    const cached = getCachedCharacterAsset(id);
+    if (cached?.vrm) {
+      cached.vrm.scene.position.y = cached.baseY;
+      dance.current = createClubDance(cached.vrm);
+      cached.dance?.resync();
+      resetPhysics.current = true;
+      gl.domElement.dataset[`npc${name}`] = 'ready';
+      setAsset(cached);
+      return () => {
+        dance.current = null;
+        delete gl.domElement.dataset[`npc${name}`];
+        delete gl.domElement.dataset[`dance${name}`];
+        delete gl.domElement.dataset[`motion${name}`];
+      };
+    }
+    gl.domElement.dataset[`npc${name}`] = 'loading';
     void loadCharacterAsset(id).then(loaded => {
       if (cancelled) return;
       const vrm = loaded.vrm;

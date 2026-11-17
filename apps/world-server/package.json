@@ -6,7 +6,7 @@
     "dev": "tsx watch src/main.ts",
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "test": "tsx --test test/movement.spec.ts test/club-dj.spec.ts"
+    "test": "tsx --test test/movement.spec.ts test/club-dj.spec.ts test/kohaku-bluff.spec.ts test/kohaku-jump.spec.ts test/street-social.spec.ts test/poker-hand-rank.spec.ts test/poker-pots.spec.ts test/gekka-poker.spec.ts test/gekka-room.spec.ts test/voice-relay.spec.ts"
   },
   "dependencies": {
     "@metaverse/game-protocol": "workspace:*",

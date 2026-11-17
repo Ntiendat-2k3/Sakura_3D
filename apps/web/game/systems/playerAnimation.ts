@@ -2,10 +2,11 @@
 import { AnimationMixer, MathUtils, Mesh, SkinnedMesh, type AnimationClip, type Object3D } from 'three';
 import { clone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { getClubBeat } from './BeatSyncController';
-import type { ClubShow } from '@metaverse/game-protocol';
+import { PLAYER_DANCES, type ClubShow } from '@metaverse/game-protocol';
 import character from '../entities/player-character.json';
 
-const bodyMotions = ['Idle', 'Walk', 'Run', 'Sit', 'Dance', 'GuitarDance', 'Flair'] as const;
+const bodyMotions = ['Idle', 'Walk', 'Run', 'Sit', ...Object.values(PLAYER_DANCES).map(dance => dance.clip)] as const;
+const naturalMotions = new Set<string>(Object.values(PLAYER_DANCES).filter(dance => dance.source).map(dance => dance.clip));
 export type PlayerMotion = Exclude<typeof bodyMotions[number], 'Run'>;
 
 export function createPlayerAnimation(source: Object3D, clips: AnimationClip[], guitarRequired = true) {
@@ -35,29 +36,28 @@ export function createPlayerAnimation(source: Object3D, clips: AnimationClip[], 
       if (!guitar && motion === 'GuitarDance') motion = 'Dance';
       if (guitar) guitar.visible = motion === 'GuitarDance';
       idleTime += dt;
-      gaitSpeed = MathUtils.damp(gaitSpeed, motion === 'Walk' ? Math.max(0, speed) : 0, 12, dt);
-      const running = MathUtils.smoothstep(gaitSpeed, 2, 3.8);
+      // Giữ nhịp bước chân ổn định tự nhiên khi đang đi bộ, không bị khựng bước khi gói mạng trễ nhẹ
+      const targetGait = motion === 'Walk' ? (speed > 0.05 ? Math.max(character.runSpeed * 0.85, speed) : character.runSpeed) : 0;
+      gaitSpeed = MathUtils.damp(gaitSpeed, targetGait, 10, dt);
       const locomotion = motion === 'Walk' || motion === 'Idle';
       const moving = locomotion ? MathUtils.smoothstep(gaitSpeed, .05, .7) : 0;
       for (const name of bodyMotions) {
         const action = actions.get(name)!;
         let target = name === motion ? 1 : 0;
         if (name === 'Idle') target = locomotion ? 1 - moving : 0;
-        else if (name === 'Walk') target = moving * (1 - running);
-        else if (name === 'Run') target = moving * running;
+        else if (name === 'Walk') target = moving;
+        else if (name === 'Run') target = 0;
         const weight = MathUtils.damp(action.getEffectiveWeight(), target, 10, dt);
         action.setEffectiveWeight(Math.abs(weight - target) < .001 ? target : weight);
       }
-      const walk = actions.get('Walk')!, run = actions.get('Run')!;
-      const locomotionWeight = walk.getEffectiveWeight() + run.getEffectiveWeight();
-      const runBlend = locomotionWeight > .001 ? run.getEffectiveWeight() / locomotionWeight : 0;
-      // Nhịp theo sải chân đang hiển thị, kể cả lúc trọng số chưa chuyển xong sang chạy.
-      const stride = MathUtils.lerp(walk.getClip().duration * character.walkSpeed, run.getClip().duration * character.runSpeed, runBlend);
+      const walk = actions.get('Walk')!;
+      // Nhịp bước Dwarf Walk tại tốc độ gốc tự nhiên, tỷ lệ mượt theo gia tốc khởi hành/dừng.
+      const stride = walk.getClip().duration * character.runSpeed;
       gaitPhase = (gaitPhase + dt * gaitSpeed / stride) % 1;
       for (const name of bodyMotions) {
         const action = actions.get(name)!;
         const duration = action.getClip().duration;
-        action.time = name === 'Flair' ? ((now - epoch) / 1000 % duration + duration) % duration
+        action.time = naturalMotions.has(name) ? ((now - epoch) / 1000 % duration + duration) % duration
           : name === 'Dance' || name === 'GuitarDance'
           ? (getClubBeat(epoch, show, now).beat % character.danceBeats) / character.danceBeats * duration
           : name === 'Walk' || name === 'Run' ? gaitPhase * duration : name === 'Sit' ? 0 : idleTime % duration;

@@ -19,7 +19,8 @@ async function bootstrap() {
   if (!process.env.DEMO_JWT_SECRET || process.env.DEMO_JWT_SECRET.length < 32) throw new Error('Configure DEMO_JWT_SECRET >=32 characters');
   const app = await NestFactory.create(AppModule);
   app.enableShutdownHooks();
-  const origins = new Set([process.env.CORS_ORIGIN ?? 'http://localhost:3000']);
+  // CORS_ORIGIN nhận nhiều origin cách nhau bởi dấu phẩy, vd. thêm https://<máy>.<tailnet>.ts.net khi chơi qua Tailscale.
+  const origins = new Set((process.env.CORS_ORIGIN ?? 'http://localhost:3000').split(',').map(origin => origin.trim()).filter(Boolean));
   // Next trên Windows hiển thị URL 127.0.0.1; trình duyệt xem đây là origin khác localhost.
   if (process.env.NODE_ENV !== 'production') {
     origins.add('http://localhost:3000');

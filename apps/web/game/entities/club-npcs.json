@@ -2,5 +2,15 @@
   "wine": {"name":"WINE","url":"/assets/characters/club-local/wine.vrm","format":"vrm","height":1.78,"role":"dancer"},
   "pop": {"name":"POP","url":"/assets/characters/club-local/pop.vrm","format":"vrm","height":1.78,"role":"dancer"},
   "rosetta": {"name":"Rosetta","url":"/assets/characters/club-local/rosetta-restored.glb","format":"glb","height":2.12,"role":"door-greeter","position":[3.5,0,2.5],"yaw":-1.5707963267948966,"caption":"F · Trò chuyện"},
-  "galaxy": {"name":"DJ Rio","url":"/assets/characters/club-local/galaxy.vrm","format":"vrm","height":1.78,"role":"dj","caption":"DENMU · Resident DJ"}
+  "galaxy": {"name":"DJ Rio","url":"/assets/characters/club-local/galaxy.vrm","format":"vrm","height":1.78,"role":"dj","caption":"DENMU · Resident DJ"},
+  "yuzu": {"name":"Yuzu","url":"/assets/characters/club-local/yuzu.vrm","format":"vrm","height":1.72,"role":"lounge-greeter","position":[0,0,-1.8],"yaw":0,"caption":"Luxury Hostess · Đón khách"},
+  "bunny": {"name":"Bunny","url":"/assets/characters/club-local/bunny.vrm","format":"vrm","height":1.75,"role":"lounge-bartender","position":[-4.4,0,-1.2],"yaw":1.5707963267948966,"caption":"Sommelier · Quầy Champagne Bar"},
+  "zankou": {"name":"Zankou","url":"/assets/characters/club-local/zankou.vrm","format":"vrm","height":1.76,"role":"lounge-vip","position":[2.4,0,-3.6],"yaw":-0.4,"caption":"VIP Hostess · Khu Sofa VIP"},
+  "shinku": {"name":"Shinku","url":"/assets/characters/club-local/shinku.vrm","format":"vrm","height":1.76,"role":"kohaku-dealer","position":[0.95,0,-2.25],"yaw":0,"caption":"Dealer · Bàn Poker VIP"},
+  "hinata": {"name":"Hinata","url":"/assets/characters/club-local/hinata.vrm","format":"vrm","height":1.72,"role":"kohaku-greeter","position":[-0.88,0,5.3],"yaw":0.55,"caption":"Lễ tân Thảm Đỏ · Kohaku Club"},
+  "bartender": {"name":"Caca","url":"/assets/characters/club-local/bartender.vrm","format":"vrm","height":1.74,"role":"kohaku-bartender","position":[-6.54,0,-0.9],"yaw":1.5707963267948966,"caption":"Bartender · Quầy Bar Whisky"},
+  "aos": {"name":"Aos","url":"/assets/characters/gekka/aos.vrm","format":"vrm","height":1.7,"role":"gekka-hostess","caption":"Bà chủ 月華楼 · Đón khách"},
+  "espeon": {"name":"Tsukimi","url":"/assets/characters/gekka/espeon.vrm","format":"vrm","height":1.68,"role":"gekka-dealer","caption":"Dealer · Bàn Texas Hold'em"},
+  "lindsay": {"name":"Onizuka","url":"/assets/characters/gekka/lindsay.vrm","format":"vrm","height":1.86,"role":"gekka-executioner","caption":"Đao phủ · Hầm 地下"},
+  "rina": {"name":"Rina","url":"/assets/characters/gekka/rina.vrm","format":"vrm","height":1.62,"role":"gekka-barmaid","position":[-6.95,0,2.3],"yaw":1.5707963267948966,"caption":"Quầy rượu · Sake & Whisky"}
 }

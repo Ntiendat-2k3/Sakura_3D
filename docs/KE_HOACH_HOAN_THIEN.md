@@ -18,17 +18,17 @@ Hoàn thành một bản **local chơi được từ đầu đến cuối**:
 
 | Hạng mục | Hiện trạng | Phần phải làm tiếp |
 | --- | --- | --- |
-| Web, API, World Server, PostgreSQL | Đã kiểm thử local trong đợt trước | Kiểm tra lại khi bắt đầu phiên mới |
-| Ngoại cảnh phố GLB | Có model CC0, vật liệu và đèn | Tiếp tục nâng chất lượng kiến trúc Nhật/anime |
-| Di chuyển và camera | Hoạt động, có kiểm tra va chạm công trình | Hoàn thiện va chạm nội thất, đạo cụ và các góc camera mới |
-| Multiplayer ngoài phố | Đã kiểm thử | Mở rộng cho chuyển phòng và nội thất |
-| Cửa các tòa nhà | Chưa triển khai | Vùng tương tác, gợi ý phím E, kiểm tra server, vào/ra |
-| Nội thất club/lounge/VIP | Chưa triển khai | Model nội thất, bố cục, ánh sáng, collider và spawn |
-| NPC anime | Chưa có model được xác minh | Nhập model, rig, vật liệu, animation, tương tác |
-| Avatar người chơi | Vẫn là placeholder hình học | Model thật và animation idle/walk |
-| Hội thoại, ghế ngồi, hoạt động | Chưa triển khai | Chốt hành vi, làm từng tính năng |
-| Tài khoản thật, quyền VIP, kiểm soát truy cập | Chưa hoàn chỉnh | Làm trước khi dùng cho người dùng bên ngoài |
-| Production build sau đợt asset | Chưa chạy lại | Build và chạy thử bản production |
+| Web, API, World Server, PostgreSQL | Đã kiểm thử local, 85/85 tests monorepo pass | Kiểm tra mở rộng khi có tính năng mới |
+| Ngoại cảnh phố GLB & Bầu trời | Có phố Sakura, Trăng Máu (Blood Moon), chu kỳ 5 phút mưa / 5 phút tạnh, đèn đường chập chờn khi mưa | Tối ưu thêm asset môi trường chi tiết |
+| Di chuyển và camera | Hoạt động mượt mà, collider công trình, cầu thang bộ lên 2F Love Hotel | Tinh chỉnh góc nhìn camera phòng hẹp |
+| Multiplayer đa phòng | Hoạt động trên cả 4 zone: Street, Denmu Club, Reika Lounge, Cyber Love Hotel 2F | Mở rộng scale multi-room |
+| Cửa các tòa nhà & Chuyển phòng | Cửa mở tự động, bước qua ngưỡng cửa chuyển phòng liền mạch, bỏ phím E, xóa vòng tròn sàn | Thêm âm thanh kẹt cửa nếu cần |
+| Nội thất các địa điểm | Đã hoàn thành Denmu Club, Reika Hostess Lounge 1F, Cyber Love Hotel 2F (4 mood màu, bồn sục Jacuzzi) | Bổ sung thêm các phòng VIP riêng |
+| NPC anime & Hoạt ảnh | Đã có 7 NPC: Rosetta, Wine, Pop, Galaxy/DJ Rio, Yuzu, Bunny, Zankou (dáng nhảy, đi Dwarf Walk chung) | Thêm tương tác thoại sâu hơn |
+| Chức năng Đào theo sau & Nhạc | "Đi với anh nhé" đào đi theo qua các phòng và nhảy cùng trong Club; Order nhạc Reika Lounge | Mở rộng minigame tương tác |
+| Avatar người chơi | 11 model GLB đầy đủ biểu cảm, dáng đi, chạy, ngồi, nhảy (7 điệu nhảy) và chơi đàn | Tính năng đổi trang phục/phụ kiện |
+| Màn hình Loading game | Ảnh nền tùy biến (`loading-bg.jpg`), thanh loading nạp 100% tài nguyên đồ họa trước khi vào game | Người dùng cung cấp ảnh nền mới khi muốn thay thế |
+| Tài khoản thật, quyền VIP, thanh toán | Bypass guest/demo local an toàn | Tích hợp hệ thống ví/auth khi triển khai production |
 
 Chi tiết và bằng chứng đợt trước: [VISUAL_UPGRADE_REPORT.md](reports/VISUAL_UPGRADE_REPORT.md). Nguồn/giấy phép: [ASSET_MANIFEST.json](../assets/manifests/ASSET_MANIFEST.json).
 

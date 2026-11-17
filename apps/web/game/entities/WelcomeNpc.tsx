@@ -2,37 +2,48 @@
 import { useEffect, useMemo, useRef, useState, type RefObject } from 'react';
 import { Billboard, Text } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
-import { CLUB_NPCS, loadCharacterAsset, type CharacterAsset } from '../systems/characterAssets';
+import { CLUB_NPCS, getCachedCharacterAsset, loadCharacterAsset, type CharacterAsset } from '../systems/characterAssets';
 import { MathUtils, PropertyBinding, Vector3, type AnimationAction, type Group } from 'three';
 import { canTalkToRosetta, loadRosettaDance, loadRosettaWave, type RosettaMode } from '../systems/rosettaMotion';
-import { createHostLocomotion } from '../systems/hostLocomotion';
+import { createHostLocomotion, SHARED_WALK_CLIP_ID } from '../systems/hostLocomotion';
 import { createDjVisitMotion } from '../systems/djVisitMotion';
 import { createDjPerformance } from '../systems/djPerformance';
 import { createRosettaGreeting } from '../systems/rosettaGreeting';
+import { createRecordedClubDance, updateDanceRig } from '../systems/retargetClubMotion';
+import { getDjStageRoutine } from '../systems/djStagePerformance';
 import { getClubBeat } from '../systems/BeatSyncController';
 import { DJ_HOME, type DjVisit, type ClubShow } from '@metaverse/game-protocol';
 
-/** Rosetta chào khách/nhảy theo tương tác; DJ Rio thao tác console trên sân khấu. Rig dùng lại từ cache. */
+/** Rosetta chào khách/nhảy theo tương tác; DJ Rio thao tác console trên sân khấu và đi bộ bằng Dwarf Walk chung. */
 export function WelcomeNpc({ id, objectRef, mode = 'greeting', player, onDanceError, epoch, show, dj }: { id: 'rosetta' | 'galaxy'; objectRef?: RefObject<Group | null>; mode?: RosettaMode; player?: { x: number; z: number }; onDanceError?: () => void; epoch?: number; show?: ClubShow; dj?: DjVisit }) {
   const config = CLUB_NPCS[id];
   const position: [number, number, number] = id === 'galaxy' ? [DJ_HOME.x, DJ_HOME.y, DJ_HOME.z] : [...CLUB_NPCS.rosetta.position] as [number, number, number];
   const homeYaw = id === 'galaxy' ? DJ_HOME.yaw : CLUB_NPCS.rosetta.yaw;
-  const [asset, setAsset] = useState<CharacterAsset | null>(null);
+  const [asset, setAsset] = useState<CharacterAsset | null>(() => getCachedCharacterAsset(id) ?? null);
   const [failed, setFailed] = useState(false);
   const last = useRef(0);
   const ownRoot = useRef<Group>(null), root = objectRef ?? ownRoot;
   const [danceAction, setDanceAction] = useState<AnimationAction | null>(null);
   const [greeting, setGreeting] = useState<ReturnType<typeof createRosettaGreeting> | null>(null);
+  const [djWalk, setDjWalk] = useState<Awaited<ReturnType<typeof createRecordedClubDance>> | null>(() => getCachedCharacterAsset(id)?.dance ?? null);
+  const [djSnakeDance, setDjSnakeDance] = useState<Awaited<ReturnType<typeof createRecordedClubDance>> | null>(() => getCachedCharacterAsset(id)?.stageDance ?? null);
   const [motionFailed, setMotionFailed] = useState(false);
   const performance = useRef({ weight: 0, started: 0, footHeight: Number.NaN, point: new Vector3() });
   const feet = useMemo(() => asset ? ['Foot.L', 'Foot.R'].map(name => asset.scene.getObjectByName(PropertyBinding.sanitizeNodeName(name))).filter(node => !!node) : [], [asset]);
   const djMotion = useMemo(() => id === 'galaxy' && asset?.vrm ? createDjPerformance(asset.vrm, DJ_HOME.y) : null, [id, asset, config]);
   const walking = dj && ['approaching', 'ready', 'returning'].includes(dj.phase);
-  const visitMotion = useMemo(() => walking && dj && asset?.vrm ? createHostLocomotion(asset.vrm, asset.footClearance, createDjVisitMotion(dj)) : null, [walking, asset, dj?.phase, dj?.startedAt, dj?.targetX, dj?.targetZ, dj?.returnDistance]);
+  const visitMotion = useMemo(() => walking && dj && asset?.vrm ? createHostLocomotion(asset.vrm, asset.footClearance, createDjVisitMotion(dj), djWalk ?? undefined) : null, [walking, asset, djWalk, dj?.phase, dj?.startedAt, dj?.targetX, dj?.targetZ, dj?.returnDistance]);
   const { gl } = useThree();
   useEffect(() => {
     let cancelled = false;
-    setFailed(false); setAsset(null);
+    setFailed(false);
+    const cached = getCachedCharacterAsset(id);
+    if (cached) {
+      cached.scene.position.y = cached.baseY;
+      setAsset(cached);
+      gl.domElement.dataset[`npc${id}`] = 'ready';
+      return () => { delete gl.domElement.dataset[`npc${id}`]; };
+    }
     void loadCharacterAsset(id).then(loaded => {
       if (cancelled) return;
       loaded.scene.position.y = loaded.baseY; setAsset(loaded);
@@ -54,9 +65,33 @@ export function WelcomeNpc({ id, objectRef, mode = 'greeting', player, onDanceEr
   }, [asset, id, mode, danceAction, onDanceError]);
   useEffect(() => { if (mode === 'dancing') performance.current.started = Date.now(); }, [mode]);
   useEffect(() => {
-    let cancelled = false; setGreeting(null); setMotionFailed(false);
-    if (id === 'rosetta' && asset) void loadRosettaWave(asset.scene).then(clip => { if (!cancelled) setGreeting(createRosettaGreeting(asset, clip)); }).catch(() => { if (!cancelled) setMotionFailed(true); });
-    return () => { cancelled = true; };
+    let cancelled = false;
+    let currentWalk: Awaited<ReturnType<typeof createRecordedClubDance>> | null = null;
+    let currentSnakeDance: Awaited<ReturnType<typeof createRecordedClubDance>> | null = null;
+    setGreeting(null); setMotionFailed(false);
+    if (id === 'rosetta' && asset) {
+      void loadRosettaWave(asset.scene).then(clip => { if (!cancelled) setGreeting(createRosettaGreeting(asset, clip)); }).catch(() => { if (!cancelled) setMotionFailed(true); });
+    } else if (id === 'galaxy' && asset?.vrm) {
+      if (asset.dance) {
+        setDjWalk(asset.dance);
+      } else {
+        void createRecordedClubDance(asset.vrm, 'DJ_Walk', [SHARED_WALK_CLIP_ID]).then(loaded => {
+          if (cancelled) { loaded.dispose(); return; }
+          currentWalk = loaded;
+          setDjWalk(loaded);
+        }).catch(() => { if (!cancelled) setMotionFailed(true); });
+      }
+      if (asset.stageDance) {
+        setDjSnakeDance(asset.stageDance);
+      } else {
+        void createRecordedClubDance(asset.vrm, 'DJ_SnakeHipHop', ['Snake Hip Hop Dance']).then(loaded => {
+          if (cancelled) { loaded.dispose(); return; }
+          currentSnakeDance = loaded;
+          setDjSnakeDance(loaded);
+        }).catch(() => { /* Bỏ qua nếu lỗi mạng */ });
+      }
+    }
+    return () => { cancelled = true; currentWalk?.dispose(); currentSnakeDance?.dispose(); };
   }, [id, asset]);
   useFrame((_, delta) => {
     if (!asset || !root.current) return;
@@ -87,8 +122,34 @@ export function WelcomeNpc({ id, objectRef, mode = 'greeting', player, onDanceEr
         asset.scene.updateWorldMatrix(true, true);
         asset.scene.position.y += state.footHeight - Math.min(...feet.map(foot => foot.getWorldPosition(state.point).y));
       }
-    } else if (visitMotion && dj) visitMotion.update(Math.max(0, (Date.now() - dj.startedAt) / 1000), dt, root.current);
-    else {
+    } else if (visitMotion && dj && dj.phase !== 'idle') {
+      visitMotion.update(Math.max(0, (Date.now() - dj.startedAt) / 1000), dt, root.current);
+    } else if (id === 'galaxy' && epoch && show && djWalk && djSnakeDance && asset.vrm) {
+      const { trackSeconds, beat, elapsedBeat } = getClubBeat(epoch, show);
+      const routine = getDjStageRoutine(trackSeconds);
+      root.current.position.set(routine.x, routine.y, routine.z);
+      root.current.rotation.y = routine.yaw;
+
+      if (routine.phase === 'console') {
+        if (asset.mixer) asset.mixer.setTime(seconds);
+        djMotion?.update(seconds, dt, elapsedBeat);
+      } else if (routine.phase === 'snake_dancing') {
+        asset.vrm.humanoid.resetNormalizedPose();
+        djSnakeDance.update(beat, 0, routine.phaseTime);
+        const blink = Math.max(0, 1 - Math.abs(seconds % 4.6 - 4.3) / .1);
+        asset.vrm.expressionManager?.setValue('blink', blink);
+        asset.vrm.expressionManager?.setValue('happy', 0.35);
+        updateDanceRig(asset.vrm, dt, 0.77 + asset.footClearance);
+      } else {
+        // Đang đi bộ ra giữa sân khấu (walking_to_center) hoặc quay về bàn (walking_to_console)
+        asset.vrm.humanoid.resetNormalizedPose();
+        djWalk.update(routine.phaseTime * 2, 0, routine.phaseTime);
+        const blink = Math.max(0, 1 - Math.abs(seconds % 4.6 - 4.3) / .1);
+        asset.vrm.expressionManager?.setValue('blink', blink);
+        asset.vrm.expressionManager?.setValue('relaxed', 0.2);
+        updateDanceRig(asset.vrm, dt, 0.77 + asset.footClearance);
+      }
+    } else {
       root.current.position.set(DJ_HOME.x, DJ_HOME.y, DJ_HOME.z); root.current.rotation.y = DJ_HOME.yaw;
       if (asset.mixer) asset.mixer.setTime(seconds);
       djMotion?.update(seconds, dt, epoch && show ? getClubBeat(epoch, show).elapsedBeat : undefined);

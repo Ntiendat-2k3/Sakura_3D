@@ -13,6 +13,10 @@ export default function Home() {
   useEffect(() => {
     try { setChoice(readPlayerChoice(window.localStorage)); } catch { /* Dùng mặc định khi trình duyệt khóa storage. */ }
     void import('../components/World').catch(() => {});
+    if (typeof window !== 'undefined') {
+      const img = new window.Image();
+      img.src = '/assets/ui/loading-bg.jpg';
+    }
   }, []);
   const enter = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -37,7 +41,7 @@ export default function Home() {
         </fieldset>
         <div className="character-entry"><div><strong>{PLAYER_CHARACTERS[choice].name}</strong><p>Chế độ thử nghiệm · Không cần tài khoản</p></div><button type="submit">Vào game <span aria-hidden="true">↗</span></button></div>
       </form>
-      <footer>WASD để di chuyển · Trong club: N + 1 nhảy, N + 2 chơi đàn nếu nhân vật có đàn.</footer>
+      <footer>WASD để di chuyển · Trong club: giữ N + 1–7 để chọn điệu nhảy; N + 2 chơi đàn nếu nhân vật có đàn.</footer>
     </div>
   </main>;
 }

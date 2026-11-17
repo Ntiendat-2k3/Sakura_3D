@@ -132,6 +132,7 @@ def import_model(pack, name, size, kind='building', variant=0, height=False):
     center = Vector(((lo.x+hi.x)/2,(lo.y+hi.y)/2,lo.z))
     for v in obj.data.vertices:
         v.co = (v.co-center)*scale
+    obj.rotation_mode = 'XYZ'
     obj.name = name
     return obj
 
@@ -181,6 +182,7 @@ def join(objects,name):
     select(objects)
     bpy.ops.object.join()
     obj=bpy.context.object
+    obj.rotation_mode='XYZ'
     obj.name=name
     scene.cursor.location=(0,0,0)
     bpy.ops.object.origin_set(type='ORIGIN_CURSOR')
@@ -221,6 +223,40 @@ def lantern():
     parts.append(curve('lantern-cord',[(0,0,.7),(0,0,1.05)],.012))
     return join(parts,'lantern')
 
+def build_entrance_door(block, index):
+    """Thiết kế khung cửa, bậc tam cấp, thảm đón khách, nẹp đồng và đèn cổng ở mặt tiền quay ra đường; cánh cửa đóng mở do R3F điều khiển."""
+    venue = block['id']
+    traditional = venue in ('oiran', 'izakaya', 'tea')
+    frame_tile = 2 if traditional else 6
+    glow_tile = [4, 5, 10][index % 3]
+    door_parts = [
+        # Bậc thềm đá và thảm đón khách trước cửa
+        cube('door-threshold', (0, -3.14, .11), (2.64, .52, .08), 8, .015),
+        cube('door-welcome-mat', (0, -3.18, .16), (1.84, .34, .025), 7, .008),
+        # Hốc cửa lùi sâu tạo chiều sâu kiến trúc thật khi cửa mở
+        cube('door-recess-wall', (0, -2.88, 1.25), (2.04, .08, 2.24), 3),
+        cube('door-recess-floor', (0, -2.96, .12), (2.04, .24, .06), 8),
+        cube('door-recess-ceiling', (0, -2.96, 2.38), (2.04, .24, .06), frame_tile),
+        # Hai trụ khung bao cửa + nẹp đồng và dầm ngang trên cửa
+        cube('door-jamb-l', (-1.08, -3.05, 1.26), (.18, .28, 2.32), frame_tile, .02),
+        cube('door-jamb-r', (1.08, -3.05, 1.26), (.18, .28, 2.32), frame_tile, .02),
+        cube('door-trim-l', (-.97, -3.10, 1.26), (.05, .22, 2.28), 7),
+        cube('door-trim-r', (.97, -3.10, 1.26), (.05, .22, 2.28), 7),
+        cube('door-lintel-header', (0, -3.08, 2.48), (2.56, .34, .20), frame_tile, .02),
+        cube('door-transom-glow', (0, -3.14, 2.32), (1.88, .08, .14), glow_tile),
+    ]
+    for side in (-1, 1):
+        sx = side * 1.38
+        door_parts.extend([
+            cube('door-sconce-box', (sx, -3.04, 1.76), (.16, .16, .40), 6, .015),
+            cube('door-sconce-lamp', (sx, -3.08, 1.76), (.11, .12, .28), glow_tile),
+        ])
+    if traditional or venue == 'hostess':
+        door_parts.append(cube('noren-rod', (0, -3.15, 2.26), (1.92, .04, .04), 2))
+        for nx in (-.69, -.23, .23, .69):
+            door_parts.append(cube('noren-flap', (nx, -3.16, 2.04), (.41, .03, .42), 7, .008))
+    return door_parts
+
 # Tám công trình nhập từ Kenney; mọi chi tiết bổ sung đều có texture và tái sử dụng vật liệu chung.
 model_names=['building-skyscraper-a','building-d','building-h','building-d','building-f','building-a','building-h','building-a']
 buildings=[]
@@ -232,19 +268,22 @@ for index,(block,name) in enumerate(zip(LAYOUT,model_names)):
     parts.append(cube('sign-frame',(0,-3.02,3.9),(4.7,.16,1.65),6,.035))
     parts.append(face('venue-sign',0,-3.112,3.9,4.55,1.51,signs,index))
     parts.append(cube('entry-lintel',(0,-2.99,2.85),(4.95,.35,.18),6,.025))
-    # Biển nhô vuông góc mặt tiền: nhìn thấy dọc theo phố.
+    parts.extend(build_entrance_door(block,index))
+    # Biển nhô vuông góc mặt tiền (2 mặt): nhìn rõ từ cả hai chiều đi dọc theo phố.
     sign=cube('blade-frame',(-2.5,-2.95,5.7),(.13,1.15,2.05),6,.025)
     parts.append(sign)
-    blade=face('blade-sign',0,0,0,1.05,1.92,blade_signs,index)
-    blade.rotation_euler.z=math.pi/2
-    blade.location=(-2.58,-2.95,5.7)
-    parts.append(blade)
-    # Mái hiên nhập từ bộ asset, kèm khung gỗ mặt tiền cho hai lounge truyền thống.
+    for bx,rot_z in [(-2.58,math.pi/2),(-2.42,-math.pi/2)]:
+        blade=face('blade-sign',0,0,0,1.05,1.92,blade_signs,index)
+        blade.rotation_mode='XYZ'
+        blade.rotation_euler.z=rot_z
+        blade.location=(bx,-2.95,5.7)
+        parts.append(blade)
+    # Mái hiên nhập từ bộ asset, kèm khung gỗ hai bên mặt tiền cho các quán truyền thống.
     awning=import_model('kenney-commercial','detail-awning-wide',4.8,variant=index)
-    awning.location=(0,-2.65,1.65)
+    awning.location=(0,-2.65,2.62)
     parts.append(awning)
     if block['id'] in ('oiran','izakaya','tea'):
-        for x in [-2.2,-1.8,-1.4,1.4,1.8,2.2]:
+        for x in [-2.25,-1.85,1.85,2.25]:
             parts.append(cube('timber-screen',(x,-3.04,1.35),(.09,.11,2.3),2))
         for row in range(3):
             # Mái ngói có mép cong, nhiều dải lợp, không phải một mặt phẳng tô màu.
@@ -252,7 +291,9 @@ for index,(block,name) in enumerate(zip(LAYOUT,model_names)):
             points=[(-3.05,y,top+.2),(-2.5,y,top-.05),(0,y,top-.17),(2.5,y,top-.05),(3.05,y,top+.2)]
             parts.append(curve('curved-tiled-eave',points,.13,3))
     obj=join(parts,block['id'])
-    obj.rotation_euler.z=math.pi/2 if block['x']<0 else -math.pi/2
+    yaw=math.pi/2 if block['x']<0 else -math.pi/2
+    obj.data.transform(Matrix.Rotation(yaw,4,'Z'))
+    obj.rotation_euler=(0,0,0)
     obj.location=(block['x'],-block['z'],.03)
     obj['source']='Kenney City Kit Commercial 2.1 / CC0 + original Sakura trim'
     obj['venue']=block['id']
@@ -300,14 +341,7 @@ for side in [-1,1]:
         place('light-curved',side*5.45,0,z+2, -math.pi/2 if side>0 else math.pi/2)
         for dz in [-1.45,0,1.45]:
             place('lantern',side*5.72,2.5,z+dz)
-    for z in [-17,-1,15]:
-        place('electricity-pole',side*5.5,0,z,math.pi/2)
-    for z in [-13,-5,3,11]:
-        place('electricity-wires',side*5.5,6.25,z)
-    for z in [-19.5,16.5]:
-        place('tree_oak',side*8.8,0,z)
-for x in [-3,3]:
-    place('tree_oak',x,0,-25)
+    # Cột điện, dây điện và cây do scripts/build-street-decor.py dựng (cột bê tông kiểu Nhật, dây võng, anh đào).
 for x,z,r in [(-5.8,-9.3,math.pi/2),(5.8,11.3,-math.pi/2)]:
     place('vending-machine',x,0,z,r)
 for x,z in [(-11.3,-4.8),(11.3,3.2)]:

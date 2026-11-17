@@ -16,7 +16,14 @@
     "db:seed": "pnpm --filter @metaverse/database seed",
     "db:status": "pnpm --filter @metaverse/database status",
     "music:sync": "python scripts/import-club-playlist.py",
-    "characters:flair": "node scripts/prepare-club-motion.mjs --mixamo --file=Flair.fbx && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts"
+    "characters:walk": "node scripts/prepare-club-motion.mjs --mixamo --file=\"Dwarf Walk.fbx\" && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts --motion=walk",
+    "characters:flair": "node scripts/prepare-club-motion.mjs --mixamo --file=Flair.fbx && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts",
+    "voices:bluff": "node scripts/generate-bluff-voices.mjs",
+    "characters:hiphop": "node scripts/prepare-club-motion.mjs --mixamo --file=\"Hip Hop Dancing.fbx\" && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts --motion=hiphop",
+    "characters:maraschino": "node scripts/prepare-club-motion.mjs --mixamo --file=\"Dancing Maraschino Step.fbx\" && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts --motion=maraschino",
+    "characters:swing": "node scripts/prepare-club-motion.mjs --mixamo --file=\"Swing Dancing.fbx\" && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts --motion=swing",
+    "characters:snakehiphop": "node scripts/prepare-club-motion.mjs --mixamo --file=\"Snake Hip Hop Dance.fbx\" && corepack.cmd pnpm --filter @metaverse/web exec tsx scripts/bake-player-flair.ts --motion=snakehiphop",
+    "characters:textures": "node apps/web/scripts/resize-glb-textures.mjs apps/web/public/assets/characters/gekka/aos.vrm apps/web/public/assets/characters/gekka/espeon.vrm apps/web/public/assets/characters/gekka/lindsay.vrm apps/web/public/assets/characters/gekka/rina.vrm"
   },
   "devDependencies": {"turbo":"^2.3.3", "typescript":"^5.7.3"}
 }

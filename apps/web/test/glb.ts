@@ -16,11 +16,18 @@ export function pack(doc: ReturnType<typeof unpack>['doc'], binary: Buffer) {
 }
 export function withAnimation(doc: ReturnType<typeof unpack>['doc'], binary: Buffer, clip: AnimationClip, append = false) {
   const additions: Buffer[] = []; let length = binary.length;
+  // Các bone thường có cùng mốc lấy mẫu; dùng chung accessor để không nhân bản dãy thời gian trong GLB.
+  const timeAccessors = new Map<string, number>();
   function accessor(array: Float32Array, type: string, components: number) {
-    const data = Buffer.from(array.buffer, array.byteOffset, array.byteLength), view = doc.bufferViews.length;
+    const data = Buffer.from(array.buffer, array.byteOffset, array.byteLength);
+    const timeKey = type === 'SCALAR' ? data.toString('base64') : undefined;
+    const existing = timeKey === undefined ? undefined : timeAccessors.get(timeKey);
+    if (existing !== undefined) return existing;
+    const view = doc.bufferViews.length;
     doc.bufferViews.push({ buffer: 0, byteOffset: length, byteLength: data.length }); additions.push(data); length += data.length;
     const index = doc.accessors.length;
     doc.accessors.push({ bufferView: view, componentType: 5126, count: array.length / components, type, ...(type === 'SCALAR' ? { min: [array[0]], max: [array[array.length - 1]] } : {}) });
+    if (timeKey !== undefined) timeAccessors.set(timeKey, index);
     return index;
   }
   const animation = { name: clip.name, samplers: [] as object[], channels: [] as object[] };

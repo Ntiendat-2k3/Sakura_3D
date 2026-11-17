@@ -1,77 +1,12 @@
-/** Tuần tra sàn club với quỹ đạo bo góc, bước chân neo theo mặt đất và IK hai khớp trên rig VRM. */
+/** Tiện ích căn đế giày, giải IK hai khớp trên rig VRM và điều khiển di chuyển DJ bằng dáng đi chung Dwarf Walk. */
 import { MathUtils, Quaternion, SkinnedMesh, Vector3, type Group, type Object3D } from 'three';
 import type { VRM } from '@pixiv/three-vrm';
+import { createRecordedClubDance, updateDanceRig } from './retargetClubMotion';
 
-const STRIDE = .64, SPEED = .55, ACCEL = .6, PAUSE = 1.8, RADIUS = .8;
-// Chia chu vi thành số nguyên chu kỳ bước để điểm nghỉ không rơi vào lúc chân đang vung.
-const QUARTER_DISTANCE = 11 * STRIDE;
-const LOOP_DISTANCE = QUARTER_DISTANCE * 4;
-const X_MAX = 4.4, Z_MAX = 4.2;
-const WIDTH = X_MAX * 2;
-const DEPTH = (LOOP_DISTANCE - 2 * WIDTH + 8 * RADIUS - 2 * Math.PI * RADIUS) / 2;
-const Z_MIN = Z_MAX - DEPTH;
-const TRAVEL_TIME = QUARTER_DISTANCE / SPEED + ACCEL;
-const PERIOD = TRAVEL_TIME + PAUSE;
-const Y_AXIS = new Vector3(0, 1, 0);
-const mod = (value: number, divisor: number) => ((value % divisor) + divisor) % divisor;
+export const SHARED_WALK_CLIP_ID = 'Dwarf Walk' as const;
 
 export type PatrolSample = { x: number; y?: number; z: number; yaw: number; distance: number; speed: number };
 export type HostMotionRoute = { sample: (seconds: number, out: PatrolSample) => PatrolSample; path: (distance: number, out: PatrolSample) => PatrolSample; stride: number; speed: number };
-export type FootSample = { position: Vector3; yaw: number; planted: boolean };
-
-/** Trả điểm theo độ dài cung để tốc độ không thay đổi khi vào góc bo. Không tạo state mạng mới. */
-export function sampleHostPath(distance: number, out: PatrolSample): PatrolSample {
-  let d = mod(distance, LOOP_DISTANCE);
-  const vertical = DEPTH - 2 * RADIUS, horizontal = WIDTH - 2 * RADIUS, arc = Math.PI * RADIUS / 2;
-  const straight = (length: number, x: number, z: number, dx: number, dz: number) => {
-    if (d <= length) { out.x = x + dx * d; out.z = z + dz * d; out.yaw = Math.atan2(dx, dz); return true; }
-    d -= length; return false;
-  };
-  const corner = (x: number, z: number, start: number) => {
-    if (d <= arc) { const angle = start - d / RADIUS; out.x = x + Math.cos(angle) * RADIUS; out.z = z + Math.sin(angle) * RADIUS; out.yaw = Math.atan2(Math.sin(angle), -Math.cos(angle)); return true; }
-    d -= arc; return false;
-  };
-  if (straight(vertical, X_MAX, Z_MAX - RADIUS, 0, -1)
-    || corner(X_MAX - RADIUS, Z_MIN + RADIUS, 0)
-    || straight(horizontal, X_MAX - RADIUS, Z_MIN, -1, 0)
-    || corner(-X_MAX + RADIUS, Z_MIN + RADIUS, -Math.PI / 2)
-    || straight(vertical, -X_MAX, Z_MIN + RADIUS, 0, 1)
-    || corner(-X_MAX + RADIUS, Z_MAX - RADIUS, -Math.PI)
-    || straight(horizontal, -X_MAX + RADIUS, Z_MAX, 1, 0)
-    || corner(X_MAX - RADIUS, Z_MAX - RADIUS, -Math.PI * 1.5)) return out;
-  out.x = X_MAX; out.z = Z_MAX - RADIUS; out.yaw = Math.PI;
-  return out;
-}
-
-/** Dừng chỉ tại bội số một chu kỳ bước, để hai chân chạm sàn; tăng/giảm tốc có gia tốc đầu-cuối bằng 0. */
-export function sampleHostPatrol(seconds: number, out: PatrolSample): PatrolSample {
-  const time = Math.max(0, Number.isFinite(seconds) ? seconds : 0), segment = Math.floor(time / PERIOD), phase = time % PERIOD;
-  const integrated = (u: number) => SPEED * ACCEL * (u ** 3 - .5 * u ** 4);
-  let distance = QUARTER_DISTANCE, speed = 0;
-  if (phase < ACCEL) { const u = phase / ACCEL; distance = integrated(u); speed = SPEED * u * u * (3 - 2 * u); }
-  else if (phase < TRAVEL_TIME - ACCEL) { distance = SPEED * (phase - ACCEL / 2); speed = SPEED; }
-  else if (phase < TRAVEL_TIME) { const u = (TRAVEL_TIME - phase) / ACCEL; distance = QUARTER_DISTANCE - integrated(u); speed = SPEED * u * u * (3 - 2 * u); }
-  out.distance = segment * QUARTER_DISTANCE + distance; out.speed = speed;
-  return sampleHostPath(out.distance, out);
-}
-
-/** Pha chống chân trả đúng cùng tọa độ world; pha vung chân nối hai điểm đặt chân với cung nâng mũi giày. */
-export function sampleHostFoot(distance: number, offset: number, lateral: number, ankleY: number, out: FootSample, scratch: PatrolSample, path = sampleHostPath, stride = STRIDE): FootSample {
-  const cycles = distance / stride + offset, cycle = Math.floor(cycles), phase = mod(cycles, 1);
-  const contact = (cycle - offset) * stride, from = contact + .3 * stride;
-  path(from, scratch);
-  const x = scratch.x + Math.cos(scratch.yaw) * lateral, z = scratch.z - Math.sin(scratch.yaw) * lateral, yaw = scratch.yaw;
-  out.position.set(x, ankleY + (scratch.y ?? 0), z); out.yaw = yaw; out.planted = phase < .6;
-  if (!out.planted) {
-    const t = (phase - .6) / .4, smooth = t * t * (3 - 2 * t);
-    path(from + stride, scratch);
-    out.position.x = MathUtils.lerp(x, scratch.x + Math.cos(scratch.yaw) * lateral, smooth);
-    out.position.z = MathUtils.lerp(z, scratch.z - Math.sin(scratch.yaw) * lateral, smooth);
-    out.position.y = MathUtils.lerp(out.position.y, ankleY + (scratch.y ?? 0), smooth) + .025 * Math.sin(Math.PI * t) + .065 * Math.sin(Math.PI * t) ** 2;
-    out.yaw = yaw + Math.atan2(Math.sin(scratch.yaw - yaw), Math.cos(scratch.yaw - yaw)) * smooth;
-  }
-  return out;
-}
 
 /** Giải chuỗi hai xương theo world, giữ chiều dài; tùy chọn khóa hướng bàn chân hoặc để bàn tay theo cẳng tay. */
 export function createTwoBoneIK(upper: Object3D, lower: Object3D, foot: Object3D) {
@@ -114,65 +49,65 @@ export function alignVrmSoles(vrm: VRM, floorY: number) {
   return restAnkle - soleFloor;
 }
 
-export function createHostLocomotion(vrm: VRM, footClearance: number, custom?: HostMotionRoute) {
-  const stride = custom?.stride ?? STRIDE, speed = custom?.speed ?? SPEED;
+/** Điều khiển di chuyển của NPC VRM (DJ Rio) theo quỹ đạo với dáng đi chung Dwarf Walk từ thư mục common. */
+export function createHostLocomotion(
+  vrm: VRM,
+  footClearance: number,
+  custom: HostMotionRoute,
+  walk?: Awaited<ReturnType<typeof createRecordedClubDance>>,
+) {
   const h = vrm.humanoid;
   const hips = h.getNormalizedBoneNode('hips')!;
-  const feet = (['left', 'right'] as const).map(side => {
-    const upper = h.getNormalizedBoneNode(`${side}UpperLeg`)!, lower = h.getNormalizedBoneNode(`${side}LowerLeg`)!, foot = h.getNormalizedBoneNode(`${side}Foot`)!;
-    return { upper, lower, foot, solve: createTwoBoneIK(upper, lower, foot), sample: { position: new Vector3(), yaw: 0, planted: true }, flat: new Quaternion(), lateral: 0 };
-  });
-  const arms = (['left', 'right'] as const).map(side => {
-    const upper = h.getNormalizedBoneNode(`${side}UpperArm`)!, lower = h.getNormalizedBoneNode(`${side}LowerArm`)!, hand = h.getNormalizedBoneNode(`${side}Hand`)!;
-    return { upper, lower, hand, solve: createTwoBoneIK(upper, lower, hand) };
-  });
-  const route: PatrolSample = { x: 0, z: 0, yaw: 0, distance: 0, speed: 0 }, scratch = { ...route };
-  const forward = new Vector3(), point = new Vector3(), scale = new Vector3(), right = new Vector3(), armGoal = new Vector3(), elbow = new Vector3(), hand = new Vector3(), outward = new Vector3(), pole = new Vector3(), yawRotation = new Quaternion(), pitchRotation = new Quaternion();
+  const route: PatrolSample = { x: 0, z: 0, yaw: 0, distance: 0, speed: 0 };
+  const scale = new Vector3();
+  const vrm0Sign = vrm.meta?.metaVersion === '0' ? -1 : 1;
   let initialized = false, ankleClearance = footClearance;
   return {
-    feet, route,
+    route,
     get ankleClearance() { return ankleClearance; },
     update(seconds: number, delta: number, root: Group) {
-      (custom?.sample ?? sampleHostPatrol)(seconds, route);
-      root.position.set(route.x, route.y ?? .086, route.z); root.rotation.y = route.yaw;
-      h.resetNormalizedPose(); vrm.scene.updateWorldMatrix(true, true);
+      const dt = MathUtils.clamp(delta, 0, .05);
+      custom.sample(seconds, route);
+      const floorY = route.y ?? .086;
+      root.position.set(route.x, floorY, route.z);
+      root.rotation.y = route.yaw;
+
       if (!initialized) {
-        ankleClearance = alignVrmSoles(vrm, root.position.y);
-        const rightX = Math.cos(route.yaw), rightZ = -Math.sin(route.yaw);
-        feet.forEach(leg => { leg.foot.getWorldPosition(point); leg.lateral = (point.x - root.position.x) * rightX + (point.z - root.position.z) * rightZ; });
-        initialized = true;
+        h.resetNormalizedPose();
+        vrm.scene.updateWorldMatrix(true, true);
+        ankleClearance = alignVrmSoles(vrm, floorY);
       }
+
+      const blink = Math.max(0, 1 - Math.abs(seconds % 4.6 - 4.3) / .1);
+      if (route.speed > .04 && walk) {
+        h.resetNormalizedPose();
+        walk.update(seconds * 2, 0, seconds);
+        vrm.expressionManager?.setValue('blink', blink);
+        vrm.expressionManager?.setValue('relaxed', .2);
+        updateDanceRig(vrm, dt, floorY + ankleClearance, !initialized);
+        initialized = true;
+        return;
+      }
+
+      // Khi DJ dừng trước mặt khách chờ chọn bài (phase === 'ready'), giữ dáng đứng tự nhiên nhìn về khách.
+      h.resetNormalizedPose();
+      vrm.scene.updateWorldMatrix(true, true);
       hips.parent!.getWorldScale(scale);
-      feet.forEach((leg, i) => sampleHostFoot(route.distance, i * .5, leg.lateral, (custom ? 0 : root.position.y) + ankleClearance, leg.sample, scratch, custom?.path, stride));
-      // Khi lên/xuống bậc, hạ trọng tâm theo chân thấp hơn để không kéo quá chiều dài chân trụ.
-      const stairDrop = custom ? Math.max(0, root.position.y + ankleClearance - Math.min(...feet.map(leg => leg.sample.position.y))) : 0;
-      hips.position.y -= stairDrop / scale.y;
-      hips.position.y -= (.035 + .006 * (1 - Math.cos(route.distance / stride * Math.PI * 4)) * route.speed / speed) / scale.y;
-      const swing = -Math.cos(route.distance / stride * Math.PI * 2), intensity = MathUtils.clamp(route.speed / speed, 0, 1);
-      h.getNormalizedBoneNode('spine')?.rotation.set(.01 * Math.sin(seconds * 1.6), .025 * swing * intensity, .01 * swing * intensity);
-      h.getNormalizedBoneNode('head')?.rotation.set(0, .06 * Math.sin(seconds * .45) * (1 - intensity), 0);
-      vrm.scene.updateWorldMatrix(true, true); forward.set(Math.sin(route.yaw), 0, Math.cos(route.yaw));
-      // Hướng trục tay VRM 0.x không nên suy đoán bằng góc Z cố định; đặt cổ tay world và giải khuỷu tay.
-      pole.copy(forward).negate();
-      arms.forEach((arm, i) => {
-        arm.upper.getWorldPosition(point); arm.lower.getWorldPosition(elbow); arm.hand.getWorldPosition(hand);
-        const length = point.distanceTo(elbow) + elbow.distanceTo(hand), offset = .035 + (i === 0 ? 1 : -1) * .12 * swing * intensity;
-        arms[1 - i].upper.getWorldPosition(outward); outward.subVectors(point, outward); outward.y = 0; outward.normalize();
-        armGoal.copy(point).addScaledVector(forward, offset).addScaledVector(outward, .06); armGoal.y -= Math.sqrt(Math.max(.001, (length * .96) ** 2 - offset * offset - .06 ** 2));
-        arm.solve(armGoal, pole);
-      });
-      feet.forEach((leg, i) => {
-        leg.foot.getWorldQuaternion(leg.flat);
-        yawRotation.setFromAxisAngle(Y_AXIS, leg.sample.yaw - route.yaw); leg.flat.premultiply(yawRotation);
-        if (!leg.sample.planted) {
-          const phase = (mod(route.distance / stride + i * .5, 1) - .6) / .4;
-          right.set(Math.cos(leg.sample.yaw), 0, -Math.sin(leg.sample.yaw));
-          pitchRotation.setFromAxisAngle(right, .12 * Math.sin(Math.PI * 2 * phase)); leg.flat.premultiply(pitchRotation);
-        }
-        leg.solve(leg.sample.position, forward, leg.flat);
-      });
-      vrm.expressionManager?.setValue('blink', Math.max(0, 1 - Math.abs(seconds % 4.6 - 4.3) / .1));
-      vrm.update(Math.min(delta, .05)); vrm.scene.updateWorldMatrix(true, true); vrm.scene.updateMatrixWorld(true);
+      const breathe = Math.sin(seconds * 1.7);
+      hips.position.y -= (.02 + .005 * (1 + breathe)) / scale.y;
+      h.getNormalizedBoneNode('spine')?.rotation.set(.02 * breathe * vrm0Sign, .02 * Math.sin(seconds * .9), 0);
+      h.getNormalizedBoneNode('head')?.rotation.set(.015 * breathe * vrm0Sign, .05 * Math.sin(seconds * .55), 0);
+      for (const side of ['left', 'right'] as const) {
+        const upperArm = h.getNormalizedBoneNode(`${side}UpperArm`);
+        const lowerArm = h.getNormalizedBoneNode(`${side}LowerArm`);
+        const dir = (side === 'left' ? 1 : -1) * vrm0Sign;
+        if (upperArm) upperArm.rotation.set(.06 * vrm0Sign, 0, dir * 1.18);
+        if (lowerArm) lowerArm.rotation.set(.18 * vrm0Sign, 0, dir * .12);
+      }
+      vrm.expressionManager?.setValue('blink', blink);
+      vrm.expressionManager?.setValue('happy', .25);
+      updateDanceRig(vrm, dt, floorY + ankleClearance, !initialized);
+      initialized = true;
     },
   };
 }

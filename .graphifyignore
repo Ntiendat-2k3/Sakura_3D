@@ -1,0 +1,15 @@
+# Graphify scope: code + docs only (binaries, screenshots, audio add no code knowledge)
+test-results/
+assets/
+apps/web/public/assets/
+graphify-out/
+.claude/
+.agents/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.mp3
+*.m4a
+*.pdf
+*.docx

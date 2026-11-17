@@ -1,0 +1,30 @@
+[
+  {
+    "id": "reika-bb16f9896100bfad",
+    "title": "Kho báu",
+    "url": "/assets/audio/reika/playlist/reika-bb16f9896100bfad-24f55f43a66a.m4a",
+    "durationSeconds": 192.238005,
+    "bpm": 120.0,
+    "beatOffsetSeconds": 0,
+    "cues": [
+      {
+        "atSeconds": 0,
+        "cue": "lounge"
+      }
+    ]
+  },
+  {
+    "id": "reika-db95e048d4e4c128",
+    "title": "Thôi đừng chiếm anh",
+    "url": "/assets/audio/reika/playlist/reika-db95e048d4e4c128-f92e2d10a226.m4a",
+    "durationSeconds": 304.738685,
+    "bpm": 120.0,
+    "beatOffsetSeconds": 0,
+    "cues": [
+      {
+        "atSeconds": 0,
+        "cue": "lounge"
+      }
+    ]
+  }
+]

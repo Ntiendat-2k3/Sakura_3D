@@ -1,9 +1,10 @@
-/** Server giữ lượt gọi DJ, đo thời gian giữ phím và chỉ đổi bài sau khi DJ đã đến đúng người. */
+/** Server giữ lượt gọi DJ và chỉ phát bài khách đã order khi DJ quay về tới bàn. */
 import { canCallClubDj, createDjRoute, DEFAULT_DJ_VISIT, DJ_HOLD_MS, DJ_REACH, DJ_WAIT_MS, getClubTrack, getDjMeetingPoint, getDjTravelDuration, sampleDjTravel, type ClubTrack, type DjVisit } from '@metaverse/game-protocol';
 
 type Guest = { x: number; z: number; seatId: string; dancing: boolean };
 export function createClubDj(visit: DjVisit, players: { get(id: string): Guest | undefined }, play: (track: ClubTrack, now: number) => void) {
-  const reset = () => Object.assign(visit, DEFAULT_DJ_VISIT);
+  let pendingTrack: ClubTrack | undefined;
+  const reset = () => { pendingTrack = undefined; Object.assign(visit, DEFAULT_DJ_VISIT); };
   const distance = () => createDjRoute(visit.targetX, visit.targetZ).length;
   const returnHome = (now: number) => {
     if (visit.phase === 'holding') { reset(); return; }
@@ -26,11 +27,18 @@ export function createClubDj(visit: DjVisit, players: { get(id: string): Guest |
     select(id: string, value: unknown, now: number) {
       const track = getClubTrack(value), player = players.get(id);
       if (!track || visit.phase !== 'ready' || visit.requesterId !== id || !player || Math.hypot(player.x - visit.targetX, player.z - visit.targetZ) > DJ_REACH) return false;
-      play(track, now); returnHome(now); return true;
+      pendingTrack = track; returnHome(now); return true;
     },
     tick(now: number) {
       if (visit.phase === 'idle') return;
-      if (visit.phase === 'returning') { if (now - visit.startedAt >= getDjTravelDuration(visit.returnDistance) * 1000) reset(); return; }
+      if (visit.phase === 'returning') {
+        if (now - visit.startedAt >= getDjTravelDuration(visit.returnDistance) * 1000) {
+          const track = pendingTrack;
+          reset();
+          if (track) play(track, now);
+        }
+        return;
+      }
       const player = players.get(visit.requesterId);
       if (!canCallClubDj(player) || Math.hypot(player!.x - visit.playerX, player!.z - visit.playerZ) > .65) { returnHome(now); return; }
       const elapsed = now - visit.startedAt;

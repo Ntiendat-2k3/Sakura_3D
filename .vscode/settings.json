@@ -2,5 +2,6 @@
   "terminal.integrated.env.windows": {
     "Path": "${workspaceFolder}\\scripts\\bin;${env:PATH}"
   },
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "antigravity.enableInlineDiff": false
 }

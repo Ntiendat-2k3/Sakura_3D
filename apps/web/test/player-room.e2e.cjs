@@ -127,6 +127,18 @@ test('nhảy và DJ: xác thực thật, hai client đồng bộ, di chuyển/ng
     await waitFor(() => clubA.state.players.get(clubB.sessionId)?.danceStyle === 'flair', 'Mẫu không có đàn vẫn phải nhảy Flair và đồng bộ sang A');
     clubB.send('dance', { dancing: false, style: 'flair' });
     await waitFor(() => !clubA.state.players.get(clubB.sessionId)?.dancing, 'Không dừng được Flair');
+    clubB.send('dance', { dancing: true, style: 'hiphop' });
+    await waitFor(() => clubA.state.players.get(clubB.sessionId)?.danceStyle === 'hiphop' && clubA.state.players.get(clubB.sessionId)?.dancing, 'Hip Hop phải đồng bộ sang A cho cả mẫu không có đàn');
+    clubB.send('dance', { dancing: false, style: 'hiphop' });
+    await waitFor(() => !clubA.state.players.get(clubB.sessionId)?.dancing, 'Không dừng được Hip Hop');
+    assert.equal(clubA.state.players.get(clubB.sessionId).danceStyle, 'normal');
+    for (const style of ['maraschino', 'swing', 'snakehiphop']) {
+      clubB.send('dance', { dancing: true, style });
+      await waitFor(() => clubA.state.players.get(clubB.sessionId)?.danceStyle === style && clubA.state.players.get(clubB.sessionId)?.dancing, `Không đồng bộ điệu ${style} sang A`);
+      clubB.send('dance', { dancing: false, style });
+      await waitFor(() => !clubA.state.players.get(clubB.sessionId)?.dancing, `Không dừng được ${style}`);
+      assert.equal(clubA.state.players.get(clubB.sessionId).danceStyle, 'normal');
+    }
     await streetB.leave(); rooms.delete(streetB);
     clubA.send('dance', { dancing: true, style: 'normal' });
     await waitFor(() => clubB.state.players.get(clubA.sessionId).danceStyle === 'normal', 'B thấy A chuyển từ đàn sang nhảy thường');
@@ -170,7 +182,9 @@ test('nhảy và DJ: xác thực thật, hai client đồng bộ, di chuyển/ng
     clubB.send('dj-track', DEFAULT_CLUB_TRACK.id); await delay(180);
     assert.equal(clubB.state.dj.phase, 'ready', 'Khách khác không được chọn thay');
     clubA.send('dj-track', DEFAULT_CLUB_TRACK.id);
-    await waitFor(() => clubB.state.dj.phase === 'returning' && clubB.state.danceEpoch > oldEpoch, 'Chọn bài chưa đồng bộ timeline/cho DJ về');
+    await waitFor(() => clubB.state.dj.phase === 'returning', 'DJ chưa quay lại bàn sau khi nhận order');
+    assert.equal(clubB.state.danceEpoch, oldEpoch, 'Bài cũ phải tiếp tục trong lúc DJ quay lại bàn');
+    await waitFor(() => clubB.state.dj.phase === 'idle' && clubB.state.danceEpoch > oldEpoch, 'Bài chưa phát khi DJ về bàn', 18000);
     assert.equal(clubB.state.activeTrackId, DEFAULT_CLUB_TRACK.id);
     assert.equal(clubB.state.showBpm, DEFAULT_CLUB_TRACK.bpm);
     await moveTo(clubA, 0, 6.4);

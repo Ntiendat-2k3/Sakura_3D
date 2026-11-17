@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "track-3d03e3b73c17473c",
+    "title": "Bất độ",
+    "url": "/assets/audio/club/playlist/track-3d03e3b73c17473c-039bfc5ceb85.m4a",
+    "durationSeconds": 449.584762,
+    "bpm": 120.0,
+    "beatOffsetSeconds": 0,
+    "cues": [
+      {
+        "atSeconds": 0,
+        "cue": "groove"
+      }
+    ]
+  },
+  {
+    "id": "track-8965de0ecea3fc64",
+    "title": "Lạnh lẽo (ko có em)",
+    "url": "/assets/audio/club/playlist/track-8965de0ecea3fc64-b631e09ee2ca.m4a",
+    "durationSeconds": 320.830113,
+    "bpm": 120.0,
+    "beatOffsetSeconds": 0,
+    "cues": [
+      {
+        "atSeconds": 0,
+        "cue": "groove"
+      }
+    ]
+  },
+  {
+    "id": "track-caddf389cfc8e160",
+    "title": "Để anh đi ngủ",
+    "url": "/assets/audio/club/playlist/track-caddf389cfc8e160-32ec44c55fa5.m4a",
+    "durationSeconds": 234.451882,
+    "bpm": 120.0,
+    "beatOffsetSeconds": 0,
+    "cues": [
+      {
+        "atSeconds": 0,
+        "cue": "groove"
+      }
+    ]
+  }
+]

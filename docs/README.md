@@ -28,6 +28,13 @@ Hướng dẫn chạy nằm trong [README chính](../README.md). Các đường 
 - [Import animation người dùng](reports/USER_DANCE_IMPORT_REPORT.md)
 - [DJ Rio và đèn lồng](reports/DJ_RIO_LANTERN_UPGRADE_REPORT.md)
 - [Chiều cao đèn lồng](reports/STREET_LANTERN_HEIGHT_REPORT.md)
+- [Kohaku Bluff](reports/KOHAKU_BLUFF_REPORT.md)
+- [Tối ưu độ mượt](reports/PERFORMANCE_SMOOTHNESS_REPORT.md)
+- [Voice chat theo khoảng cách qua Tailscale](reports/VOICE_PROXIMITY_REPORT.md)
+- [Mưa chân thật và chu kỳ ngày/đêm](reports/WEATHER_DAY_NIGHT_REPORT.md)
+- [Làm lại nội thất Denmu Club và Kohaku Club](reports/INTERIOR_RESTYLE_REPORT.md)
+- [Nhảy từ ban công Kohaku xuống tầng 1](reports/KOHAKU_JUMP_REPORT.md)
+- [Làm lại khu phố Sakura: anh đào, cột điện, cổng, đèn đá](reports/STREET_DECOR_REPORT.md)
 
 Các báo cáo ghi lại trạng thái tại thời điểm thực hiện; không thay thế kết quả kiểm tra hiện tại.
 

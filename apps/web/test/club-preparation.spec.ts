@@ -8,7 +8,7 @@ import { CLUB_PRELOAD_URLS } from '../game/systems/ClubAssetWarmup';
 import { DEFAULT_PLAYER_CHARACTER, isPlayerCharacterId, PLAYER_CHARACTERS, type PlayerCharacterId } from '@metaverse/game-protocol';
 import { readPlayerChoice, savePlayerChoice } from '../game/systems/playerChoice';
 
-test('N+1/N+2 chọn đúng kiểu, không kích hoạt nhảy thường trước tổ hợp và không lặp khi giữ phím', () => {
+test('N+1–7 chọn đúng kiểu, không kích hoạt nhảy thường trước tổ hợp và không lặp khi giữ phím', () => {
   const styles: string[] = [], keys = createPlayerDanceShortcuts(style => styles.push(style));
   keys.down('2', false); assert.deepEqual(styles, []);
   keys.down('n', false); assert.deepEqual(styles, []);
@@ -21,6 +21,18 @@ test('N+1/N+2 chọn đúng kiểu, không kích hoạt nhảy thường trướ
   keys.down('n', false); keys.up('n'); assert.equal(styles.length, 3, 'Giữ tương thích phím N đơn');
   keys.down('n', false); keys.down('3', false); keys.down('3', true); keys.up('n');
   assert.deepEqual(styles, ['guitar', 'normal', 'normal', 'flair']);
+  assert.equal(keys.down('4', false), false);
+  keys.down('n', false); keys.down('4', false); keys.down('4', true); keys.up('n');
+  assert.deepEqual(styles, ['guitar', 'normal', 'normal', 'flair', 'hiphop']);
+  keys.down('n', false); keys.down('4', false); keys.up('n');
+  assert.equal(styles.at(-1), 'hiphop', 'Nhấn lại N+4 gửi cùng kiểu để bật/tắt');
+  for (const [key, expected] of [['5', 'maraschino'], ['6', 'swing'], ['7', 'snakehiphop']]) {
+    const before: number = styles.length;
+    assert.equal(keys.down(key, false), false);
+    keys.down('n', false); keys.down(key, false); keys.down(key, true); keys.up('n');
+    assert.deepEqual(styles.slice(before), [expected]);
+  }
+  assert.equal(keys.down('8', false), false);
 });
 
 test('MP3 tải đầy đủ một lần, dùng lại cùng blob, giải phóng khi World đóng', async () => {

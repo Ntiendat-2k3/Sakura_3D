@@ -7,7 +7,5 @@
   "nijika": { "name": "Nijika", "url": "/assets/characters/player/nijika.glb", "portrait": "/assets/characters/player/portraits/nijika.png", "guitar": false },
   "serie": { "name": "Serie", "url": "/assets/characters/player/serie.glb", "portrait": "/assets/characters/player/portraits/serie.png", "guitar": false },
   "yui": { "name": "Yui", "url": "/assets/characters/player/yui.glb", "portrait": "/assets/characters/player/portraits/yui.png", "guitar": false },
-  "airi": { "name": "Airi · bản dựng", "url": "/assets/characters/player/airi.glb", "portrait": "/assets/characters/player/portraits/airi.png", "guitar": false },
-  "annie": { "name": "Annie · bản dựng", "url": "/assets/characters/player/annie.glb", "portrait": "/assets/characters/player/portraits/annie.png", "guitar": false },
-  "kuroki": { "name": "Kuroki · bản dựng", "url": "/assets/characters/player/kuroki.glb", "portrait": "/assets/characters/player/portraits/kuroki.png", "guitar": false }
+  "mint": { "name": "Mint", "url": "/assets/characters/player/mint.glb", "portrait": "/assets/characters/player/portraits/mint.png", "guitar": false }
 }

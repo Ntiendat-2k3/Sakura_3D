@@ -30,7 +30,12 @@ __pycache__/
 # Asset do người dùng cung cấp đang chờ xác minh quyền phân phối.
 /*.rar
 /assets/source/characters/club-import/
+/assets/source/characters/reika-import/
 /apps/web/public/assets/characters/club-local/
+# VRM 月華楼 từ VRoid Hub: Espeon/Lindsay/Rina cấm phân phối lại (redistribution=disallow), xem LICENSE.md trong gekka-import.
+/assets/source/characters/gekka-import/*.vrm
+/apps/web/public/assets/characters/gekka/
+/assets/processed/meshopt-raw/
 /assets/processed/rosetta-greeter.blend
 /assets/processed/rosetta-greeter.blend1
 /assets/processed/rosetta-dance-preview.glb
@@ -44,3 +49,6 @@ __pycache__/
 /assets/processed/dj-rio-preview.glb
 /assets/processed/dj-rio-stage-preview.blend*
 /test-results/tmp/
+
+# graphify knowledge graph (local, regenerate with /graphify)
+graphify-out/

@@ -71,7 +71,7 @@ signs = Image.new('RGB', (2048, 384), '#131324')
 blades = Image.new('RGB', (512, 512), '#131324')
 entries = [('琥珀', 'K O H A K U', 'PRIVATE MEMBERS CLUB', '#e9c878'),
            ('夜桜', 'Y O Z A K U R A', 'IZAKAYA / SAKE BAR', '#ed9d72'),
-           ('麗華', 'R E I K A', 'HOSTESS LOUNGE', '#f3a3ce'),
+           ('麗華', 'R E I K A', '1F LOUNGE · 2F LOVE HOTEL', '#f3a3ce'),
            ('紅蓮', 'K U R E N A I', 'OIRAN LOUNGE', '#ee8b87'),
            ('月華', 'G E K K A', 'CABARET / LIVE SHOW', '#dba4ef'),
            ('電夢', 'D E N M U', 'NIGHT CLUB / MUSIC', '#74e2e4'),

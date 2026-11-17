@@ -24,12 +24,14 @@ Progress: `pnpm test:e2e` now checks API/database health and two-client Colyseus
 
 ## Milestone B — full game features
 
-- [x] Ngoại cảnh GLB CC0, atlas vật liệu/biển hiệu, instancing đạo cụ và collider dùng chung đã kiểm tra; art direction anime cao cấp vẫn chưa hoàn tất. Xem `docs/reports/VISUAL_UPGRADE_REPORT.md`.
-- [x] Chọn 11 mẫu trước khi vào game qua guest local tự động: 8 mẫu nhập từ nguồn và ba bản dựng gần giống Airi/Annie/Kuroki trên rig Yui, ghi rõ bản dựng trong UI. GLB có đứng/đi/chạy/ngồi/nhảy/chớp mắt, lựa chọn và kiểu nhảy được server kiểm tra và đồng bộ. Mẫu Unity và bản dựng có ngân sách mesh/texture. Chưa có thay đồ/lưu ngoại hình theo tài khoản, chưa kiểm thử browser cho thay đổi này. Xem `docs/reports/PLAYER_CHARACTER_REPORT.md`.
-- [ ] Physics/navmesh, asset loading and FPS/asset budgets
-- [ ] Clubs, interiors, proximity chat, private rooms with permission checks
-
-Tiến độ club: Denmu đã có nội thất GLB thử nghiệm, cửa E kiểm tra vị trí server, room Colyseus riêng, WINE/POP VRM nhảy theo epoch phòng và kiểm thử hai browser contexts. Các club khác, proximity chat, quyền VIP và hệ thống moderation chưa hoàn thiện. Xem `docs/reports/CLUB_TEST_REPORT.md`.
+- [x] Ngoại cảnh GLB CC0, atlas vật liệu/biển hiệu, instancing đạo cụ và collider dùng chung đã kiểm tra.
+- [x] Chọn 11 mẫu trước khi vào game qua guest local tự động: 8 mẫu nhập từ nguồn và ba bản dựng trên rig Yui. GLB có đứng/đi/chạy/ngồi/nhảy/chớp mắt, lựa chọn và kiểu nhảy được server kiểm tra và đồng bộ.
+- [x] Bầu trời Trăng Máu (Blood Moon) Anime Cyberpunk, chu kỳ thời tiết 5 phút mưa / 5 phút tạnh, hiệu ứng sương mù u ám và đèn đường cao áp nhấp nháy chập chờn khi mưa.
+- [x] Màn hình Loading game sau đăng nhập bypass: hình nền tùy biến (`loading-bg.jpg`) và thanh loading thời gian thực nạp 100% tài nguyên đồ họa (đường phố, 11 avatars, 3 không gian nội thất, 7 NPCs, GPU Texture Warmup) trước khi vào game.
+- [x] Không gian nội thất đa địa điểm: Denmu Night Club (DJ Rio, sân khấu ánh sáng, order nhạc), Reika Hostess Lounge (3 Hostess Yuzu/Bunny/Zankou, chức năng "Đi với anh nhé", order nhạc), Cyber Love Hotel tầng 2 (thang bộ dốc, giường tròn King-size, bồn tắm sục Jacuzzi, 4 mood màu).
+- [x] Không gian Câu Lạc Bộ Thượng Lưu 琥珀 (Kohaku Private Members Club) Tầng 1: Quy hoạch 3 tầng với cầu thang đá cẩm thạch đen nẹp đồng nẹp LED dẫn lên Tầng 2 & 3, bàn tròn Poker / Casino bọc nỉ xanh ngọc bích viền da cognac ở trung tâm cho 4 người chơi + slot NPC Dealer (chia bài), quầy Whisky & Cigar Reserve cổ điển, sofa da Chesterfield, bàn cờ vua và vách lò sưởi gia huy Kohaku.
+- [x] Cửa ra vào chân thực và cơ chế bước qua ngưỡng cửa tự động chuyển phòng liền mạch, xóa bỏ hoàn toàn vòng tròn sàn và chữ chỉ dẫn lơ lửng.
+- [ ] Physics/navmesh nâng cao, proximity chat, private VIP rooms with permission checks
 - [ ] Friends and messages, notifications, events calendar
 - [ ] Voice chat (opt-in microphone) with consent, mute and abuse reporting
 - [ ] Shop, non-redeemable demo coins, cosmetics, VIP memberships (without payment for local demo)

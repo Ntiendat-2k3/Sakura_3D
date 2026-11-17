@@ -4,9 +4,11 @@ import { resolve } from 'node:path';
 import { test } from 'node:test';
 import { AnimationMixer, Box3, Quaternion, SkinnedMesh, Texture, Vector3 } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { DEFAULT_CLUB_SHOW, DEFAULT_PLAYER_CHARACTER, MOVE_SPEED, PLAYER_CHARACTERS, type PlayerCharacterId } from '@metaverse/game-protocol';
+import { DEFAULT_CLUB_SHOW, DEFAULT_PLAYER_CHARACTER, MOVE_SPEED, PLAYER_CHARACTERS, PLAYER_DANCES, type PlayerCharacterId } from '@metaverse/game-protocol';
 import { createPlayerAnimation } from '../game/systems/playerAnimation';
 import character from '../game/entities/player-character.json';
+import { retargetSkeletonMotion } from '../game/systems/retargetSkeletonMotion';
+import type { Motion } from '../game/systems/retargetClubMotion';
 
 /** Đọc geometry/rig/clip GLB thật bằng Three; phần decode ảnh được thay vì Node không có DOM. */
 async function loadPlayer(id: PlayerCharacterId = DEFAULT_PLAYER_CHARACTER) {
@@ -16,10 +18,12 @@ async function loadPlayer(id: PlayerCharacterId = DEFAULT_PLAYER_CHARACTER) {
   return loader.parseAsync(raw.buffer.slice(raw.byteOffset, raw.byteOffset + raw.byteLength), '');
 }
 
-test('Flair có trên cả 11 mẫu, giữ root, lặp mượt ở tốc độ gốc và không xuyên sàn khi đổi tư thế', async () => {
+for (const definition of [{ clip: 'Walk' as const, source: 'Dwarf Walk' }, ...Object.values(PLAYER_DANCES).filter(dance => dance.source)]) test(`${definition.clip} có trên cả 9 mẫu, giữ root, lặp mượt ở tốc độ gốc và không xuyên sàn khi đổi tư thế`, async () => {
+  const motion = definition.clip;
+  const source = JSON.parse(await readFile(resolve(__dirname, `../public/assets/animations/club/${definition.source}.json`), 'utf8'));
   for (const id of Object.keys(PLAYER_CHARACTERS) as PlayerCharacterId[]) {
-    const gltf = await loadPlayer(id), clip = gltf.animations.find(item => item.name === 'Flair')!;
-    assert.ok(clip && clip.duration > .8 && clip.duration <= 1);
+    const gltf = await loadPlayer(id), clip = gltf.animations.find(item => item.name === motion)!;
+    assert.ok(clip && Math.abs(clip.duration - (source.duration - .08)) < .001, `${id}: ${motion} phải giữ thời lượng nguồn ngoài đoạn nối vòng`);
     const controller = createPlayerAnimation(gltf.scene, gltf.animations, PLAYER_CHARACTERS[id].guitar);
     const hips = controller.scene.getObjectByName('Hips')!, root = controller.scene.position.clone(), point = new Vector3();
     const meshes: SkinnedMesh[] = []; controller.scene.traverse(node => { if (node instanceof SkinnedMesh && node.name !== 'guitar') meshes.push(node); });
@@ -27,7 +31,7 @@ test('Flair có trên cả 11 mẫu, giữ root, lặp mượt ở tốc độ g
     const first = new Quaternion();
     try {
       for (let frame = 0; frame <= 120; frame++) {
-        controller.update(1 / 60, 'Flair', 0, 1000, DEFAULT_CLUB_SHOW, 1000 + frame / 120 * clip.duration * 1000);
+        controller.update(1 / 60, motion, motion === 'Walk' ? MOVE_SPEED : 0, 1000, DEFAULT_CLUB_SHOW, 1000 + frame / 120 * clip.duration * 1000);
         assert.ok(controller.scene.position.distanceTo(root) < 1e-8);
         assert.ok([...hips.position.toArray(), ...hips.quaternion.toArray()].every(Number.isFinite));
         if (frame === 30) first.copy(hips.quaternion);
@@ -41,16 +45,51 @@ test('Flair có trên cả 11 mẫu, giữ root, lặp mượt ở tốc độ g
           minFloor = Math.min(minFloor, floor); maxFloor = Math.max(maxFloor, floor);
         }
       }
-      assert.ok(minFloor > -.04 && maxFloor < .04, `${id}: Flair lệch sàn ${minFloor}..${maxFloor}`);
-      assert.ok(maxHipTurn > .4, `${id}: Flair không giữ chuyển động hông từ nguồn`);
+      assert.ok(minFloor > -.04 && maxFloor < .04, `${id}: ${motion} lệch sàn ${minFloor}..${maxFloor}`);
+      assert.ok(maxHipTurn > (motion === 'Flair' || motion === 'HipHop' ? .4 : motion === 'Walk' ? .05 : .1), `${id}: ${motion} không giữ chuyển động hông từ nguồn`);
       const guitar = controller.scene.getObjectByName('guitar'); if (guitar) assert.equal(guitar.visible, false);
     } finally { controller.dispose(); }
   }
 });
 
-test('GLB có skin, biểu cảm, đàn và tám clip lặp liên tục; chân đứng đúng sàn', async () => {
+for (const style of ['maraschino', 'swing', 'snakehiphop'] as const) test(`${style}: keyframe tối ưu giữ sai số góc khớp dưới 1 độ so với nguồn 30 Hz`, async t => {
+  const definition = PLAYER_DANCES[style], gltf = await loadPlayer();
+  const source = JSON.parse(await readFile(resolve(__dirname, `../public/assets/animations/club/${definition.source}.json`), 'utf8')) as Motion;
+  const mapping = Object.fromEntries(Object.keys(source.bones).map(name => [name.replace('mixamorig', ''), name.replace('mixamorig', '')]));
+  const reference = retargetSkeletonMotion(source, gltf.scene, mapping, { name: definition.clip, hipsLimit: 2, overlap: .08 });
+  const actual = gltf.animations.find(clip => clip.name === definition.clip)!;
+  const a = new Quaternion(), b = new Quaternion(); let greatest = 0;
+  for (const track of reference.tracks.filter(track => track.name.endsWith('.quaternion'))) {
+    const expected = track.createInterpolant(), sampled = actual.tracks.find(item => item.name === track.name)!.createInterpolant();
+    for (let frame = 0; frame <= reference.duration * 60; frame++) {
+      const time = frame / 60;
+      greatest = Math.max(greatest, a.fromArray(expected.evaluate(time)).normalize().angleTo(b.fromArray(sampled.evaluate(time)).normalize()));
+    }
+  }
+  assert.ok(greatest < Math.PI / 180, `${definition.clip}: sai số ${greatest * 180 / Math.PI} độ`);
+  t.diagnostic(`Sai số góc lớn nhất ${(greatest * 180 / Math.PI).toFixed(3)} độ`);
+});
+
+for (const motion of ['HipHop', 'Maraschino', 'Swing', 'SnakeHipHop'] as const) test(`${motion} giữ tốc độ gốc khi đổi BPM; client vào muộn lấy cùng pha và chuyển sang đi không kéo root`, async () => {
+  const gltf = await loadPlayer(), clip = gltf.animations.find(item => item.name === motion)!;
+  const a = createPlayerAnimation(gltf.scene, gltf.animations), b = createPlayerAnimation(gltf.scene, gltf.animations);
+  const epoch = 1000, now = 3550;
+  try {
+    for (let i = 0; i < 100; i++) a.update(.02, motion, 0, epoch, { ...DEFAULT_CLUB_SHOW, bpm: 80 }, now);
+    for (let i = 0; i < 50; i++) b.update(.04, motion, 0, epoch, { ...DEFAULT_CLUB_SHOW, bpm: 170 }, now);
+    const armA = a.scene.getObjectByName('LeftArm')!, armB = b.scene.getObjectByName('LeftArm')!;
+    assert.ok(armA.quaternion.angleTo(armB.quaternion) < .001);
+    const expected = new Quaternion().fromArray(clip.tracks.find(item => item.name === 'LeftArm.quaternion')!.createInterpolant().evaluate((now - epoch) / 1000)).normalize();
+    assert.ok(armA.quaternion.clone().normalize().angleTo(expected) < .001, 'Phải chạy theo giây nguồn thay vì co giãn theo BPM');
+    for (let i = 0; i < 90; i++) a.update(1 / 60, 'Walk', 4.8, epoch, DEFAULT_CLUB_SHOW, now);
+    assert.deepEqual(a.scene.position.toArray(), [0, 0, 0]);
+    assert.ok(armA.quaternion.angleTo(armB.quaternion) > .1);
+  } finally { a.dispose(); b.dispose(); }
+});
+
+test('GLB có skin, biểu cảm, đàn và mười hai clip lặp liên tục; chân đứng đúng sàn', async () => {
   const gltf = await loadPlayer();
-  assert.deepEqual(gltf.animations.map(clip => clip.name).sort(), ['Blink', 'Dance', 'Flair', 'GuitarDance', 'Idle', 'Run', 'Sit', 'Walk']);
+  assert.deepEqual(gltf.animations.map(clip => clip.name).sort(), ['Blink', 'Dance', 'Flair', 'GuitarDance', 'HipHop', 'Idle', 'Maraschino', 'Run', 'Sit', 'SnakeHipHop', 'Swing', 'Walk']);
   const meshes: SkinnedMesh[] = [];
   gltf.scene.traverse(node => { if (node instanceof SkinnedMesh) meshes.push(node); });
   assert.ok(meshes.length >= 3);
@@ -270,27 +309,28 @@ test('Yui chuyển từ Unity giữ texture nhúng tối đa 1024, ngân sách l
   assert.deepEqual(Object.keys(face.morphTargetDictionary ?? {}).sort(), ['eyeBlinkLeft', 'eyeBlinkRight']);
 });
 
-test('ba bản dựng được ghi rõ nguồn, đủ skin và giữ ngân sách GLB/texture/draw call', async () => {
-  assert.equal(Object.keys(PLAYER_CHARACTERS).length, 11, 'Màn chọn phải có đủ 11 lựa chọn đã yêu cầu');
-  for (const id of ['airi', 'annie', 'kuroki'] as const) {
-    assert.ok(PLAYER_CHARACTERS[id].name.includes('bản dựng'), `${id}: không được trình bày là model gốc`);
-    const manifest = JSON.parse(await readFile(resolve(__dirname, `../../../assets/processed/${id}-player-manifest.json`), 'utf8'));
-    assert.equal(manifest.reconstruction.approximation, true);
-    assert.ok(manifest.reconstruction.base.endsWith('yui-player.blend'));
-    const raw = await readFile(resolve(__dirname, '../public', PLAYER_CHARACTERS[id].url.slice(1)));
-    assert.ok(raw.length < 6 * 1024 * 1024, `${id}: GLB quá nặng`);
-    const jsonSize = raw.readUInt32LE(12), document = JSON.parse(raw.subarray(20, 20 + jsonSize).toString());
-    const binary = raw.subarray(28 + jsonSize);
-    for (const item of document.images) {
-      assert.equal(item.uri, undefined); assert.equal(item.mimeType, 'image/png');
-      const view = document.bufferViews[item.bufferView], png = binary.subarray(view.byteOffset ?? 0, (view.byteOffset ?? 0) + view.byteLength);
-      assert.ok(png.readUInt32BE(16) <= 1024 && png.readUInt32BE(20) <= 1024, `${id}: texture quá lớn`);
-    }
-    const gltf = await loadPlayer(id); let triangles = 0, meshes = 0;
-    gltf.scene.traverse(node => {
-      if (node instanceof SkinnedMesh) { meshes++; triangles += (node.geometry.index?.count ?? node.geometry.attributes.position.count) / 3; }
-    });
-    assert.ok(meshes <= 12, `${id}: phụ kiện gây quá nhiều draw call`);
-    assert.ok(triangles < 65000, `${id}: lưới quá nặng`);
+test('dàn 9 nhân vật gồm Mint giữ đủ skin, ngân sách GLB/texture/draw call và bỏ 3 bản dựng cũ', async () => {
+  assert.equal(Object.keys(PLAYER_CHARACTERS).length, 9, 'Màn chọn phải có đủ 9 nhân vật gồm Mint');
+  for (const deprecatedId of ['airi', 'annie', 'kuroki']) {
+    assert.equal(Object.hasOwn(PLAYER_CHARACTERS, deprecatedId), false, `${deprecatedId}: không còn trong danh sách nhân vật`);
   }
+  const id = 'mint' as const;
+  assert.equal(PLAYER_CHARACTERS[id].name, 'Mint');
+  const manifest = JSON.parse(await readFile(resolve(__dirname, `../../../assets/processed/${id}-player-manifest.json`), 'utf8'));
+  assert.equal(manifest.textureMaxResolution, 1024);
+  const raw = await readFile(resolve(__dirname, '../public', PLAYER_CHARACTERS[id].url.slice(1)));
+  assert.ok(raw.length < 14 * 1024 * 1024, `${id}: GLB quá nặng (${raw.length})`);
+  const jsonSize = raw.readUInt32LE(12), document = JSON.parse(raw.subarray(20, 20 + jsonSize).toString());
+  const binary = raw.subarray(28 + jsonSize);
+  for (const item of document.images) {
+    assert.equal(item.uri, undefined); assert.equal(item.mimeType, 'image/png');
+    const view = document.bufferViews[item.bufferView], png = binary.subarray(view.byteOffset ?? 0, (view.byteOffset ?? 0) + view.byteLength);
+    assert.ok(png.readUInt32BE(16) <= 1024 && png.readUInt32BE(20) <= 1024, `${id}: texture quá lớn`);
+  }
+  const gltf = await loadPlayer(id); let triangles = 0, meshes = 0;
+  gltf.scene.traverse(node => {
+    if (node instanceof SkinnedMesh) { meshes++; triangles += (node.geometry.index?.count ?? node.geometry.attributes.position.count) / 3; }
+  });
+  assert.ok(meshes <= 12, `${id}: quá nhiều draw call (${meshes})`);
+  assert.ok(triangles < 65000, `${id}: lưới quá nặng (${triangles})`);
 });

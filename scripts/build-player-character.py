@@ -21,6 +21,7 @@ SOURCES = {name: SOURCE_ROOT / path for name, path in {
 SOURCES['yui'] = ROOT / 'assets/processed/unity/yui/Assets/YUI/FBX/YUI_1.fbx'
 RECONSTRUCTED = {'airi', 'annie', 'kuroki'}
 for identity in RECONSTRUCTED: SOURCES[identity] = ROOT / f'assets/processed/reconstructed/{identity}-source.blend'
+SOURCES['mint'] = ROOT / 'assets/processed/mint-source.blend'
 if CHARACTER not in CATALOG:
     raise ValueError('Nhân vật không hợp lệ')
 SOURCE = SOURCES[CHARACTER]
@@ -161,7 +162,7 @@ if CHARACTER == 'yui':
             bpy.context.view_layer.objects.active = obj
             modifier = obj.modifiers.new('Giảm lưới cho Web', 'DECIMATE'); modifier.ratio = .5
             bpy.ops.object.modifier_apply(modifier=modifier.name)
-elif CHARACTER not in RECONSTRUCTED:
+elif CHARACTER not in RECONSTRUCTED and CHARACTER != 'mint':
     for image in bpy.data.images:
         if image.source == 'FILE':
             texture = next((path for path in SOURCE.parent.rglob('*.png') if path.name.lower() in ['gotoh tx.png', 'kita.png', 'ryo.png', 'selen.png', 'miorine tx.png', 'nijika.png', 'serie.png']), None)
@@ -187,7 +188,7 @@ for material in bpy.data.materials:
     material.use_backface_culling = False
     for node in material.node_tree.nodes:
         if node.type == 'TEX_IMAGE':
-            node.interpolation = 'Linear' if CHARACTER == 'yui' or CHARACTER in RECONSTRUCTED else 'Closest'
+            node.interpolation = 'Linear' if CHARACTER in ('yui', 'mint') or CHARACTER in RECONSTRUCTED else 'Closest'
         if node.type == 'BSDF_PRINCIPLED':
             node.inputs['Metallic'].default_value = 0
             node.inputs['Roughness'].default_value = .82
@@ -405,7 +406,7 @@ for name, duration in DURATIONS.items():
 
 # Chớp mắt là clip riêng để không mất biểu cảm khi blend động tác thân hoặc đổi BPM.
 blink_names = (['eyeBlinkLeft', 'eyeBlinkRight'] if CHARACTER in RECONSTRUCTED or CHARACTER == 'yui' else
-               {'bocchi': ['blink 1 L', 'blink 1 R'], 'kita': ['blink left', 'blink right'], 'ryo': ['blink'], 'ubel': ['blink'], 'miorine': ['blink L', 'blink R'], 'nijika': ['blink'], 'serie': ['blink']}[CHARACTER])
+               {'bocchi': ['blink 1 L', 'blink 1 R'], 'kita': ['blink left', 'blink right'], 'ryo': ['blink'], 'ubel': ['blink'], 'miorine': ['blink L', 'blink R'], 'nijika': ['blink'], 'serie': ['blink'], 'mint': ['Blink Left', 'Blink Right']}[CHARACTER])
 face = next(obj for obj in meshes if obj.data.shape_keys and all(name in obj.data.shape_keys.key_blocks for name in blink_names))
 keys = face.data.shape_keys
 for frame, value in [(0, 0), (48, 0), (51, 1), (54, 0), (120, 0)]:
@@ -433,13 +434,15 @@ bpy.ops.export_scene.gltf(
 bpy.context.preferences.filepaths.save_version = 0
 bpy.ops.wm.save_as_mainfile(filepath=str(PROCESSED / f'{CHARACTER}-player.blend'))
 
-# Ghép mocap sau bước xuất rig chuẩn; giữ Flair khi dựng lại từng nhân vật từ nguồn.
-subprocess.run(['corepack.cmd', 'pnpm', '--filter', '@metaverse/web', 'exec', 'tsx', 'scripts/bake-player-flair.ts', f'--character={CHARACTER}'], cwd=str(ROOT), check=True)
+# Ghép mocap chung (dáng đi Dwarf Walk và 5 điệu nhảy) sau bước xuất rig chuẩn.
+recorded_dances = {'walk': ('Walk', 'Dwarf Walk'), 'flair': ('Flair', 'Flair'), 'hiphop': ('HipHop', 'Hip Hop Dancing'), 'maraschino': ('Maraschino', 'Dancing Maraschino Step'), 'swing': ('Swing', 'Swing Dancing'), 'snakehiphop': ('SnakeHipHop', 'Snake Hip Hop Dance')}
+for motion in recorded_dances:
+    subprocess.run(['corepack.cmd', 'pnpm', '--filter', '@metaverse/web', 'exec', 'tsx', 'scripts/bake-player-flair.ts', f'--motion={motion}', f'--character={CHARACTER}'], cwd=str(ROOT), check=True)
 
 raw = TARGET.read_bytes()
 import struct
 document = json.loads(raw[20:20 + struct.unpack_from('<I', raw, 12)[0]])
-if not document.get('skins') or not (set(DURATIONS) | {'Blink', 'Flair'}).issubset({action['name'] for action in document.get('animations', [])}):
+if not document.get('skins') or not (set(DURATIONS) | {'Blink'} | {clip for clip, _ in recorded_dances.values()}).issubset({action['name'] for action in document.get('animations', [])}):
     raise ValueError('GLB thiếu skin hoặc clip; kiểm tra rig có bị ẩn/khóa trong nguồn không')
 report = {
     'source': str(SOURCE.relative_to(ROOT)),
@@ -451,7 +454,7 @@ report = {
     'boneCount': len(rig.data.bones),
     'animations': [a['name'] for a in document.get('animations', [])],
     'dance': {'beatsPerLoop': CONFIG['danceBeats'], 'authorBpm': 120},
-    'flair': {'source': 'assets/source/animations/club/mixamo/Flair.fbx', 'sourceSha256': hashlib.sha256((ROOT / 'assets/source/animations/club/mixamo/Flair.fbx').read_bytes()).hexdigest(), 'playback': 'natural'},
+    **{key: {'source': f'assets/source/animations/club/mixamo/common/{source}.fbx', 'sourceSha256': hashlib.sha256((ROOT / f'assets/source/animations/club/mixamo/common/{source}.fbx').read_bytes()).hexdigest(), 'playback': 'natural'} for key, (_, source) in recorded_dances.items()},
     'locomotion': {name: {'speed': CONFIG['runSpeed'] if name == 'Run' else CONFIG['walkSpeed'], 'duration': DURATIONS[name], 'contactRatio': RUN_CONTACT if name == 'Run' else .6} for name in ['Walk', 'Run']},
     'guitar': bool(guitar), 'characterId': CHARACTER,
     'license': 'Mẫu do người dùng cung cấp cho dự án local; chưa xác minh quyền phân phối.',
@@ -462,6 +465,8 @@ if CHARACTER == 'yui':
     report['sourcePackage'] = package['source']; report['sourcePackageSha256'] = package['sourceSha256']
     report['textureMaxResolution'] = 1024
     report['materialConversion'] = 'MainTex Unity sang glTF PBR, giữ màu gốc; không mang shader/script Unity sang Web.'
+elif CHARACTER == 'mint':
+    report['textureMaxResolution'] = 1024
 if CHARACTER in RECONSTRUCTED:
     report['reconstruction'] = json.loads((ROOT / f'assets/processed/reconstructed/{CHARACTER}-provenance.json').read_text(encoding='utf8'))
 (PROCESSED / f'{CHARACTER}-player-manifest.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf8')
